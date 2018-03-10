@@ -1901,8 +1901,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 273206160}
-  offsetX: 5
-  offsetZ: 5
+  offsetX: 3
+  offsetZ: 3
+  smoothing: 1
 --- !u!1 &679592106
 GameObject:
   m_ObjectHideFlags: 0
