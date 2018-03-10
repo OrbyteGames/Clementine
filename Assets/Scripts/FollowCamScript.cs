@@ -8,12 +8,15 @@ public class FollowCamScript : MonoBehaviour {
     public float offsetX = 5.0f;
     public float offsetZ = 5.0f;
     public float smoothing = 10.0f;
+    public GameObject lookTarget;
     private Vector3 offset;
+    private Camera maincam;
 
 	// Use this for initialization
 	void Start ()
     {
         offset = gameObject.transform.position - player.transform.position;
+        maincam = gameObject.GetComponent<Camera>();
 	}
 	
 	// Update is called once per frame
@@ -25,7 +28,11 @@ public class FollowCamScript : MonoBehaviour {
         if (Mathf.Abs((pos-offset).x- playerPos.x) > offsetX)
         {
             //targetPos.x +=  offset.x;
-            gameObject.transform.position = Vector3.Lerp(pos, targetPos, smoothing * Time.deltaTime);
+            // gameObject.transform.position = Vector3.Lerp(pos, targetPos, smoothing * Time.deltaTime);
+            float direction;
+            if (playerPos.x > (pos - offset).x) direction = 1.0f;
+            else direction = -1.0f;
+            gameObject.transform.position = Vector3.Lerp(pos, targetPos, direction*smoothing * Time.deltaTime);
         }
         if (Mathf.Abs((pos - offset).z - playerPos.z) > offsetZ)
         {
@@ -33,6 +40,6 @@ public class FollowCamScript : MonoBehaviour {
             gameObject.transform.position = Vector3.Lerp(pos, targetPos, smoothing * Time.deltaTime);
 
         }
-
+        maincam.transform.LookAt(lookTarget.transform);
     }
 }
