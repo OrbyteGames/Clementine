@@ -7,7 +7,7 @@ public class FollowCamScript : MonoBehaviour {
     public GameObject player;
     public float offsetX = 5.0f;
     public float offsetZ = 5.0f;
-    public float smoothing = 10.0f;
+    public float smoothing = 1.0f;
     public GameObject lookTarget;
     private Vector3 offset;
     private Camera maincam;
@@ -30,9 +30,10 @@ public class FollowCamScript : MonoBehaviour {
             //targetPos.x +=  offset.x;
             // gameObject.transform.position = Vector3.Lerp(pos, targetPos, smoothing * Time.deltaTime);
             float direction;
-            if (playerPos.x > (pos - offset).x) direction = 1.0f;
-            else direction = -1.0f;
-            gameObject.transform.position = Vector3.Lerp(pos, targetPos, direction*smoothing * Time.deltaTime);
+            if (playerPos.x > (pos - offset).x) direction = -1.0f;
+            else direction = 1.0f;
+            //gameObject.transform.position = Vector3.Lerp(pos, targetPos, direction*smoothing * Time.deltaTime);
+            transform.RotateAround(lookTarget.transform.position, Vector3.up, direction * smoothing * Time.deltaTime);
         }
         if (Mathf.Abs((pos - offset).z - playerPos.z) > offsetZ)
         {
