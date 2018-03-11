@@ -6,12 +6,12 @@ public class CameraZone : MonoBehaviour {
 
     public Camera playerCam;
     public Camera cam;
-    public StillCamScript associatedCamScript;
+    private StillCamScript associatedCamScript;
 	
     // Use this for initialization
 	void Start ()
     {
-		
+		associatedCamScript = cam.GetComponent<StillCamScript>();
 	}
 	
 	// Update is called once per frame

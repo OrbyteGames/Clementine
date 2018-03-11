@@ -6,14 +6,14 @@ public class StillCamScript : MonoBehaviour {
 
     public GameObject player;
     public bool enablePlayerLookAt = true;
-    public Camera associatedCamera;
+    private Camera associatedCamera;
 
     private bool startLooking;
 
     // Use this for initialization
     void Start () {
         startLooking = false;
-       //associatedCamera = gameObject.GetComponent<Camera>();
+       associatedCamera = gameObject.GetComponent<Camera>();
         associatedCamera.enabled = false;
 	}
 	
