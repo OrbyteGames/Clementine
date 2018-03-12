@@ -17,6 +17,7 @@ public class FollowCamScript : MonoBehaviour {
     {
         offset = gameObject.transform.position - player.transform.position;
         maincam = gameObject.GetComponent<Camera>();
+        CameraManager.Instance.SwitchCamera(maincam);
 	}
 	
 	// Update is called once per frame

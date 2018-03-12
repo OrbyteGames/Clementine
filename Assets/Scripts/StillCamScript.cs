@@ -27,8 +27,10 @@ public class StillCamScript : MonoBehaviour {
 
     public void ActivateCam()
     {
+        
         startLooking = true;
         associatedCamera.enabled = true;
+        CameraManager.Instance.SwitchCamera(associatedCamera);
     }
 
     public void DeactivateCam()
