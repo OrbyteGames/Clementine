@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
+public class TOADAPTPlayerController : MonoBehaviour {
 
     public float inputDelay = 0.1f;
     public float forwardVel = 12;
