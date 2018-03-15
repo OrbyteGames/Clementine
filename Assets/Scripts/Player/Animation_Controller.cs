@@ -39,7 +39,7 @@ public class Animation_Controller : MonoBehaviour
 
     IEnumerator Wait()
     {
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(2f);
 
 
         PM.enabled = true;
