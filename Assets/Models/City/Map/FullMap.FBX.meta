@@ -1,0 +1,263 @@
+fileFormatVersion: 2
+guid: 60dc3f7c222437745999543c66579742
+timeCreated: 1521197071
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Box001
+    100002: Box003
+    100004: Box004
+    100006: Box005
+    100008: Box006
+    100010: Capsule001
+    100012: //RootNode
+    100014: Ground
+    100016: MagicStairs
+    100018: Provisional1
+    100020: Provisional2
+    100022: Provisional3
+    100024: Provisional4
+    100026: Puzzle1_Bike
+    100028: Puzzle1_Wall
+    100030: Puzzle2_Container
+    100032: Puzzle2_Container_deco1
+    100034: Puzzle2_FallingBox
+    100036: Puzzle2_FallingBoxDeco1
+    100038: Puzzle2_FallingBoxDeco2
+    100040: Puzzle2_FishBones
+    100042: Puzzle2_Wall
+    100044: SkyHole
+    100046: Torches
+    100048: Z1BBuilding1
+    100050: Z1BBuilding2
+    100052: Z1BBuilding3
+    100054: Z1DBuilding1
+    100056: Z1DBuilding2
+    100058: Z1FBuilding1
+    100060: Z1FBuilding2
+    100062: Z1FBuilding3
+    100064: Z1FBuilding4
+    100066: Z2FBuilding1
+    100068: Z2FBuilding2
+    400000: Box001
+    400002: Box003
+    400004: Box004
+    400006: Box005
+    400008: Box006
+    400010: Capsule001
+    400012: //RootNode
+    400014: Ground
+    400016: MagicStairs
+    400018: Provisional1
+    400020: Provisional2
+    400022: Provisional3
+    400024: Provisional4
+    400026: Puzzle1_Bike
+    400028: Puzzle1_Wall
+    400030: Puzzle2_Container
+    400032: Puzzle2_Container_deco1
+    400034: Puzzle2_FallingBox
+    400036: Puzzle2_FallingBoxDeco1
+    400038: Puzzle2_FallingBoxDeco2
+    400040: Puzzle2_FishBones
+    400042: Puzzle2_Wall
+    400044: SkyHole
+    400046: Torches
+    400048: Z1BBuilding1
+    400050: Z1BBuilding2
+    400052: Z1BBuilding3
+    400054: Z1DBuilding1
+    400056: Z1DBuilding2
+    400058: Z1FBuilding1
+    400060: Z1FBuilding2
+    400062: Z1FBuilding3
+    400064: Z1FBuilding4
+    400066: Z2FBuilding1
+    400068: Z2FBuilding2
+    2300000: Box001
+    2300002: Box003
+    2300004: Box004
+    2300006: Box005
+    2300008: Box006
+    2300010: Capsule001
+    2300012: Ground
+    2300014: MagicStairs
+    2300016: Provisional1
+    2300018: Provisional2
+    2300020: Provisional3
+    2300022: Provisional4
+    2300024: Puzzle1_Bike
+    2300026: Puzzle1_Wall
+    2300028: Puzzle2_Container
+    2300030: Puzzle2_Container_deco1
+    2300032: Puzzle2_FallingBox
+    2300034: Puzzle2_FallingBoxDeco1
+    2300036: Puzzle2_FallingBoxDeco2
+    2300038: Puzzle2_FishBones
+    2300040: Puzzle2_Wall
+    2300042: SkyHole
+    2300044: Torches
+    2300046: Z1BBuilding1
+    2300048: Z1BBuilding2
+    2300050: Z1BBuilding3
+    2300052: Z1DBuilding1
+    2300054: Z1DBuilding2
+    2300056: Z1FBuilding1
+    2300058: Z1FBuilding2
+    2300060: Z1FBuilding3
+    2300062: Z1FBuilding4
+    2300064: Z2FBuilding1
+    2300066: Z2FBuilding2
+    3300000: Box001
+    3300002: Box003
+    3300004: Box004
+    3300006: Box005
+    3300008: Box006
+    3300010: Capsule001
+    3300012: Ground
+    3300014: MagicStairs
+    3300016: Provisional1
+    3300018: Provisional2
+    3300020: Provisional3
+    3300022: Provisional4
+    3300024: Puzzle1_Bike
+    3300026: Puzzle1_Wall
+    3300028: Puzzle2_Container
+    3300030: Puzzle2_Container_deco1
+    3300032: Puzzle2_FallingBox
+    3300034: Puzzle2_FallingBoxDeco1
+    3300036: Puzzle2_FallingBoxDeco2
+    3300038: Puzzle2_FishBones
+    3300040: Puzzle2_Wall
+    3300042: SkyHole
+    3300044: Torches
+    3300046: Z1BBuilding1
+    3300048: Z1BBuilding2
+    3300050: Z1BBuilding3
+    3300052: Z1DBuilding1
+    3300054: Z1DBuilding2
+    3300056: Z1FBuilding1
+    3300058: Z1FBuilding2
+    3300060: Z1FBuilding3
+    3300062: Z1FBuilding4
+    3300064: Z2FBuilding1
+    3300066: Z2FBuilding2
+    4300000: Ground
+    4300002: Torches
+    4300004: SkyHole
+    4300006: MagicStairs
+    4300008: Z1FBuilding3
+    4300010: Z1FBuilding2
+    4300012: Z1FBuilding1
+    4300014: Z1FBuilding4
+    4300016: Z1DBuilding1
+    4300018: Z2FBuilding2
+    4300020: Z2FBuilding1
+    4300022: Z1BBuilding1
+    4300024: Z1BBuilding2
+    4300026: Z1BBuilding3
+    4300028: Z1DBuilding2
+    4300030: Capsule001
+    4300032: Puzzle1_Bike
+    4300034: Puzzle1_Wall
+    4300036: Box001
+    4300038: Box003
+    4300040: Box004
+    4300042: Box005
+    4300044: Puzzle2_Container
+    4300046: Puzzle2_Wall
+    4300048: Puzzle2_Container_deco1
+    4300050: Puzzle2_FallingBox
+    4300052: Puzzle2_FallingBoxDeco2
+    4300054: Puzzle2_FallingBoxDeco1
+    4300056: Puzzle2_FishBones
+    4300058: Box006
+    4300060: Provisional4
+    4300062: Provisional3
+    4300064: Provisional2
+    4300066: Provisional1
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: c25a9861abd725a4ca55943fdf8a7eb5, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

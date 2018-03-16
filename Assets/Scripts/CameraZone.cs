@@ -6,13 +6,17 @@ public class CameraZone : MonoBehaviour {
 
     public Camera playerCam;
     public Camera cam;
+    public bool isStill;
+
     private StillCamScript associatedCamScript;
-	
+    private PanningCamera associatedPanScript;
+
     // Use this for initialization
 	void Start ()
     {
-		associatedCamScript = cam.GetComponent<StillCamScript>();
-	}
+        if (isStill) associatedCamScript = cam.GetComponent<StillCamScript>();
+        else associatedPanScript = cam.GetComponent<PanningCamera>();
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -26,7 +30,8 @@ public class CameraZone : MonoBehaviour {
         if (collision.gameObject.tag == "Player")
         {
             playerCam.enabled = false;
-            associatedCamScript.ActivateCam();
+            if (isStill) associatedCamScript.ActivateCam();
+            else associatedPanScript.ActivateCam();
         }
     }
     
@@ -36,7 +41,8 @@ public class CameraZone : MonoBehaviour {
         if (collision.gameObject.tag == "Player")
         {
             playerCam.enabled = true;
-            associatedCamScript.DeactivateCam();
+            if (isStill) associatedCamScript.DeactivateCam();
+            else associatedPanScript.DeactivateCam();
         }
     }
 }
