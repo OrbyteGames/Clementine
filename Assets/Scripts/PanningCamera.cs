@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PanningCamera : MonoBehaviour {
 
-    private Transform startingTransform;
+    private Vector3 startingObjectPos;
     private Camera associatedCam;
+    private Vector3 camplayerOffset;
     // Use this for initialization
     private bool start;
     public float distance;
@@ -13,11 +14,11 @@ public class PanningCamera : MonoBehaviour {
     public float smoothing;
     public GameObject player;
     public bool useAxisZ;
+    
 
     void Start () {
         associatedCam = gameObject.GetComponent<Camera>();
-        startingTransform = associatedCam.transform;
-
+        startingObjectPos =new Vector3(associatedCam.transform.position.x, associatedCam.transform.position.y, associatedCam.transform.position.z);
         start = false;
 	}
 	
@@ -25,7 +26,6 @@ public class PanningCamera : MonoBehaviour {
 	void Update () {
         if (start) {
             Vector3 playerPos = player.transform.position;
-            Vector3 startingObjectPos = startingTransform.position;
             float playerCoord = playerPos.z;
             float camCoord = startingObjectPos.z;
             if (!useAxisZ)
@@ -36,22 +36,14 @@ public class PanningCamera : MonoBehaviour {
             if (playerCoord > camCoord && playerCoord < (camCoord + distance))
             {
                 Vector3 actualPos = gameObject.transform.position;
-                Vector3 targetPos = actualPos + new Vector3(0.0f, 0.0f, playerPos.z);
-                if (!useAxisZ) targetPos = new Vector3(playerPos.x, 0.0f, 0.0f);
+                Vector3 targetPos = new Vector3(actualPos.x, actualPos.y, playerPos.z);
+                if (!useAxisZ) targetPos = new Vector3(playerPos.x, actualPos.y, actualPos.z);
                 float posCoord = actualPos.z;
                 if (!useAxisZ) posCoord = actualPos.x;
-                if (Mathf.Abs(posCoord - playerCoord) < 0.1)
+                if (Mathf.Abs(posCoord - playerCoord) > offset)
                 {
-                    if (useAxisZ) gameObject.transform.position = new Vector3(actualPos.x, actualPos.y, playerPos.z);
-                    else gameObject.transform.position = new Vector3(playerPos.x,actualPos.y, actualPos.z);
+                    gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, targetPos, 1.0f * smoothing * Time.deltaTime);
                 }
-/*else
-                {
-                    if (playerCoord > (posCoord + offset)) gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, targetPos, 1.0f * smoothing * Time.deltaTime);
-                    if (playerCoord < (posCoord - offset)) gameObject.transform.position = Vector3.Lerp(gameObject.transform.position, targetPos, 1.0f * smoothing * Time.deltaTime);
-                }*/
-
-
             }
         }
     }
