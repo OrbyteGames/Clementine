@@ -8,17 +8,17 @@ public class Animation_Controller : MonoBehaviour
 
     Animator animator;
     CharacterController CC;
-    PlayerMovement PM;
+    //PlayerMovement PM;
 
     // Use this for initialization
     void Start()
     {
         animator = GetComponent<Animator>();
         CC = GetComponent<CharacterController>();
-        PM = GetComponent<PlayerMovement>();
+       // PM = GetComponent<PlayerMovement>();
 
 
-        PM.enabled = false;
+      //  PM.enabled = false;
         StartCoroutine(Wait());
 
     }
@@ -42,6 +42,6 @@ public class Animation_Controller : MonoBehaviour
         yield return new WaitForSeconds(2f);
 
 
-        PM.enabled = true;
+     //   PM.enabled = true;
     }
 }
