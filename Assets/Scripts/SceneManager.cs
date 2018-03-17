@@ -7,9 +7,14 @@ public class SceneManager : MonoBehaviour {
     public Camera debugCam;
     public CameraManager camManager;
     bool debugModeActive;
+    public Camera[] cams;
 	// Use this for initialization
 	void Start () {
         debugModeActive = false;
+        for (int i = 0; i < cams.Length; ++i)
+        {
+            cams[i].enabled = false;
+        }
 	}
 	
 
