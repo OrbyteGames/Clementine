@@ -35,8 +35,8 @@ public class CanvasScript : MonoBehaviour {
         buttons[1].image.color = Color.white;
 
         buttons[2].buttonAction = QuitGame;
-        buttons[2].button = GameObject.Find("QuitButton");
-        buttons[2].image = GameObject.Find("QuitButton").GetComponent<Image>();
+        buttons[2].button = GameObject.Find("MainQuitButton");
+        buttons[2].image = GameObject.Find("MainQuitButton").GetComponent<Image>();
         buttons[2].image.color = Color.white;
 
 

@@ -23,7 +23,6 @@ public class PanningCamera : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log("I'm cam : " + gameObject.name);
         if (start) {
             Vector3 playerPos = player.transform.position;
             float playerCoord = playerPos.z;

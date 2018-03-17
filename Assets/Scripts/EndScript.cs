@@ -16,20 +16,24 @@ public class EndScript : MonoBehaviour {
     private int buttonIndex;
     // Use this for initialization
     void Start () {
+        buttonIndex = 0;
         active = false;
+        buttons = new MyButton[2];
         buttons[0].buttonAction = Restart;
         buttons[0].button = GameObject.Find("RestartButton");
         buttons[0].image = GameObject.Find("RestartButton").GetComponent<Image>();
         buttons[0].image.color = Color.green;
 
         buttons[1].buttonAction = Quit;
-        buttons[1].button = GameObject.Find("QuitButton");
-        buttons[1].image = GameObject.Find("QuitButton").GetComponent<Image>();
+        buttons[1].button = GameObject.Find("OverQuitButton");
+        buttons[1].image = GameObject.Find("OverQuitButton").GetComponent<Image>();
         buttons[1].image.color = Color.white;
+        gameOverCanvas.gameObject.SetActive(false);
+
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
         if (active)
         {
             if (Input.GetKeyDown(KeyCode.DownArrow) && buttonIndex < 1)
@@ -60,6 +64,7 @@ public class EndScript : MonoBehaviour {
         {
             pc.PauseCharacter();
             EnableEnd();
+            active = true;
         }
     }
 

@@ -12,7 +12,7 @@ public class StillCamScript : MonoBehaviour {
     // Use this for initialization
     void Start () {
         startLooking = false;
-       associatedCamera = gameObject.GetComponent<Camera>();
+        associatedCamera = gameObject.GetComponent<Camera>();
         associatedCamera.enabled = false;
 	}
 	

@@ -11,7 +11,7 @@ public class PushBox : MonoBehaviour {
     public GameObject player;
     public Transform target;
     public float DistanceToBox;
-    float step = 1 * Time.deltaTime;
+    //float step = 1 * Time.deltaTime;
 	// Use this for initialization
 	void Start ()
     {
