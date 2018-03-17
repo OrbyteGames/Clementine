@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//NOT USING IT!
+
 public class PushBox : MonoBehaviour {
 
     Rigidbody rb;
     public GameObject player;
-
+    public Transform target;
     public float DistanceToBox;
-
+    float step = 1 * Time.deltaTime;
 	// Use this for initialization
 	void Start ()
     {
@@ -21,11 +24,17 @@ public class PushBox : MonoBehaviour {
         //Define variables
         DistanceToBox = transform.position.z-player.transform.position.z;
 
-        if (-0.7f<DistanceToBox&& DistanceToBox < 0f && Input.GetKey("q"))
+        if (Input.GetKeyDown("q"))
         {
-            rb.AddForce(20f, 0, 0);
+            Debug.Log("q is pressed");
+           // transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+            rb.AddForce(-4f, 0, 0);
+            
         }
-        else rb.velocity.Set(0f, 0, 0);
+       if (Input.GetKeyUp("q"))
+        {
+            rb.constraints = RigidbodyConstraints.FreezeAll;
+        }
     }
 }
 //Player.transform.forward
