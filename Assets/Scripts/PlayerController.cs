@@ -62,6 +62,11 @@ public class PlayerController : MonoBehaviour {
     {
         start = true;
     }
+
+    public void PauseCharacter()
+    {
+        start = false;
+    }
 }
 
 

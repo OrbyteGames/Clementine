@@ -103,6 +103,8 @@ public class CanvasScript : MonoBehaviour {
         optionsOn = true;
     }
 
+
+
     [System.Serializable]
     public struct MyButton
     {
