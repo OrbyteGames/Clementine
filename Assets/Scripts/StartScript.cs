@@ -8,10 +8,11 @@ public class StartScript : MonoBehaviour {
     private Vector3 initialPos;
     private float count ;
     private bool start;
+    public PlayerController pc;
 
-	// Use this for initialization
-	void Start () {
-        start = true;
+    // Use this for initialization
+    void Start () {
+        start = false;
         count = 2.0f;
         initialPos = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z);
 	}
@@ -23,6 +24,8 @@ public class StartScript : MonoBehaviour {
             if (count < 0.0)
             {
                 player.transform.position = new Vector3(1.0f, 0.7f, 2.15f);
+                pc.StartCharacter();
+
                 count = 0.0f;
                 start = false;
             }
@@ -33,11 +36,11 @@ public class StartScript : MonoBehaviour {
         }
 	}
 
-    void Activate(){
+    public void Activate(){
         start = true;
     }
 
-    void Deactivate(){
+    public void Deactivate(){
         start = false;
     }
 }

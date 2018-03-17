@@ -9,7 +9,7 @@ public class CanvasScript : MonoBehaviour {
     public Camera associatedCamera;
     public Canvas optionsCanvas;
     public Canvas mainMenuCanvas;
-
+    public StartScript ss;
     public MyButton[] buttons;
 
     private int buttonIndex;
@@ -88,6 +88,7 @@ public class CanvasScript : MonoBehaviour {
 
     public void StartGame() {
         canvasHidden = true;
+        ss.Activate();
         mainMenuCanvas.gameObject.SetActive(false);
     }
 

@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        start = true;
+        start = false;
         playerController = GetComponent<CharacterController>();
     }
 	
