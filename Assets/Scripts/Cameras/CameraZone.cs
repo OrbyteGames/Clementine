@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CameraZone : MonoBehaviour {
 
-    public Camera playerCam;
     public Camera cam;
     public bool isStill;
 
@@ -26,10 +25,10 @@ public class CameraZone : MonoBehaviour {
 
     private void OnTriggerEnter(Collider collision)
     {
-        Debug.Log("Entered collider");
+        Debug.Log("Entered collider "+gameObject.name);
         if (collision.gameObject.tag == "Player")
         {
-            playerCam.enabled = false;
+            //playerCam.enabled = false;
             if (isStill) associatedCamScript.ActivateCam();
             else associatedPanScript.ActivateCam();
         }
@@ -37,10 +36,10 @@ public class CameraZone : MonoBehaviour {
     
     private void OnTriggerExit(Collider collision)
     {
-        Debug.Log("Left collider");
+        Debug.Log("Left collider " + gameObject.name);
         if (collision.gameObject.tag == "Player")
         {
-            playerCam.enabled = true;
+            //playerCam.enabled = true;
             if (isStill) associatedCamScript.DeactivateCam();
             else associatedPanScript.DeactivateCam();
         }

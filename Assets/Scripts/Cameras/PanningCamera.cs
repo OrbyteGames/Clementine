@@ -6,7 +6,6 @@ public class PanningCamera : MonoBehaviour {
 
     private Vector3 startingObjectPos;
     private Camera associatedCam;
-    private Vector3 camplayerOffset;
     // Use this for initialization
     private bool start;
     public float distance;
@@ -24,6 +23,7 @@ public class PanningCamera : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        Debug.Log("I'm cam : " + gameObject.name);
         if (start) {
             Vector3 playerPos = player.transform.position;
             float playerCoord = playerPos.z;
@@ -52,7 +52,8 @@ public class PanningCamera : MonoBehaviour {
     {
         start = true;
         associatedCam.enabled = true;
-        CameraManager.Instance.SwitchCamera(associatedCam);
+        Debug.Log("Switching to: " + gameObject.name);
+        //CameraManager.Instance.SwitchCamera(associatedCam);
     }
 
     public void DeactivateCam()

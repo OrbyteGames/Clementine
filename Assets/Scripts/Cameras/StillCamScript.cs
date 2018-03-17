@@ -7,7 +7,6 @@ public class StillCamScript : MonoBehaviour {
     public GameObject player;
     public bool enablePlayerLookAt = true;
     private Camera associatedCamera;
-
     private bool startLooking;
 
     // Use this for initialization
@@ -27,10 +26,9 @@ public class StillCamScript : MonoBehaviour {
 
     public void ActivateCam()
     {
-        
         startLooking = true;
         associatedCamera.enabled = true;
-        CameraManager.Instance.SwitchCamera(associatedCamera);
+        //CameraManager.Instance.SwitchCamera(associatedCamera);
     }
 
     public void DeactivateCam()

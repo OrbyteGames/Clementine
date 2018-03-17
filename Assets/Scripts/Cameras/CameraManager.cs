@@ -66,6 +66,7 @@ public class CameraManager : MonoBehaviour
     {
         if (_activedCamera != cam)
         {
+            Debug.Log("Camera is: " + cam.name);
             _activedCamera = cam;
             if (OnCameraIsSwitched != null)
                 OnCameraIsSwitched(_activedCamera);
