@@ -3165,10 +3165,10 @@ MonoBehaviour:
   gameOverCanvas: {fileID: 780345812}
   pc: {fileID: 273206167}
   buttons:
-  - image: {fileID: 364959766}
-    button: {fileID: 364959763}
-  - image: {fileID: 1087365036}
-    button: {fileID: 1087365033}
+  - image: {fileID: 0}
+    button: {fileID: 0}
+  - image: {fileID: 0}
+    button: {fileID: 0}
 --- !u!4 &1175754865
 Transform:
   m_ObjectHideFlags: 0
