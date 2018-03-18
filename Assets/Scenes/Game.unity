@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -140,7 +140,7 @@ Transform:
   m_GameObject: {fileID: 5547378}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -373.55, y: -238.42, z: 40.16}
-  m_LocalScale: {x: 22.718119, y: 10.5, z: 6}
+  m_LocalScale: {x: 22.718119, y: 14, z: 6}
   m_Children:
   - {fileID: 1564042737}
   m_Father: {fileID: 1939750727}
@@ -1232,9 +1232,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  gravity: 10
+  gravity: 4
   turnSmooth: 15
   airFlight: 1
+  jumpforce: 100
 --- !u!95 &273206168
 Animator:
   serializedVersion: 3
@@ -2587,7 +2588,7 @@ Transform:
   m_GameObject: {fileID: 835359851}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -379.62, y: -238.42, z: 60.549995}
-  m_LocalScale: {x: 22.718119, y: 10.5, z: 12.37494}
+  m_LocalScale: {x: 22.718119, y: 14.5, z: 12.37494}
   m_Children:
   - {fileID: 163482548}
   m_Father: {fileID: 1939750727}
@@ -3797,7 +3798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10e90826a9fb9f4488abbce4e3d702bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  associatedCamera: {fileID: 37881589}
+  associatedCamera: {fileID: 163482552}
   gameOverCanvas: {fileID: 780345812}
   pc: {fileID: 273206167}
   buttons:

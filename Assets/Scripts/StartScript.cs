@@ -23,7 +23,7 @@ public class StartScript : MonoBehaviour {
         {
             if (count < 0.0)
             {
-                player.transform.position = new Vector3(1.0f, 0.7f, 2.15f);
+                player.transform.position = new Vector3(1.0f, 0.07f, 2.15f);
                 pc.StartCharacter();
 
                 count = 0.0f;
