@@ -7,31 +7,47 @@ public class SceneManagerScript : MonoBehaviour {
     public Camera debugCam;
     public CameraManager camManager;
     public Camera camSaved;
+    //public DebugCam cameraOptions = new DebugCam();
     bool debugModeActive;
     int returnCamera;
+    private string camName;
     public Camera[] cams;
-	// Use this for initialization
-	void Start () {
+
+    public string CamName
+    {
+        get
+        {
+            return camName;
+        }
+
+        set
+        {
+            camName = value;
+        }
+    }
+
+    // Use this for initialization
+    void Start () {
         debugModeActive = false;
         for (int i = 0; i < cams.Length; ++i)
         {
             cams[i].enabled = false;
         }
-	}
+        //cameraOptions.enabled = false;
+    }
 	
 
 
 	// Update is called once per frame
 	void Update () {
+
         if (Input.GetKeyDown(KeyCode.P)) {
             if (!debugModeActive)
             {
-                debugCam.transform.position = camManager.ActivedCamera.transform.position;
-                debugCam.transform.rotation = camManager.ActivedCamera.transform.rotation;
-                //camManager.ActivedCamera.enabled = false;
+                camManager.ActivedCamera.enabled = false;
                 for (int i = 0; i < cams.Length; ++i)
                 {
-                    if (cams[i].enabled) { returnCamera = i; camSaved = cams[i]; }
+                    if (cams[i].enabled) { returnCamera = i; camSaved = cams[i]; CamName =cams[i].name; }
                     cams[i].enabled = false;
                 }
                 debugCam.enabled = true;
@@ -45,6 +61,14 @@ public class SceneManagerScript : MonoBehaviour {
                 camManager.ActivedCamera.enabled = true;
                 debugModeActive = false;
             }
+        }
+        if(Input.GetKeyDown(KeyCode.I)&& debugCam.enabled)
+        {
+            debugCam.enabled = false;
+        }
+        if (Input.GetKeyDown(KeyCode.I) && !debugCam.enabled)
+        {
+            debugCam.enabled = true;
         }
     }
 }
