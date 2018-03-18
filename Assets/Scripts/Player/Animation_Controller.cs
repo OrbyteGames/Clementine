@@ -8,7 +8,8 @@ public class Animation_Controller : MonoBehaviour
 
     Animator animator;
     CharacterController CC;
-    //PlayerMovement PM;
+    private bool debugModeActive;
+//PlayerMovement PM;
 
     // Use this for initialization
     void Start()
@@ -26,14 +27,20 @@ public class Animation_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if ( Mathf.Abs(CC.velocity.x) > 0.5 || Mathf.Abs(CC.velocity.z) > 0.5)
+        if (Input.GetKeyDown(KeyCode.P))
         {
-            animator.SetBool("isWalking", true);
+            if (!debugModeActive) debugModeActive = true;
+            else debugModeActive = false;
         }
+        if (!debugModeActive)
+        {
+            if (Mathf.Abs(CC.velocity.x) > 0.5 || Mathf.Abs(CC.velocity.z) > 0.5)
+            {
+                animator.SetBool("isWalking", true);
+            }
 
-        else animator.SetBool("isWalking", false);
-
+            else animator.SetBool("isWalking", false);
+        }
 
     }
 

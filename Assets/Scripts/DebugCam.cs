@@ -29,6 +29,12 @@ public class DebugCam : MonoBehaviour
     private float fpsaAccum = 0;
     private int frames = 0;
     private float timeleft;
+    private bool debugModeActive;
+    public float speedH = 2.0f;
+    public float speedV = 2.0f;
+
+    private float yaw = 0.0f;
+    private float pitch = 0.0f;
     //public void debugging() { GL.wireframe = true; Show_FPS = true;
     //Show_Tris = true;
     //Show_Verts = true;}
@@ -45,108 +51,122 @@ public class DebugCam : MonoBehaviour
     {
         if (Show_Wireframe) GL.wireframe = true;
         if (Show_invertCulling) GL.invertCulling = true;
-        //GL.sRGBWrite = true;
     }
     void OnPostRender()
     {
         GL.wireframe = false;
         GL.invertCulling = false;
-        //GL.sRGBWrite = false;
     }
     void Update()
     {
-        float rotationY = Input.GetAxis("Mouse X") * Sensitivity;
-        float rotationX = 0;
-        if (YInvert)
+        if (Input.GetKeyDown(KeyCode.P))
         {
-            rotationX = -Input.GetAxis("Mouse Y") * Sensitivity;
-        }
-        else
-        {
-            rotationX = Input.GetAxis("Mouse Y") * Sensitivity;
-        }
-
-        transform.Rotate(new Vector3(rotationX, rotationY));
-        Vector3 ea = transform.eulerAngles;
-        transform.eulerAngles = new Vector3(ea.x, ea.y, 0);
-
-        //camera angle done.  
-
-        //Keyboard commands
-        float f = 0.0f;
-        Vector3 p = GetBaseInput();
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            totalRun += Time.deltaTime;
-            p = p * totalRun * shiftAdd;
-            p.x = Mathf.Clamp(p.x, -maxShift, maxShift);
-            p.y = Mathf.Clamp(p.y, -maxShift, maxShift);
-            p.z = Mathf.Clamp(p.z, -maxShift, maxShift);
-        }
-        else
-        {
-            totalRun = Mathf.Clamp(totalRun * 0.5f, 1f, 1000f);
-            p = p * mainSpeed;
-        }
-
-        p = p * Time.deltaTime;
-        Vector3 newPosition = transform.position;
-        if (Input.GetKey(KeyCode.Space))
-        { //If player wants to move on X and Z axis only
-            transform.Translate(p);
-            newPosition.x = transform.position.x;
-            newPosition.z = transform.position.z;
-            transform.position = newPosition;
-        }
-        else
-        {
-            transform.Translate(p);
-        }
-        //OpenStats/CloseStats
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            //GL.wireframe = true;
-            if (!Show_Stats) {
-                Show_Stats = true;
-                Show_FPS  =true;
-                Show_Tris =true;
-                Show_Verts=true;
-            }else
-            {
-                Show_Stats = false;
-                Show_FPS = false;
-                Show_Tris = false;
-                Show_Verts = false;
-            }
-        }
-        //QuitStats
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            //GL.wireframe = false;
-            if(!Show_invertCulling) Show_invertCulling = true;
-            else Show_invertCulling = false;
+            if (!debugModeActive) debugModeActive = true;
+            else debugModeActive = false;
         }
         if (Input.GetKeyDown(KeyCode.I))
         {
             if (!Show_Wireframe) Show_Wireframe = true;
             else Show_Wireframe = false;
         }
-
-        //Updating
-        timeleft -= Time.deltaTime;
-        fpsaAccum += Time.timeScale / Time.deltaTime;
-        ++frames;
-
-        if (timeleft <= 0.0)
+        if (debugModeActive && !Show_Wireframe)
         {
-            // display two fractional digits (f2 format)
-            fps = fpsaAccum / frames;
-            string format = System.String.Format("{0:F2} FPS", fps);
-            //  DebugConsole.Log(format,level);
-            timeleft = updateInterval;
-            fpsaAccum = 0.0F;
-            frames = 0;
-            GetObjectStats();
+            float rotationY = Input.GetAxis("Mouse X") * Sensitivity;
+            float rotationX = 0;
+            if (YInvert)
+            {
+                rotationX = -Input.GetAxis("Mouse Y") * Sensitivity;
+            }
+            else
+            {
+                rotationX = Input.GetAxis("Mouse Y") * Sensitivity;
+            }
+
+            transform.Rotate(new Vector3(rotationX, rotationY));
+
+            yaw += speedH * Input.GetAxis("Mouse X");
+            pitch -= speedV * Input.GetAxis("Mouse Y");
+
+            transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
+
+            //Vector3 ea = transform.eulerAngles;
+            //transform.eulerAngles = new Vector3(ea.x, ea.y, 0);
+
+            //camera angle done.  
+
+            //Keyboard commands
+            Vector3 p = GetBaseInput();
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                totalRun += Time.deltaTime;
+                p = p * totalRun * shiftAdd;
+                p.x = Mathf.Clamp(p.x, -maxShift, maxShift);
+                p.y = Mathf.Clamp(p.y, -maxShift, maxShift);
+                p.z = Mathf.Clamp(p.z, -maxShift, maxShift);
+            }
+            else
+            {
+                totalRun = Mathf.Clamp(totalRun * 0.5f, 1f, 1000f);
+                p = p * mainSpeed;
+            }
+
+            p = p * Time.deltaTime;
+            Vector3 newPosition = transform.position;
+            if (Input.GetKey(KeyCode.Space))
+            { //If player wants to move on X and Z axis only
+                transform.Translate(p);
+                newPosition.x = transform.position.x;
+                newPosition.z = transform.position.z;
+                transform.position = newPosition;
+            }
+            else
+            {
+                transform.Translate(p);
+            }
+            //OpenStats/CloseStats
+            if (Input.GetKeyDown(KeyCode.O))
+            {
+                //GL.wireframe = true;
+                if (!Show_Stats)
+                {
+                    Show_Stats = true;
+                    Show_FPS = true;
+                    Show_Tris = true;
+                    Show_Verts = true;
+                }
+                else
+                {
+                    Show_Stats = false;
+                    Show_FPS = false;
+                    Show_Tris = false;
+                    Show_Verts = false;
+                }
+            }
+            //QuitStats
+            if (Input.GetKeyDown(KeyCode.L))
+            {
+                //GL.wireframe = false;
+                if (!Show_invertCulling) Show_invertCulling = true;
+                else Show_invertCulling = false;
+            }
+
+
+            //Updating
+            timeleft -= Time.deltaTime;
+            fpsaAccum += Time.timeScale / Time.deltaTime;
+            ++frames;
+
+            if (timeleft <= 0.0)
+            {
+                // display two fractional digits (f2 format)
+                fps = fpsaAccum / frames;
+                string format = System.String.Format("{0:F2} FPS", fps);
+                //  DebugConsole.Log(format,level);
+                timeleft = updateInterval;
+                fpsaAccum = 0.0F;
+                frames = 0;
+                GetObjectStats();
+            }
         }
 
     }
