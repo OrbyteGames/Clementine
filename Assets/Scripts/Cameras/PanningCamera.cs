@@ -52,7 +52,7 @@ public class PanningCamera : MonoBehaviour {
         start = true;
         associatedCam.enabled = true;
         Debug.Log("Switching to: " + gameObject.name);
-        //CameraManager.Instance.SwitchCamera(associatedCam);
+        CameraManager.Instance.SwitchCamera(associatedCam);
     }
 
     public void DeactivateCam()

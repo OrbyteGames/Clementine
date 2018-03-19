@@ -2050,12 +2050,14 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 273206160}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a3a92d15cb4cbb42bd35c3a02ac545c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 150
+  _speed: 2
+  _jumpForce: 5
+  _gravity: 14
 --- !u!23 &273206163
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2123,7 +2125,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 273206160}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ef0aae096b3143842b354f175edff087, type: 3}
   m_Name: 
@@ -5320,6 +5322,8 @@ MonoBehaviour:
   YInvert: 0
   updateInterval: 0.5
   fps: 0
+  speedH: 2
+  speedV: 2
 --- !u!1 &894613625 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100062, guid: 60dc3f7c222437745999543c66579742, type: 3}
@@ -10493,6 +10497,7 @@ MonoBehaviour:
   debugCam: {fileID: 886673232}
   camManager: {fileID: 1820860350}
   camSaved: {fileID: 0}
+  cameraDebug: {fileID: 0}
   cams:
   - {fileID: 1418537662}
   - {fileID: 37881589}
