@@ -7,24 +7,54 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     float _speed = 150f;
 
+    [SerializeField]
+    float _jumpForce;
+
+    [SerializeField]
+    float _gravity = 1;
+
+
     CharacterController _character;
 
     Camera _activedCamera;
 
     Rigidbody _rigidBody;
 
+    bool _isMovementLocked = false;
+    bool _isJumpLocked = false;
+    bool _isJumping = false;
+
+    float _verticalVelocity = 0;
+
+
     // Use this for initialization
     void Start()
     {
         _character = GetComponent<CharacterController>();
         _rigidBody = GetComponent<Rigidbody>();
-        CameraManager.Instance.OnCameraIsSwitched+=OnCameraIsSwitched;
+        CameraManager.Instance.OnCameraIsSwitched += OnCameraIsSwitched;
         if (CameraManager.Instance.ActivedCamera == null)
-        {
             _activedCamera = Camera.main;
-        }
+
 
     }
+
+    void LockMovement()
+    {
+        _isMovementLocked = true;
+    }
+
+    void UnlockMovement()
+    {
+        _isMovementLocked = false;
+    }
+
+    void LockJump()
+    {
+        _isJumpLocked = true;
+    }
+
+    void UnlockJump() { _isJumpLocked = false; }
     private void OnDestroy()
     {
         if (CameraManager.Instance)
@@ -35,34 +65,68 @@ public class PlayerMovement : MonoBehaviour
     {
         _activedCamera = cam;
     }
-  
+
 
     private void Update()
     {
+        ManageMovement();
+
+    }
+
+    void ManageMovement()
+    {
+        Vector3 moveDirection = Vector3.zero;
         float axisX = Input.GetAxis("Horizontal");
 
         float axisY = Input.GetAxis("Vertical");
 
-        if (axisX != 0 || axisY != 0 && _character.isGrounded)
-            ManageMovement(axisX, axisY);
 
-    }
-
-    void ManageMovement(float axisX, float axisY)
-    {
         Transform cameraTransform = _activedCamera.transform;
         Vector3 cameraRotation = _activedCamera.transform.rotation.eulerAngles;
-
+        Vector2 lastCameraRotation = cameraRotation;
         //A millorar!
         cameraRotation.x = 0;
         cameraTransform.eulerAngles = cameraRotation;
-
-        Vector3 worldDirection=_activedCamera.transform.TransformDirection(axisX, 0, axisY);
+        Vector3 worldDirection = _activedCamera.transform.TransformDirection(axisX, 0, axisY);
         worldDirection.y = 0;
-        worldDirection *= _speed * Time.deltaTime;
-        _character.SimpleMove(worldDirection);
-        if (worldDirection!=Vector3.zero)
+        worldDirection *= _speed;
+
+        if (worldDirection != Vector3.zero)
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(worldDirection), Time.deltaTime * 20);
-        
+
+        if (_character.isGrounded)
+        {
+            _verticalVelocity = -_gravity * Time.deltaTime;
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                _verticalVelocity = _jumpForce;
+            }
+        }
+        else
+            _verticalVelocity -= _gravity * Time.deltaTime;
+
+
+        worldDirection.y = _verticalVelocity;
+        moveDirection = worldDirection * Time.deltaTime;
+
+        _character.Move(moveDirection);
+
+
+
+        cameraTransform.eulerAngles = lastCameraRotation;
+
+
+
+        if (moveDirection.y > 0)
+            Debug.Log("Major: " + moveDirection);
+    }
+
+
+
+
+    void ManageGravity()
+    {
+
     }
 }
