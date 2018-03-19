@@ -35,6 +35,21 @@ public class DebugCam : MonoBehaviour
 
     private float yaw = 0.0f;
     private float pitch = 0.0f;
+    private Vector3 newPosition;
+
+    public Vector3 NewPosition
+    {
+        get
+        {
+            return newPosition;
+        }
+
+        set
+        {
+            newPosition = value;
+        }
+    }
+
     //public void debugging() { GL.wireframe = true; Show_FPS = true;
     //Show_Tris = true;
     //Show_Verts = true;}

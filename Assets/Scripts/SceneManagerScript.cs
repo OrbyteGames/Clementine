@@ -7,7 +7,7 @@ public class SceneManagerScript : MonoBehaviour {
     public Camera debugCam;
     public CameraManager camManager;
     public Camera camSaved;
-    public DebugCam cameraDebug = new DebugCam();
+    public DebugCam cameraDebug;
     bool debugModeActive;
     int returnCamera;
     private string camName;
@@ -51,8 +51,13 @@ public class SceneManagerScript : MonoBehaviour {
                         returnCamera = i;
                         camSaved = cams[i];
                         CamName =cams[i].name;
-                        //cameraDebug.transform.position = cams[i].transform.position;
-                        //cameraDebug.transform.rotation = cams[i].transform.rotation;
+                        cameraDebug.transform.position = cams[i].transform.position;
+                        cameraDebug.transform.rotation = cams[i].transform.rotation;
+                        cameraDebug.transform.eulerAngles = cams[i].transform.eulerAngles;
+                        cameraDebug.tag = cams[i].tag;
+                        //cameraDebug.transform.localPosition= cams[i].transform.localPosition;
+                        //cameraDebug.transform.localRotation = cams[i].transform.localRotation;
+                        //cameraDebug.transform.localScale = cams[i].transform.localScale;
                         //debugCam.transform.position = camManager.ActivedCamera.transform.position;
                         //debugCam.transform.rotation = camManager.ActivedCamera.transform.rotation;
                         //debugCam = camSaved;
