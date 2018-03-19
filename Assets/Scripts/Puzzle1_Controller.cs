@@ -7,7 +7,7 @@ public class Puzzle1_Controller : MonoBehaviour {
     public GameObject fence;
     public GameObject clementine;
     public Transform target;
-    
+    float step = 1f * Time.deltaTime;
 
 	// Use this for initialization
 	void Start ()
@@ -18,7 +18,6 @@ public class Puzzle1_Controller : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        float step = 1f * Time.deltaTime;
         float dist = Vector3.Distance(clementine.transform.position, fence.transform.position);
         if (dist<5)
         {
