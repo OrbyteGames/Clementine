@@ -39,6 +39,7 @@ RenderSettings:
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
   m_IndirectSpecularColor: {r: 0.0014477568, g: 0.0015977146, b: 0.0014477568, a: 1}
+
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -5320,6 +5321,8 @@ MonoBehaviour:
   YInvert: 0
   updateInterval: 0.5
   fps: 0
+  speedH: 2
+  speedV: 2
 --- !u!1 &894613625 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100062, guid: 60dc3f7c222437745999543c66579742, type: 3}
@@ -10493,6 +10496,7 @@ MonoBehaviour:
   debugCam: {fileID: 886673232}
   camManager: {fileID: 1820860350}
   camSaved: {fileID: 0}
+  cameraDebug: {fileID: 886673233}
   cams:
   - {fileID: 1418537662}
   - {fileID: 37881589}
