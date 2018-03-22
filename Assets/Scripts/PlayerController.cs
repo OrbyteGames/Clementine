@@ -8,14 +8,15 @@ public class PlayerController : MonoBehaviour {
     public float gravity = 10.0f;
     public float turnSmooth = 15.0f;
     public bool airFlight = true;
+    public float jumpforce = 14.0f;
 
     private bool start ;
     private CharacterController playerController;
     private Camera actualCamera;
-
+    private float verticalVelocity;
 	// Use this for initialization
 	void Start () {
-        start = true;
+        start = false;
         playerController = GetComponent<CharacterController>();
     }
 	
@@ -26,13 +27,18 @@ public class PlayerController : MonoBehaviour {
             Vector3 movement = (new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"))) * speed;
             float y = Input.GetAxis("Horizontal");
             //float x = Input.GetAxis("Vertical");
-
+            verticalVelocity = 0.0f;
             movement = transform.TransformDirection(movement);
             if (!playerController.isGrounded)
             {
-                if (airFlight) movement.y -= gravity;
-                else movement = new Vector3(0, -gravity, 0);
+                //if (airFlight) 
+               // else movement = new Vector3(0, -gravity, 0);
             }
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (playerController.isGrounded) movement.y = jumpforce;              
+            }
+            movement.y -= gravity;
             playerController.Move(movement * Time.deltaTime);
         }
         //Movement();
@@ -61,6 +67,11 @@ public class PlayerController : MonoBehaviour {
     public void StartCharacter()
     {
         start = true;
+    }
+
+    public void PauseCharacter()
+    {
+        start = false;
     }
 }
 

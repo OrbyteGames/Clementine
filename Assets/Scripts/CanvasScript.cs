@@ -9,7 +9,7 @@ public class CanvasScript : MonoBehaviour {
     public Camera associatedCamera;
     public Canvas optionsCanvas;
     public Canvas mainMenuCanvas;
-
+    public StartScript ss;
     public MyButton[] buttons;
 
     private int buttonIndex;
@@ -35,8 +35,8 @@ public class CanvasScript : MonoBehaviour {
         buttons[1].image.color = Color.white;
 
         buttons[2].buttonAction = QuitGame;
-        buttons[2].button = GameObject.Find("QuitButton");
-        buttons[2].image = GameObject.Find("QuitButton").GetComponent<Image>();
+        buttons[2].button = GameObject.Find("MainQuitButton");
+        buttons[2].image = GameObject.Find("MainQuitButton").GetComponent<Image>();
         buttons[2].image.color = Color.white;
 
 
@@ -88,6 +88,7 @@ public class CanvasScript : MonoBehaviour {
 
     public void StartGame() {
         canvasHidden = true;
+        ss.Activate();
         mainMenuCanvas.gameObject.SetActive(false);
     }
 
@@ -101,6 +102,8 @@ public class CanvasScript : MonoBehaviour {
         optionsCanvas.gameObject.SetActive(true);
         optionsOn = true;
     }
+
+
 
     [System.Serializable]
     public struct MyButton

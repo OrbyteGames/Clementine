@@ -15,10 +15,12 @@ public class DebugCam : MonoBehaviour
     public float Sensitivity;
     public bool YInvert;
     //Debug var
-    public bool Show_Stats;
-    public bool Show_FPS;
-    public bool Show_Tris;
-    public bool Show_Verts;
+    private bool Show_Stats;
+    private bool Show_FPS;
+    private bool Show_Tris;
+    private bool Show_Verts;
+    private bool Show_Wireframe;
+    private bool Show_invertCulling;
     public float updateInterval = 0.5F;
     public static int verts;
     public static int tris;
@@ -27,15 +29,30 @@ public class DebugCam : MonoBehaviour
     private float fpsaAccum = 0;
     private int frames = 0;
     private float timeleft;
-
+    //public void debugging() { GL.wireframe = true; Show_FPS = true;
+    //Show_Tris = true;
+    //Show_Verts = true;}
 
     private void Start()
     {
         //Hide the cursor
         Cursor.visible = false;
-        timeleft = updateInterval;
-    }
 
+    //GL.wireframe = true;
+    timeleft = updateInterval;
+    }
+    void OnPreRender()
+    {
+        if (Show_Wireframe) GL.wireframe = true;
+        if (Show_invertCulling) GL.invertCulling = true;
+        //GL.sRGBWrite = true;
+    }
+    void OnPostRender()
+    {
+        GL.wireframe = false;
+        GL.invertCulling = false;
+        //GL.sRGBWrite = false;
+    }
     void Update()
     {
         float rotationY = Input.GetAxis("Mouse X") * Sensitivity;
@@ -85,34 +102,36 @@ public class DebugCam : MonoBehaviour
         {
             transform.Translate(p);
         }
-        //WireFrame
+        //OpenStats/CloseStats
         if (Input.GetKeyDown(KeyCode.O))
         {
-            if (!GL.wireframe)
+            //GL.wireframe = true;
+            if (!Show_Stats) {
+                Show_Stats = true;
+                Show_FPS  =true;
+                Show_Tris =true;
+                Show_Verts=true;
+            }else
             {
-                Debug.Log("WireFrame Activated.");
-                GL.wireframe = true;
-            }
-            else
-            {
-                Debug.Log("WireFrame Deactivated.");
-                GL.wireframe = false;
+                Show_Stats = false;
+                Show_FPS = false;
+                Show_Tris = false;
+                Show_Verts = false;
             }
         }
-        //ShowTriangles
-        if (Input.GetKeyDown(KeyCode.T))
+        //QuitStats
+        if (Input.GetKeyDown(KeyCode.L))
         {
-            if (!GL.wireframe)
-            {
-                Debug.Log("WireFrame Activated.");
-                GL.wireframe = true;
-            }
-            else
-            {
-                Debug.Log("WireFrame Deactivated.");
-                GL.wireframe = false;
-            }
+            //GL.wireframe = false;
+            if(!Show_invertCulling) Show_invertCulling = true;
+            else Show_invertCulling = false;
         }
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            if (!Show_Wireframe) Show_Wireframe = true;
+            else Show_Wireframe = false;
+        }
+
         //Updating
         timeleft -= Time.deltaTime;
         fpsaAccum += Time.timeScale / Time.deltaTime;
@@ -178,7 +197,7 @@ public class DebugCam : MonoBehaviour
     }
     void ShowDegubModeStats()
     {
-        GUILayout.BeginArea(new Rect(0, 0, 100, 100));
+        GUILayout.BeginArea(new Rect(0, 0, 200, 200));
         if (Show_FPS)
         {
             string fpsdisplay = fps.ToString("#,##0 fps");
@@ -193,6 +212,16 @@ public class DebugCam : MonoBehaviour
         {
             string vertsdisplay = verts.ToString("#,##0 verts");
             GUILayout.Label(vertsdisplay);
+        }
+        if (Show_Wireframe)
+        {
+            string wiredisplay = "Wireframe On";
+            GUILayout.Label(wiredisplay);
+        }
+        if (Show_invertCulling)
+        {
+            string invertdisplay = "InvertCulling On";
+            GUILayout.Label(invertdisplay);
         }
         GUILayout.EndArea();
     }
