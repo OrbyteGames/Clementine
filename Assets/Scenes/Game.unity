@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0015264193, g: 0.0015954013, b: 0.0015264193, a: 1}
+  m_IndirectSpecularColor: {r: 0.0014477568, g: 0.0015977146, b: 0.0014477568, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -4271,11 +4271,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4726274742368690, guid: 3923d43618b19ec4683545307a5c50c4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.17
+      value: 4.16
       objectReference: {fileID: 0}
     - target: {fileID: 4726274742368690, guid: 3923d43618b19ec4683545307a5c50c4, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 14.85
+      value: 27.74
       objectReference: {fileID: 0}
     - target: {fileID: 4726274742368690, guid: 3923d43618b19ec4683545307a5c50c4, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4301,6 +4301,11 @@ Prefab:
       propertyPath: m_Name
       value: Point light
       objectReference: {fileID: 0}
+    - target: {fileID: 114192392566213354, guid: 3923d43618b19ec4683545307a5c50c4,
+        type: 2}
+      propertyPath: clementine
+      value: 
+      objectReference: {fileID: 273206160}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3923d43618b19ec4683545307a5c50c4, type: 2}
   m_IsPrefabParent: 0

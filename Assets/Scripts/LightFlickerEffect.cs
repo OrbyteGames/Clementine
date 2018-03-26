@@ -15,6 +15,8 @@ public class LightFlickerEffect : MonoBehaviour
 {
     [Tooltip("External light to flicker; you can leave this null if you attach script to a light")]
     public new Light light;
+    public GameObject clementine;
+    public float maxDistance = 3f;
     [Tooltip("Minimum random light intensity")]
     public float minIntensity = 0f;
     [Tooltip("Maximum random light intensity")]
@@ -56,20 +58,23 @@ public class LightFlickerEffect : MonoBehaviour
     {
         if (light == null)
             return;
-
+        float distance = Vector3.Distance(transform.position, clementine.transform.position);
         // pop off an item if too big
-        while (smoothQueue.Count >= smoothing)
+        if (distance < maxDistance)
         {
-            lastSum -= smoothQueue.Dequeue();
+            while (smoothQueue.Count >= smoothing)
+            {
+                lastSum -= smoothQueue.Dequeue();
+            }
+
+            // Generate random new item, calculate new average
+            float newVal = Random.Range(minIntensity, maxIntensity);
+            smoothQueue.Enqueue(newVal);
+            lastSum += newVal;
+
+            // Calculate new smoothed average
+            light.intensity = lastSum / (float)smoothQueue.Count;
         }
-
-        // Generate random new item, calculate new average
-        float newVal = Random.Range(minIntensity, maxIntensity);
-        smoothQueue.Enqueue(newVal);
-        lastSum += newVal;
-
-        // Calculate new smoothed average
-        light.intensity = lastSum / (float)smoothQueue.Count;
     }
 
 }
