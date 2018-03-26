@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 
 // Written by Steve Streeting 2017
 // License: CC0 Public Domain http://creativecommons.org/publicdomain/zero/1.0/
@@ -62,19 +63,38 @@ public class LightFlickerEffect : MonoBehaviour
         // pop off an item if too big
         if (distance < maxDistance)
         {
-            while (smoothQueue.Count >= smoothing)
-            {
-                lastSum -= smoothQueue.Dequeue();
-            }
-
-            // Generate random new item, calculate new average
-            float newVal = Random.Range(minIntensity, maxIntensity);
-            smoothQueue.Enqueue(newVal);
-            lastSum += newVal;
-
-            // Calculate new smoothed average
-            light.intensity = lastSum / (float)smoothQueue.Count;
+            StartCoroutine(Cooldown());
         }
     }
+
+    IEnumerator Cooldown()
+    {
+        //Reset Values
+
+
+        yield return new WaitForSeconds(0.5f);
+
+        Flickering();
+
+    }
+
+
+    void Flickering()
+    {
+        while (smoothQueue.Count >= smoothing)
+        {
+            lastSum -= smoothQueue.Dequeue();
+        }
+
+        // Generate random new item, calculate new average
+        float newVal = Random.Range(minIntensity, maxIntensity);
+        smoothQueue.Enqueue(newVal);
+        lastSum += newVal;
+
+        // Calculate new smoothed average
+        light.intensity = lastSum / (float)smoothQueue.Count;
+    }
+
+
 
 }
