@@ -1,27 +1,44 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿using UnityEngine;
+using System.Collections;
 public class PlayerController : MonoBehaviour
 {
-
-    public float speed = 6.0f;
-    public float gravity = 10.0f;
-    public float turnSmooth = 15.0f;
-    public bool airFlight = true;
-    public float jumpforce = 14.0f;
-
-    private bool start;
-    private CharacterController playerController;
-    private Camera actualCamera;
-    private float verticalVelocity;
-    // Use this for initialization
+    Vector3 newPosition;
+    private bool toMove;
+    private bool toRotate;
+    public float speed = 3f;
+    int Layer = 0;
+    void Start()
+    {
+        newPosition = transform.position;
+        toMove = false;
+        toRotate = false;
+        Layer = LayerMask.GetMask("Default");
+       
+       
+    }
     void Update()
     {
-        var x = Input.GetAxis("Horizontal") * Time.deltaTime * 3.0f;
-        var z = Input.GetAxis("Vertical") * Time.deltaTime * 3.0f;
-
-
-        transform.Translate(x, z, 0);
+       
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            RaycastHit hit;
+           
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out hit,Mathf.Infinity,Layer))
+            {
+                newPosition = hit.point;
+                toMove = true;
+                
+            }
+           
+        }
+        if (toMove)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, newPosition, speed * Time.deltaTime);
+        }
+        if (Vector3.Distance(transform.position, newPosition) < 0.5f)
+        {
+            toMove = false;
+        }
     }
 }
