@@ -17,5 +17,11 @@ public class AutoActiveCamera : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         _attachedCamera.gameObject.SetActive(true);
+        if(CameraManager.Instance!=null)
+            CameraManager.Instance.SwitchCamera(_attachedCamera);
+        else
+        {
+            throw new System.Exception("You must add Camera manager script in the scene");
+        }
     }
 }
