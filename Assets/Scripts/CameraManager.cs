@@ -24,7 +24,7 @@ public class CameraManager : MonoBehaviour
             return _instance;
         }
     }
-
+    
     //Active camera getter
     public Camera ActiveCamera
     {
@@ -47,7 +47,11 @@ public class CameraManager : MonoBehaviour
         if (_instance != null)
             throw new System.Exception("Can not exist more than one instance of camera manager");
         else
+        {
             _instance = this;
+            _activeCamera = Camera.main;
+        }
+           
         
 
     }

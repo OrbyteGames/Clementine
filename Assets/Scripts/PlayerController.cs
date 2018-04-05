@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
         {
             RaycastHit hit;
            
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray ray = CameraManager.Instance.ActiveCamera.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit,Mathf.Infinity,Layer))
             {
                 newPosition = hit.point;
