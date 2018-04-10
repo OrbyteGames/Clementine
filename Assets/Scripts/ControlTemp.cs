@@ -5,13 +5,14 @@ using UnityEngine;
 public class ControlTemp : MonoBehaviour {
 
     public float speed = 3f;
+    public GameObject player;
     MenuManager menu;
     public GameObject pausePanel;
     public GameObject UI;
     // Update is called once per frame
     void Update ()
     {
-        
+        menu = UI.GetComponent<MenuManager>();
         float postX = Input.GetAxis("Horizontal");
         float PosY = Input.GetAxis("Vertical");
 
@@ -19,7 +20,7 @@ public class ControlTemp : MonoBehaviour {
 
         if (Input.GetKey("p"))
         {
-            menu.Pause(this.gameObject);
+            menu.Pause(player);
             menu.ActivatePanel(pausePanel);
         }
 
