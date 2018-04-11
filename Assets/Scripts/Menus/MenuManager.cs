@@ -31,9 +31,12 @@ public class MenuManager : MonoBehaviour {
         Time.timeScale = 1f;
     }
     //Check OnApplicationPause and how it works
-    public void Pause(GameObject player)
+    public void Pause()
     {
         Time.timeScale = 0f;
-        player.SetActive(false);
+    }
+    public void Resume()
+    {
+        Time.timeScale = 1f;
     }
 }

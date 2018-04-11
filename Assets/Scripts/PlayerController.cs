@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     private bool toRotate;
     public float speed = 3f;
     int Layer = 0;
+    
     void Start()
     {
         newPosition = transform.position;
@@ -40,5 +41,6 @@ public class PlayerController : MonoBehaviour
         {
             toMove = false;
         }
+      
     }
 }

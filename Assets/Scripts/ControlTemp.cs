@@ -9,6 +9,7 @@ public class ControlTemp : MonoBehaviour {
     MenuManager menu;
     public GameObject pausePanel;
     public GameObject UI;
+    private bool isPaused = false;
     // Update is called once per frame
     void Update ()
     {
@@ -18,11 +19,29 @@ public class ControlTemp : MonoBehaviour {
 
         transform.Translate(postX*speed*Time.deltaTime, 0f, PosY*speed*Time.deltaTime);
 
-        if (Input.GetKey("p"))
+        if (Input.GetKeyDown("p"))
         {
-            menu.Pause(player);
-            menu.ActivatePanel(pausePanel);
+            Pause(ref isPaused);
+         
         }
+        Debug.Log(isPaused);
 
+     
+    }
+
+    private void Pause(ref bool isPaused)
+    {
+        if(isPaused)
+        {
+            menu.Resume();
+            menu.Back(pausePanel);
+            isPaused = false;
+        }
+        else
+        {
+            menu.Pause();
+            menu.ActivatePanel(pausePanel);
+            isPaused = true;
+        }
     }
 }
