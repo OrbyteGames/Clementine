@@ -13,12 +13,14 @@ public class ControlTemp : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
+       
         menu = UI.GetComponent<MenuManager>();
-        float postX = Input.GetAxis("Horizontal");
+        float PosX = Input.GetAxis("Horizontal");
         float PosY = Input.GetAxis("Vertical");
+        Vector3 movement = new Vector3(PosX, 0.0f, PosY);
 
-        transform.Translate(postX*speed*Time.deltaTime, 0f, PosY*speed*Time.deltaTime);
-
+        transform.Translate(PosX*speed*Time.deltaTime, 0f, PosY*speed*Time.deltaTime);
+     
         if (Input.GetKeyDown("p"))
         {
             Pause(ref isPaused);
