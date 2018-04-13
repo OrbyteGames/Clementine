@@ -7,7 +7,7 @@ public class Puzzle1_Controller : MonoBehaviour {
     public GameObject fence;
     public GameObject clementine;
     public Transform target;
-
+    public Puzzle1_Animation p1anim;
     public CatAI cat;
 
 	private bool activated;
@@ -37,6 +37,7 @@ public class Puzzle1_Controller : MonoBehaviour {
 			}
 			else {
 				cat.setSolved();
+
 				enabled = false;
 			}		
 		}
