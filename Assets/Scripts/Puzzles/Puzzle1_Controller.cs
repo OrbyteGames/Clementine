@@ -9,13 +9,14 @@ public class Puzzle1_Controller : MonoBehaviour {
     public Transform target;
     public Puzzle1_Animation p1anim;
     public CatAI cat;
-
+    private Puzzle1_Animation pa1;
 	private bool activated;
 	// Use this for initialization
 	void Start ()
     {
         motoLight.SetActive(false);
 		activated = false;
+        pa1 = gameObject.GetComponent<Puzzle1_Animation>();
 	}
 	
 	// Update is called once per frame
@@ -37,7 +38,7 @@ public class Puzzle1_Controller : MonoBehaviour {
 			}
 			else {
 				cat.setSolved();
-
+                pa1.StartAnimation();
 				enabled = false;
 			}		
 		}
