@@ -24,10 +24,10 @@ public class AutoActiveCamera : MonoBehaviour
         if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0 
             && hasChanged == false )
         {
-            hasChanged = true;
-            clement.transform.forward = forwardPoint.forward;
-             Debug.Log( forwardPoint.gameObject.name);
-          
+            //hasChanged = true;
+            //clement.transform.forward = forwardPoint.forward;
+            //Debug.Log(forwardPoint.gameObject.name);
+
         }
     }
     private void OnTriggerEnter(Collider other)
