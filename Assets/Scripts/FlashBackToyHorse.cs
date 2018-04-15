@@ -20,7 +20,8 @@ public class FlashBackToyHorse : MonoBehaviour {
 
     private float counter;
     // Music Options
-    public AudioSource[] fx;    // Horse Music, Leitmotiv, Laugh
+    [Tooltip("Sources, in order: Horse Music, Leitmotiv, Laughter")]
+    public AudioSource[] fx;   
     public float stage1Counter = 2.0f;
     public float stage2Counter = 4.0f;
     public float stage3Counter = 6.0f;
@@ -42,16 +43,7 @@ public class FlashBackToyHorse : MonoBehaviour {
 
     enum FlashBackState { NONE, STAGE1, STAGE2, STAGE3, STAGE4, STAGE5 };
     private FlashBackState actualState;
-    /// <summary>
-    /// Reset the randomness and start again. You usually don't need to call
-    /// this, deactivating/reactivating is usually fine but if you want a strict
-    /// restart you can do.
-    /// </summary>
-    public void Reset()
-    {
-        smoothQueue.Clear();
-        lastSum = 0;
-    }
+
 
     // Use this for initialization
     void Start () {
@@ -62,7 +54,7 @@ public class FlashBackToyHorse : MonoBehaviour {
         {
             light = gameObject.GetComponent<Light>();
         }
-        animator = gameObject.GetComponent<Animator>();
+        if (animator == null) animator = gameObject.GetComponent<Animator>();
         
     }
 	
@@ -76,7 +68,7 @@ public class FlashBackToyHorse : MonoBehaviour {
         {
             StartCoroutine(Cooldown());
             fx[0].Play();
-            animator.SetBool("startAnim", true);
+            if (animator != null) animator.SetBool("startAnim", true);
             actualState = FlashBackState.STAGE1;
         }
         if (actualState != FlashBackState.NONE)
@@ -99,7 +91,7 @@ public class FlashBackToyHorse : MonoBehaviour {
                     if (counter > stage2Counter)
                     {
                         fx[2].Play();
-                        animator.SetBool("startAnim", false);
+                        if (animator != null) animator.SetBool("startAnim", false);
                         actualState = FlashBackState.STAGE3;
                     }
                     break;
@@ -160,5 +152,16 @@ public class FlashBackToyHorse : MonoBehaviour {
         lastSum += newVal;
         // Calculate new smoothed average
         light.intensity = lastSum / (float)smoothQueue.Count;
+    }
+
+    /// <summary>
+    /// Reset the randomness and start again. You usually don't need to call
+    /// this, deactivating/reactivating is usually fine but if you want a strict
+    /// restart you can do.
+    /// </summary>
+    public void Reset()
+    {
+        smoothQueue.Clear();
+        lastSum = 0;
     }
 }
