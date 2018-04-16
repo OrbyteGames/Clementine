@@ -1,16 +1,23 @@
 fileFormatVersion: 2
-guid: 03059fdc5436c7046bc3f0ece364ce29
-timeCreated: 1523865560
+guid: 46bec0c54cd21cd459b2ac354bbf5dbe
+timeCreated: 1523891071
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: defaultMat
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Group003
+    100000: CLEM_Plaza_Edificio5_PuzzlemotoMechanismoguroabreopuerta003
+    100002: CLEM_Plaza_Edificio5_PuzzlemotoMechanismoguroabreopuerta004
+    100004: //RootNode
+    400000: CLEM_Plaza_Edificio5_PuzzlemotoMechanismoguroabreopuerta003
+    400002: CLEM_Plaza_Edificio5_PuzzlemotoMechanismoguroabreopuerta004
+    400004: //RootNode
+    2100000: No Name
+    2300000: CLEM_Plaza_Edificio5_PuzzlemotoMechanismoguroabreopuerta003
+    2300002: CLEM_Plaza_Edificio5_PuzzlemotoMechanismoguroabreopuerta004
+    3300000: CLEM_Plaza_Edificio5_PuzzlemotoMechanismoguroabreopuerta003
+    3300002: CLEM_Plaza_Edificio5_PuzzlemotoMechanismoguroabreopuerta004
+    4300000: CLEM_Plaza_Edificio5_PuzzlemotoMechanismoguroabreopuerta003
+    4300002: CLEM_Plaza_Edificio5_PuzzlemotoMechanismoguroabreopuerta004
     9500000: //RootNode
   externalObjects: {}
   materials:

@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: b4531ae0a2bb1a04fb576f0e278f01cb
-timeCreated: 1523887659
+guid: 621755ea871d71e4f92d773910feff03
+timeCreated: 1523890882
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: CLEM_Cha_Clementine (2)_defaultMat
+    2100000: CLEM_Cha_Clementine (Unity)_defaultMat
     2300000: //RootNode
     3300000: //RootNode
     4300000: Group003
