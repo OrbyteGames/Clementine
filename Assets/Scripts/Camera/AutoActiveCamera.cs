@@ -42,7 +42,7 @@ public class AutoActiveCamera : MonoBehaviour
         {
             Debug.Log("Entered: " + gameObject.name);
             _attachedCamera.gameObject.SetActive(true);
-
+            _attachedCamera.tag = "MainCamera";
             hasChanged = false;
             
             if (CameraManager.Instance != null)
