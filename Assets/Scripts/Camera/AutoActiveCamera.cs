@@ -11,7 +11,7 @@ public class AutoActiveCamera : MonoBehaviour
     public GameObject clement;
     bool hasChanged = true;
     bool hasExit = false;
-
+    
     private void Start()
     {
         if (_attachedCamera == null)
