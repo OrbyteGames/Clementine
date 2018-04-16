@@ -16,20 +16,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         
         private void Start()
         {
-            // get the transform of the main camera
-            if (Camera.main != null)
-            {
-                m_Cam = Camera.main.transform;
-            }
-            else
-            {
-                Debug.LogWarning(
-                    "Warning: no main camera found. Third person character needs a Camera tagged \"MainCamera\", for camera-relative controls.", gameObject);
-                // we use self-relative controls in this case, which probably isn't what the user wants, but hey, we warned them!
-            }
-
-            // get the third person character ( this should never be null due to require component )
-            m_Character = GetComponent<ThirdPersonCharacter>();
+            UpdateCameraAxis();
         }
 
 
@@ -70,6 +57,24 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             // pass all parameters to the character control script
             m_Character.Move(m_Move, crouch, m_Jump);
             m_Jump = false;
+        }
+
+        void UpdateCameraAxis()
+        {
+            // get the transform of the main camera
+            if (Camera.main != null)
+            {
+                m_Cam = Camera.main.transform;
+            }
+            else
+            {
+                Debug.LogWarning(
+                    "Warning: no main camera found. Third person character needs a Camera tagged \"MainCamera\", for camera-relative controls.", gameObject);
+                // we use self-relative controls in this case, which probably isn't what the user wants, but hey, we warned them!
+            }
+
+            // get the third person character ( this should never be null due to require component )
+            m_Character = GetComponent<ThirdPersonCharacter>();
         }
     }
 }
