@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: 37178647aa512d743b19f8923a1ba126
-timeCreated: 1523885223
+guid: 82920d784df60354981f1257b3c03821
+timeCreated: 1523883572
 licenseType: Free
-NativeFormatImporter:
+TextScriptImporter:
   externalObjects: {}
-  mainObjectFileID: 25800000
   userData: 
   assetBundleName: 
   assetBundleVariant: 

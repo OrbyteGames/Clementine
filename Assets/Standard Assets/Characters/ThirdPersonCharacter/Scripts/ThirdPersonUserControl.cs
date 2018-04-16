@@ -12,10 +12,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Vector3 m_CamForward;             // The current forward direction of the camera
         private Vector3 m_Move;
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
-        private bool camChanged;
+        public bool camChanged;
         
         private void Start()
         {
+            m_Character = GetComponent<ThirdPersonCharacter>();
             camChanged = true;
             UpdateCameraAxis(ref camChanged);
         }
@@ -80,7 +81,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 }
 
                 // get the third person character ( this should never be null due to require component )
-                m_Character = GetComponent<ThirdPersonCharacter>();
+             
 
                 hasChanged = false;
             }
