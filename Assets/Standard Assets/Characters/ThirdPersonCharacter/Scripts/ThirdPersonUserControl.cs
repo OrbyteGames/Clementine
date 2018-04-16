@@ -12,11 +12,12 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Vector3 m_CamForward;             // The current forward direction of the camera
         private Vector3 m_Move;
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
-
+        private bool camChanged;
         
         private void Start()
         {
-            UpdateCameraAxis();
+            camChanged = true;
+            UpdateCameraAxis(ref camChanged);
         }
 
 
@@ -25,6 +26,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             if (!m_Jump)
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
+            }
+            if(camChanged)
+            {
+                UpdateCameraAxis(ref camChanged);
             }
         }
 
@@ -59,22 +64,27 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             m_Jump = false;
         }
 
-        void UpdateCameraAxis()
+        void UpdateCameraAxis(ref bool hasChanged)
         {
-            // get the transform of the main camera
-            if (Camera.main != null)
-            {
-                m_Cam = Camera.main.transform;
-            }
-            else
-            {
-                Debug.LogWarning(
-                    "Warning: no main camera found. Third person character needs a Camera tagged \"MainCamera\", for camera-relative controls.", gameObject);
-                // we use self-relative controls in this case, which probably isn't what the user wants, but hey, we warned them!
-            }
+            if(hasChanged)
+            {  // get the transform of the main camera
+                if (Camera.main != null)
+                {
+                    m_Cam = Camera.main.transform;
+                }
+                else
+                {
+                    Debug.LogWarning(
+                        "Warning: no main camera found. Third person character needs a Camera tagged \"MainCamera\", for camera-relative controls.", gameObject);
+                    // we use self-relative controls in this case, which probably isn't what the user wants, but hey, we warned them!
+                }
 
-            // get the third person character ( this should never be null due to require component )
-            m_Character = GetComponent<ThirdPersonCharacter>();
+                // get the third person character ( this should never be null due to require component )
+                m_Character = GetComponent<ThirdPersonCharacter>();
+
+                hasChanged = false;
+            }
+           
         }
     }
 }
