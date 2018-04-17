@@ -17769,6 +17769,7 @@ GameObject:
   - component: {fileID: 457696468}
   - component: {fileID: 457696470}
   - component: {fileID: 457696469}
+  - component: {fileID: 457696471}
   m_Layer: 0
   m_Name: Box910
   m_TagString: Untagged
@@ -17834,6 +17835,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 457696467}
   m_Mesh: {fileID: 4300634, guid: 6562c828d66e44c4494e6b35d22f56e3, type: 3}
+--- !u!65 &457696471
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 457696467}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.856516, y: 6.871553, z: 22.528532}
+  m_Center: {x: -0.95, y: -0.0065771355, z: 11.264264}
 --- !u!1 &460044107
 GameObject:
   m_ObjectHideFlags: 0
@@ -58167,6 +58180,7 @@ GameObject:
   - component: {fileID: 1078990399}
   - component: {fileID: 1078990401}
   - component: {fileID: 1078990400}
+  - component: {fileID: 1078990402}
   m_Layer: 0
   m_Name: CLEM_Zona6_Sidewalk2
   m_TagString: Untagged
@@ -58230,6 +58244,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1078990398}
   m_Mesh: {fileID: 4301328, guid: 6562c828d66e44c4494e6b35d22f56e3, type: 3}
+--- !u!65 &1078990402
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1078990398}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 552.5293, y: 2.6011894, z: 0.78530395}
+  m_Center: {x: 260.34247, y: 0.89916, z: 0.39265007}
 --- !u!1 &1081091937
 GameObject:
   m_ObjectHideFlags: 0
@@ -81692,6 +81718,7 @@ GameObject:
   - component: {fileID: 1642202733}
   - component: {fileID: 1642202735}
   - component: {fileID: 1642202734}
+  - component: {fileID: 1642202736}
   m_Layer: 0
   m_Name: CLEM_Zona2_Sidewalk1
   m_TagString: Untagged
@@ -81754,6 +81781,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1642202732}
+  m_Mesh: {fileID: 4301326, guid: 6562c828d66e44c4494e6b35d22f56e3, type: 3}
+--- !u!64 &1642202736
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1642202732}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4301326, guid: 6562c828d66e44c4494e6b35d22f56e3, type: 3}
 --- !u!1 &1642529116
 GameObject:
