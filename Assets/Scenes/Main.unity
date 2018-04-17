@@ -13743,7 +13743,7 @@ GameObject:
   - component: {fileID: 395359529}
   - component: {fileID: 395359528}
   m_Layer: 0
-  m_Name: Box960
+  m_Name: CLEM_Zona6_Sidewalk3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58168,7 +58168,7 @@ GameObject:
   - component: {fileID: 1078990401}
   - component: {fileID: 1078990400}
   m_Layer: 0
-  m_Name: Box1440
+  m_Name: CLEM_Zona6_Sidewalk2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64129,7 +64129,7 @@ GameObject:
   - component: {fileID: 1225593813}
   - component: {fileID: 1225593815}
   m_Layer: 0
-  m_Name: StraightStair002
+  m_Name: CLEM_Zona2_FloorStairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69229,7 +69229,7 @@ GameObject:
   - component: {fileID: 1358604373}
   - component: {fileID: 1358604372}
   m_Layer: 0
-  m_Name: Box1442
+  m_Name: CLEM_Zona3_Sidewalk2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74445,7 +74445,7 @@ GameObject:
   - component: {fileID: 1471258639}
   - component: {fileID: 1471258638}
   m_Layer: 0
-  m_Name: Box959
+  m_Name: CLEM_Zona6_Sidewalk2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81693,7 +81693,7 @@ GameObject:
   - component: {fileID: 1642202735}
   - component: {fileID: 1642202734}
   m_Layer: 0
-  m_Name: Box1439
+  m_Name: CLEM_Zona2_Sidewalk1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83273,7 +83273,7 @@ GameObject:
   - component: {fileID: 1683982909}
   - component: {fileID: 1683982908}
   m_Layer: 0
-  m_Name: Box961
+  m_Name: CLEM_Zona6_Sidewalk1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93545,7 +93545,7 @@ GameObject:
   - component: {fileID: 1967181723}
   - component: {fileID: 1967181722}
   m_Layer: 0
-  m_Name: Box1441
+  m_Name: CLEM_Zona3_Sidewalk1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
