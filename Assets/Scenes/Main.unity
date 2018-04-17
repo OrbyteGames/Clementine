@@ -82856,7 +82856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clemen: {fileID: 479930962}
-  x: 1
+  x: 0
   y: 0
   z: 1
   step: 10
