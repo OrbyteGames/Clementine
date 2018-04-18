@@ -8345,6 +8345,41 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 248029122}
+--- !u!1 &248040826 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1804309064716250, guid: df647e8bc5f595d4f93350dc67eee87c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1529599517}
+--- !u!114 &248040827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 248040826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3cb4b4e345cf2a43855a700d3b52eab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &248040828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 248040826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c879af5045213bf4fb0de52703c388ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  motoLight: {fileID: 1093477878}
+  fences:
+  - {fileID: 1578979211}
+  - {fileID: 1321405697}
+  clementine: {fileID: 479930962}
+  cat: {fileID: 0}
+  puzzleDist: 2
+  fenceHeight: 3
 --- !u!1 &248079655
 GameObject:
   m_ObjectHideFlags: 0
@@ -58985,6 +59020,11 @@ GameObject:
   m_PrefabParentObject: {fileID: 1477092354311220, guid: df647e8bc5f595d4f93350dc67eee87c,
     type: 2}
   m_PrefabInternal: {fileID: 1529599517}
+--- !u!108 &1093477878 stripped
+Light:
+  m_PrefabParentObject: {fileID: 108270185228393836, guid: df647e8bc5f595d4f93350dc67eee87c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1529599517}
 --- !u!114 &1093477879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67281,6 +67321,10 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 8.8, y: 6.02, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1321405697 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: c0e02faf28a426c478f67edfdb19104c, type: 3}
+  m_PrefabInternal: {fileID: 1973959775}
 --- !u!1 &1321520363
 GameObject:
   m_ObjectHideFlags: 0
@@ -79758,6 +79802,10 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1577864242}
   m_Mesh: {fileID: 4302666, guid: 6562c828d66e44c4494e6b35d22f56e3, type: 3}
+--- !u!1 &1578979211 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: c0e02faf28a426c478f67edfdb19104c, type: 3}
+  m_PrefabInternal: {fileID: 1818542780}
 --- !u!1 &1589018255
 GameObject:
   m_ObjectHideFlags: 0
