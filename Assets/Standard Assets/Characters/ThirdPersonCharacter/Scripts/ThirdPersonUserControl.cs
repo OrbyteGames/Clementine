@@ -13,24 +13,29 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Vector3 m_Move;
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
         public bool camChanged;
-        
+
+        public bool movementEnabled;
+
         private void Start()
         {
+            movementEnabled = true;
             m_Character = GetComponent<ThirdPersonCharacter>();
             camChanged = true;
             UpdateCameraAxis(ref camChanged);
         }
 
-
         private void Update()
         {
-            if (!m_Jump)
+            if (movementEnabled)
             {
-                m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
-            }
-            if(camChanged)
-            {
-                UpdateCameraAxis(ref camChanged);
+                if (!m_Jump)
+                {
+                    m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
+                }
+                if (camChanged)
+                {
+                    UpdateCameraAxis(ref camChanged);
+                }
             }
         }
 
@@ -87,5 +92,14 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             }
            
         }
-    }
+        public void EnableMovement()
+        {
+            movementEnabled = true;
+        }
+
+        public void DisableMovement()
+        {
+            movementEnabled = false;
+        }
+    }    
 }

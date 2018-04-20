@@ -33,7 +33,7 @@ public class Puzzle1_Controller : MonoBehaviour {
 			} 
 		}
 		else {
-            if (motoLight.intensity < 5)
+            if (motoLight.intensity < 5 && !solved)
             {
                 motoLight.intensity += 2.0f * Time.deltaTime;
             }
@@ -58,8 +58,16 @@ public class Puzzle1_Controller : MonoBehaviour {
                     {
                         cat.setSolved();
                     }
-                    pa1.StartAnimation();
-                    enabled = false;
+                    if (motoLight.intensity > 0.0f)
+                    {
+                        motoLight.intensity -= 3.0f * Time.deltaTime;
+                    }
+                    else
+                    {
+                        motoLight.enabled = false;
+                        pa1.StartAnimation();
+                        enabled = false;
+                    }
                 }
             }
         }
