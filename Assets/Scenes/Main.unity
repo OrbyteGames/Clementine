@@ -61937,8 +61937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clementine: {fileID: 479930962}
-  Markers:
-  - {fileID: 1336418627}
+  Marker1: {fileID: 1336418627}
   previousCam: {fileID: 514861092}
   activationDist: 3
   duration: 12
@@ -85647,7 +85646,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clementine: {fileID: 479930962}
-  Markers: []
+  Marker1: {fileID: 524630907}
+  Marker2: {fileID: 1321125568}
   previousCam: {fileID: 1249410309}
   activationDist: 2
   duration: 4
