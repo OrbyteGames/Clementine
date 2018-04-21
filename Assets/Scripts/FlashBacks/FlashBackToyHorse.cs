@@ -36,6 +36,9 @@ public class FlashBackToyHorse : MonoBehaviour {
     public float shadowFadeIn = 1.0f;
     public float shadowFadeOut = 1.0f;
 
+    // Light Options
+    public float lightFade = 2.0f;
+
     // Continuous average calculation via FIFO queue
     // Saves us iterating every time we update, we just change by the delta
     Queue<float> smoothQueue;
@@ -77,7 +80,6 @@ public class FlashBackToyHorse : MonoBehaviour {
         // pop off an item if too big
         if (distance < maxDistance && actualState == FlashBackState.NONE)
         {
-            StartCoroutine(Cooldown());
             fx[0].Play();
             animator.SetBool("startAnim", true);
             actualState = FlashBackState.STAGE1;
@@ -90,7 +92,16 @@ public class FlashBackToyHorse : MonoBehaviour {
             {
                 case FlashBackState.STAGE1:
                     // shadow fade
-                    currentColor.a = Mathf.Lerp(0.0f, 1.0f, counter / shadowFadeIn);
+                    if (light.intensity < 15)
+                    {
+                        light.intensity += lightFade * Time.deltaTime;
+                    }
+                    if (currentColor.a < 1.0)
+                    {
+                        currentColor.a += Time.deltaTime * (1.0f / shadowFadeIn);
+                        matToFade.SetColor("_Color", currentColor);
+                    }
+                    //currentColor.a = Mathf.Lerp(0.0f, 1.0f, shadowFadeIn);
                     if (counter > stage1Counter) {
                         Reset();
                         currentColor.a = 1.0f;
@@ -104,7 +115,7 @@ public class FlashBackToyHorse : MonoBehaviour {
                         if (fx[0].volume > 0)
                         {
                             fx[0].volume -= 2 * Time.deltaTime;
-                            if (fx[0].volume > 0) fx[0].Stop();
+                            if (fx[0].volume  <= 0) fx[0].Stop();
                         }
                         else
                         {
@@ -122,20 +133,25 @@ public class FlashBackToyHorse : MonoBehaviour {
                     }                   
                     break;
                 case FlashBackState.STAGE4:
-                    currentColor.a = Mathf.Lerp(1.0f, 0.0f, counter / shadowFadeIn);
+                    if (currentColor.a > 0.0)
+                    {
+                        currentColor.a -= Time.deltaTime * (1.0f / shadowFadeOut);
+                        matToFade.SetColor("_Color",currentColor);
+                    }
+                    //currentColor.a = Mathf.Lerp(1.0f, 0.0f, shadowFadeOut);
                     if (fx[2].volume > 0)
                     {
                         fx[2].volume -= laughFade * Time.deltaTime;
-                        if (fx[2].volume > 0) fx[2].Stop();
+                        if (fx[2].volume <= 0) fx[2].Stop();
                     }
                     if (fx[1].volume > 0)
                     {
                         fx[1].volume -= leitmotivFade * Time.deltaTime;
-                        if (fx[1].volume > 0) fx[1].Stop();
+                        if (fx[1].volume <= 0) fx[1].Stop();
                     }
                     if (light.intensity > 0)
                     {
-                        light.intensity -= 15.0f * Time.deltaTime;   
+                        light.intensity -= lightFade * Time.deltaTime;   
                     }
                     if (counter > finishCounter)
                     {
