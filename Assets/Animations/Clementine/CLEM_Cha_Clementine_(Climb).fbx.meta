@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 0ad8d20152ce40a4b95ade6691c431d5
-timeCreated: 1523986160
+guid: 10d7f161dd994dc45818a0278a549b83
+timeCreated: 1523986161
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -75,9 +75,9 @@ ModelImporter:
     400064: mixamorig:Spine
     400066: mixamorig:Spine1
     400068: mixamorig:Spine2
-    2100000: lambert1
+    2100000: No Name
     4300000: CLEMENTINE
-    7400000: Take 001
+    7400000: Climbing
     9500000: //RootNode
     13700000: CLEMENTINE
   externalObjects: {}
@@ -106,7 +106,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Climbing
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 115
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

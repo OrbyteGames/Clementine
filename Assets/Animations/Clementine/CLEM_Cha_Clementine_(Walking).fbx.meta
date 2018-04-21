@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: 10d7f161dd994dc45818a0278a549b83
-timeCreated: 1523986161
+guid: aa5baab5ecced9f4cb357607e756b5f4
+timeCreated: 1523986743
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: CLEMENTINE
+    100000: CLEM_Cha_Clementine
+    100002: //RootNode
     100004: mixamorig:Head
     100006: mixamorig:HeadTop_End
     100008: mixamorig:Hips
@@ -40,8 +40,8 @@ ModelImporter:
     100064: mixamorig:Spine
     100066: mixamorig:Spine1
     100068: mixamorig:Spine2
-    400000: //RootNode
-    400002: CLEMENTINE
+    400000: CLEM_Cha_Clementine
+    400002: //RootNode
     400004: mixamorig:Head
     400006: mixamorig:HeadTop_End
     400008: mixamorig:Hips
@@ -76,10 +76,10 @@ ModelImporter:
     400066: mixamorig:Spine1
     400068: mixamorig:Spine2
     2100000: No Name
-    4300000: CLEMENTINE
-    7400000: mixamo.com
+    4300000: CLEM_Cha_Clementine
+    7400000: Walking
     9500000: //RootNode
-    13700000: CLEMENTINE
+    13700000: CLEM_Cha_Clementine
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -106,7 +106,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walking
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 42
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
