@@ -20,11 +20,12 @@ public class FlashBackToyHorse : MonoBehaviour {
 
     private float counter;
     // Music Options
+    [Tooltip("Horse,Leitmotiv,Laugh")]
     public AudioSource[] fx;    // Horse Music, Leitmotiv, Laugh
     public float stage1Counter = 2.0f;
     public float stage2Counter = 4.0f;
-    public float stage3Counter = 6.0f;
-    public float finishCounter = 8.0f;
+    public float stage3Counter = 8.0f;
+    public float finishCounter = 10.0f;
     public float soundFade = 2.0f;
     public float horseMusicFade = 2.0f;
     public float leitmotivFade = 2.0f;
@@ -42,16 +43,7 @@ public class FlashBackToyHorse : MonoBehaviour {
 
     enum FlashBackState { NONE, STAGE1, STAGE2, STAGE3, STAGE4, STAGE5 };
     private FlashBackState actualState;
-    /// <summary>
-    /// Reset the randomness and start again. You usually don't need to call
-    /// this, deactivating/reactivating is usually fine but if you want a strict
-    /// restart you can do.
-    /// </summary>
-    public void Reset()
-    {
-        smoothQueue.Clear();
-        lastSum = 0;
-    }
+
 
     // Use this for initialization
     void Start () {
@@ -65,9 +57,20 @@ public class FlashBackToyHorse : MonoBehaviour {
         animator = gameObject.GetComponent<Animator>();
         
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    /// <summary>
+    /// Reset the randomness and start again. You usually don't need to call
+    /// this, deactivating/reactivating is usually fine but if you want a strict
+    /// restart you can do.
+    /// </summary>
+    public void Reset()
+    {
+        smoothQueue.Clear();
+        lastSum = 0;
+    }
+
+    // Update is called once per frame
+    void Update () {
         if (light == null)
             return;
         float distance = Vector3.Distance(transform.position, clementine.transform.position);
@@ -89,29 +92,34 @@ public class FlashBackToyHorse : MonoBehaviour {
                     // shadow fade
                     currentColor.a = Mathf.Lerp(0.0f, 1.0f, counter / shadowFadeIn);
                     if (counter > stage1Counter) {
+                        Reset();
                         currentColor.a = 1.0f;
                         matToFade.SetColor("_Color", currentColor);
-                        fx[1].Play();
                         actualState = FlashBackState.STAGE2;
                     }
                     break;
-                case FlashBackState.STAGE2:
+                case FlashBackState.STAGE2:                   
                     if (counter > stage2Counter)
                     {
-                        fx[2].Play();
-                        animator.SetBool("startAnim", false);
-                        actualState = FlashBackState.STAGE3;
+                        if (fx[0].volume > 0)
+                        {
+                            fx[0].volume -= 2 * Time.deltaTime;
+                            if (fx[0].volume > 0) fx[0].Stop();
+                        }
+                        else
+                        {
+                            fx[1].Play();
+                            fx[2].Play();
+                            animator.SetBool("startAnim", false);
+                            actualState = FlashBackState.STAGE3;
+                        }
                     }
                     break;
-                case FlashBackState.STAGE3:
-                    if (fx[0].volume > 0) {
-                        fx[0].volume -= 2 * Time.deltaTime;
-                        if (fx[0].volume > 0) fx[0].Stop();
-                    }
+                case FlashBackState.STAGE3:                   
                     if (counter > stage3Counter)
                     {
                         actualState = FlashBackState.STAGE4;
-                    }
+                    }                   
                     break;
                 case FlashBackState.STAGE4:
                     currentColor.a = Mathf.Lerp(1.0f, 0.0f, counter / shadowFadeIn);
