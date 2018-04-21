@@ -21,6 +21,7 @@ public class FlashbackCamera : MonoBehaviour {
     {
         count = 0.0f;
         thisCam = gameObject.GetComponent<Camera>();
+        thisCam.enabled = false;
         tpuc = Clementine.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl>();
         startCount = false;
          posMarker = Marker1.transform.position;
