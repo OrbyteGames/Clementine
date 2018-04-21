@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class CinematicCamera : MonoBehaviour {
 
-    public GameObject Clementine;
-    public GameObject[] Markers;
+    public GameObject Clementine, Marker1,Marker2;
     public Camera previousCam;
     public float activationDist;
     public float duration;
@@ -15,7 +14,6 @@ public class CinematicCamera : MonoBehaviour {
     private AudioSource meowSound;
     private bool startCount, played;
     private UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl tpuc;
-    private Vector3[] posMarkers;
 
     // Use this for initialization
     void Start () {
@@ -24,11 +22,7 @@ public class CinematicCamera : MonoBehaviour {
         tpuc = Clementine.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl>();
         meowSound = gameObject.GetComponent<AudioSource>();
         startCount = false;
-        for (int i = 0; i < Markers.Length; ++i)
-        {
-            posMarkers[i] = Markers[i].transform.position;
-            
-        }
+
         played = false;
 	}
 	
@@ -36,15 +30,16 @@ public class CinematicCamera : MonoBehaviour {
 	void Update () {
         if (!startCount)
         {
-            foreach (Vector3 v in posMarkers)
-            {
-                if ((Vector3.Distance(Clementine.transform.position, v) < activationDist))
+           
+                if ((Vector3.Distance(Clementine.transform.position, Marker1.transform.position) < activationDist)
+                || (Vector3.Distance(Clementine.transform.position, Marker2.transform.position) < activationDist))
                 {
                     previousCam.enabled = false;
                     thisCam.enabled = true;
                     startCount = true;
                     tpuc.DisableMovement();
-                }
+                    
+                
             }
         }
         else {

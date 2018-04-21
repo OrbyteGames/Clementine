@@ -5,7 +5,7 @@ using UnityEngine;
 public class FlashbackCamera : MonoBehaviour {
 
     public GameObject Clementine;
-    public GameObject[] Markers;
+    public GameObject Marker1;
     public Camera previousCam;
     public float activationDist;
     public float duration;
@@ -13,7 +13,8 @@ public class FlashbackCamera : MonoBehaviour {
     private Camera thisCam;
     private bool startCount, played;
     private UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl tpuc;
-    private Vector3[] posMarkers;
+    private Vector3 posMarker;
+    private FlashBackToyHorse fbth;
 
     // Use this for initialization
     void Start()
@@ -22,11 +23,8 @@ public class FlashbackCamera : MonoBehaviour {
         thisCam = gameObject.GetComponent<Camera>();
         tpuc = Clementine.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl>();
         startCount = false;
-        for (int i = 0; i < Markers.Length; ++i)
-        {
-            posMarkers[i] = Markers[i].transform.position;
-
-        }
+         posMarker = Marker1.transform.position;
+        fbth = gameObject.GetComponent<FlashBackToyHorse>();
         played = false;
     }
 
@@ -34,17 +32,16 @@ public class FlashbackCamera : MonoBehaviour {
     void Update()
     {
         if (!startCount)
-        {
-            foreach (Vector3 v in posMarkers)
+        {          
+            if ((Vector3.Distance(Clementine.transform.position, posMarker) < activationDist))
             {
-                if ((Vector3.Distance(Clementine.transform.position, v) < activationDist))
-                {
-                    previousCam.enabled = false;
-                    thisCam.enabled = true;
-                    startCount = true;
-                    tpuc.DisableMovement();
-                }
+                previousCam.enabled = false;
+                thisCam.enabled = true;
+                startCount = true;
+                tpuc.DisableMovement();
+                fbth.StartScene();
             }
+           
         }
         else
         {

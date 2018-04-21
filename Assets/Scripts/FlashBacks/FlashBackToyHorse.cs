@@ -76,14 +76,6 @@ public class FlashBackToyHorse : MonoBehaviour {
     void Update () {
         if (light == null)
             return;
-        float distance = Vector3.Distance(transform.position, clementine.transform.position);
-        // pop off an item if too big
-        if (distance < maxDistance && actualState == FlashBackState.NONE)
-        {
-            fx[0].Play();
-            animator.SetBool("startAnim", true);
-            actualState = FlashBackState.STAGE1;
-        }
         if (actualState != FlashBackState.NONE)
         {
             counter += Time.deltaTime;
@@ -103,7 +95,6 @@ public class FlashBackToyHorse : MonoBehaviour {
                     }
                     //currentColor.a = Mathf.Lerp(0.0f, 1.0f, shadowFadeIn);
                     if (counter > stage1Counter) {
-                        Reset();
                         currentColor.a = 1.0f;
                         matToFade.SetColor("_Color", currentColor);
                         actualState = FlashBackState.STAGE2;
@@ -184,5 +175,12 @@ public class FlashBackToyHorse : MonoBehaviour {
         lastSum += newVal;
         // Calculate new smoothed average
         light.intensity = lastSum / (float)smoothQueue.Count;
+    }
+
+    public void StartScene()
+    {
+        fx[0].Play();
+        animator.SetBool("startAnim", true);
+        actualState = FlashBackState.STAGE1;
     }
 }
