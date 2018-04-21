@@ -26,8 +26,8 @@ public class Puzzle1_Controller : MonoBehaviour {
     {
 
         float step = 1f * Time.deltaTime;
-        float dist = Vector3.Distance(clementine.transform.position, fences[0].transform.position);
-		if (!activated) {
+        float dist = Vector3.Distance(clementine.transform.position, gameObject.transform.position); //fences[0].transform.position);
+        if (!activated) {
 			if (dist < puzzleDist) {			
 				activated = true;
 			} 
