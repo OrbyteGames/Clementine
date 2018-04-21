@@ -1,0 +1,342 @@
+fileFormatVersion: 2
+guid: 802282c08f478b84f841e2ca52901b73
+timeCreated: 1524334118
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: CAT_CTRL_Global
+    100002: Cat_Ear_End_L_Jnt
+    100004: Cat_Ear_End_R_Jnt
+    100006: Cat_Ear_L_Jnt
+    100008: Cat_Ear_R_Jnt
+    100010: Cat_Head_JawEndSHJnt
+    100012: Cat_Head_JawSHJnt
+    100014: Cat_Head_TopSHJnt
+    100016: Cat_L_Clavicle_AuxSHJnt
+    100018: Cat_L_FrontLeg_AnkleSHJnt
+    100020: Cat_L_FrontLeg_BallSHJnt
+    100022: Cat_L_FrontLeg_HipSHJnt
+    100024: Cat_L_FrontLeg_Knee01SHJnt
+    100026: Cat_L_FrontLeg_Knee02SHJnt
+    100028: Cat_L_FrontLeg_ToeSHJnt
+    100030: Cat_L_HindLeg_AnkleSHJnt
+    100032: Cat_L_HindLeg_BallSHJnt
+    100034: Cat_L_HindLeg_HipSHJnt
+    100036: Cat_L_HindLeg_Knee1SHJnt
+    100038: Cat_L_HindLeg_Knee2SHJnt
+    100040: Cat_L_HindLeg_ToeSHJnt
+    100042: Cat_Neck_01SHJnt
+    100044: Cat_Neck_TopSHJnt
+    100046: Cat_R_Clavicle_AuxSHJnt
+    100048: Cat_R_Clavicle_AuxSHJnt1
+    100050: Cat_R_FrontLeg_AnkleSHJnt
+    100052: Cat_R_FrontLeg_BallSHJnt
+    100054: Cat_R_FrontLeg_HipSHJnt
+    100056: Cat_R_FrontLeg_Knee01SHJnt
+    100058: Cat_R_FrontLeg_Knee02SHJnt
+    100060: Cat_R_FrontLeg_ToeSHJnt
+    100062: Cat_R_HindLeg_AnkleSHJnt
+    100064: Cat_R_HindLeg_BallSHJnt
+    100066: Cat_R_HindLeg_HipSHJnt
+    100068: Cat_R_HindLeg_Knee1SHJnt
+    100070: Cat_R_HindLeg_Knee2SHJnt
+    100072: Cat_R_HindLeg_ToeSHJnt
+    100074: Cat_ROOTSHJnt
+    100076: Cat_Spine_01SHJnt
+    100078: Cat_Spine_02SHJnt
+    100080: Cat_Spine_03SHJnt
+    100082: Cat_Spine_04SHJnt
+    100084: Cat_Spine_TopSHJnt
+    100086: Cat_Tail_01_01SHJnt
+    100088: Cat_Tail_01_02SHJnt
+    100090: Cat_Tail_01_03SHJnt
+    100092: Cat_Tail_01_04SHJnt
+    100094: Cat_Tail_MainSHJnt
+    100096: Cat_TailSHJnt
+    100098: CLEM_Cha_Cat
+    100100: //RootNode
+    100102: Cluster03_GRP
+    100104: Cluster04_GRP
+    100106: Cluster05_GRP
+    100108: Cluster06_GRP
+    100110: Ear_L_CTRL
+    100112: Ear_R_CTRL
+    100114: Head_CTRL
+    100116: Jaws_CTRL
+    100118: L_Back_AnkeGRP
+    100120: L_Back_Ankle_IK
+    100122: L_Back_Ball_IK
+    100124: L_Back_BallGRP
+    100126: L_Back_Knee_Tgt
+    100128: L_Back_Toe_IK
+    100130: L_Back_ToeGRP
+    100132: L_Back_ToeGRP 1
+    100134: L_Foot_Back_CTRL
+    100136: L_Foot_Front_CTRL
+    100138: L_Front_AnkeGRP
+    100140: L_Front_Ankle_IK
+    100142: L_Front_Ball_IK
+    100144: L_Front_BallGRP
+    100146: L_Front_Knee_Tgt
+    100148: L_Front_Toe_IK
+    100150: L_Front_ToeGRP
+    100152: L_Front_ToeGRP 1
+    100154: MainBodyCTRL
+    100156: Neck01_CTRL
+    100158: Neck02_CTRL
+    100160: Pelvis_CTRL
+    100162: R_Back_AnkeGRP
+    100164: R_Back_Ankle_IK
+    100166: R_Back_Ball_IK
+    100168: R_Back_BallGRP
+    100170: R_Back_Knee_Tgt
+    100172: R_Back_Toe_IK
+    100174: R_Back_ToeGRP
+    100176: R_Back_ToeGRP 1
+    100178: R_Foot_Back_CTRL
+    100180: R_Foot_Front_CTRL
+    100182: R_Front_AnkeGRP
+    100184: R_Front_Ankle_IK
+    100186: R_Front_Ball_IK
+    100188: R_Front_BallGRP
+    100190: R_Front_Knee_Tgt
+    100192: R_Front_Toe_IK
+    100194: R_Front_ToeGRP
+    100196: R_Front_ToeGRP 1
+    100198: Spine01_CTRL
+    100200: Spine01_GRP
+    100202: Spine02_CTRL
+    100204: Spine02_GRP
+    100206: Spine03_CTRL
+    100208: Spine03_GRP
+    100210: Spine04_CTRL
+    100212: Spine04_GRP
+    100214: Tail_01_CTRL
+    100216: Tail_02_CTRL
+    100218: Tail_03_CTRL
+    100220: Tail_04_CTRL
+    400000: CAT_CTRL_Global
+    400002: Cat_Ear_End_L_Jnt
+    400004: Cat_Ear_End_R_Jnt
+    400006: Cat_Ear_L_Jnt
+    400008: Cat_Ear_R_Jnt
+    400010: Cat_Head_JawEndSHJnt
+    400012: Cat_Head_JawSHJnt
+    400014: Cat_Head_TopSHJnt
+    400016: Cat_L_Clavicle_AuxSHJnt
+    400018: Cat_L_FrontLeg_AnkleSHJnt
+    400020: Cat_L_FrontLeg_BallSHJnt
+    400022: Cat_L_FrontLeg_HipSHJnt
+    400024: Cat_L_FrontLeg_Knee01SHJnt
+    400026: Cat_L_FrontLeg_Knee02SHJnt
+    400028: Cat_L_FrontLeg_ToeSHJnt
+    400030: Cat_L_HindLeg_AnkleSHJnt
+    400032: Cat_L_HindLeg_BallSHJnt
+    400034: Cat_L_HindLeg_HipSHJnt
+    400036: Cat_L_HindLeg_Knee1SHJnt
+    400038: Cat_L_HindLeg_Knee2SHJnt
+    400040: Cat_L_HindLeg_ToeSHJnt
+    400042: Cat_Neck_01SHJnt
+    400044: Cat_Neck_TopSHJnt
+    400046: Cat_R_Clavicle_AuxSHJnt
+    400048: Cat_R_Clavicle_AuxSHJnt1
+    400050: Cat_R_FrontLeg_AnkleSHJnt
+    400052: Cat_R_FrontLeg_BallSHJnt
+    400054: Cat_R_FrontLeg_HipSHJnt
+    400056: Cat_R_FrontLeg_Knee01SHJnt
+    400058: Cat_R_FrontLeg_Knee02SHJnt
+    400060: Cat_R_FrontLeg_ToeSHJnt
+    400062: Cat_R_HindLeg_AnkleSHJnt
+    400064: Cat_R_HindLeg_BallSHJnt
+    400066: Cat_R_HindLeg_HipSHJnt
+    400068: Cat_R_HindLeg_Knee1SHJnt
+    400070: Cat_R_HindLeg_Knee2SHJnt
+    400072: Cat_R_HindLeg_ToeSHJnt
+    400074: Cat_ROOTSHJnt
+    400076: Cat_Spine_01SHJnt
+    400078: Cat_Spine_02SHJnt
+    400080: Cat_Spine_03SHJnt
+    400082: Cat_Spine_04SHJnt
+    400084: Cat_Spine_TopSHJnt
+    400086: Cat_Tail_01_01SHJnt
+    400088: Cat_Tail_01_02SHJnt
+    400090: Cat_Tail_01_03SHJnt
+    400092: Cat_Tail_01_04SHJnt
+    400094: Cat_Tail_MainSHJnt
+    400096: Cat_TailSHJnt
+    400098: CLEM_Cha_Cat
+    400100: //RootNode
+    400102: Cluster03_GRP
+    400104: Cluster04_GRP
+    400106: Cluster05_GRP
+    400108: Cluster06_GRP
+    400110: Ear_L_CTRL
+    400112: Ear_R_CTRL
+    400114: Head_CTRL
+    400116: Jaws_CTRL
+    400118: L_Back_AnkeGRP
+    400120: L_Back_Ankle_IK
+    400122: L_Back_Ball_IK
+    400124: L_Back_BallGRP
+    400126: L_Back_Knee_Tgt
+    400128: L_Back_Toe_IK
+    400130: L_Back_ToeGRP
+    400132: L_Back_ToeGRP 1
+    400134: L_Foot_Back_CTRL
+    400136: L_Foot_Front_CTRL
+    400138: L_Front_AnkeGRP
+    400140: L_Front_Ankle_IK
+    400142: L_Front_Ball_IK
+    400144: L_Front_BallGRP
+    400146: L_Front_Knee_Tgt
+    400148: L_Front_Toe_IK
+    400150: L_Front_ToeGRP
+    400152: L_Front_ToeGRP 1
+    400154: MainBodyCTRL
+    400156: Neck01_CTRL
+    400158: Neck02_CTRL
+    400160: Pelvis_CTRL
+    400162: R_Back_AnkeGRP
+    400164: R_Back_Ankle_IK
+    400166: R_Back_Ball_IK
+    400168: R_Back_BallGRP
+    400170: R_Back_Knee_Tgt
+    400172: R_Back_Toe_IK
+    400174: R_Back_ToeGRP
+    400176: R_Back_ToeGRP 1
+    400178: R_Foot_Back_CTRL
+    400180: R_Foot_Front_CTRL
+    400182: R_Front_AnkeGRP
+    400184: R_Front_Ankle_IK
+    400186: R_Front_Ball_IK
+    400188: R_Front_BallGRP
+    400190: R_Front_Knee_Tgt
+    400192: R_Front_Toe_IK
+    400194: R_Front_ToeGRP
+    400196: R_Front_ToeGRP 1
+    400198: Spine01_CTRL
+    400200: Spine01_GRP
+    400202: Spine02_CTRL
+    400204: Spine02_GRP
+    400206: Spine03_CTRL
+    400208: Spine03_GRP
+    400210: Spine04_CTRL
+    400212: Spine04_GRP
+    400214: Tail_01_CTRL
+    400216: Tail_02_CTRL
+    400218: Tail_03_CTRL
+    400220: Tail_04_CTRL
+    2100000: lambert2
+    4300000: CLEM_Cha_Cat
+    7400000: idle
+    9500000: //RootNode
+    13700000: CLEM_Cha_Cat
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 400
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
