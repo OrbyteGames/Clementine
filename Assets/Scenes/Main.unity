@@ -18799,7 +18799,7 @@ Prefab:
     - target: {fileID: 9500000, guid: 621755ea871d71e4f92d773910feff03, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 9467f4af85b961b45baac5a06d2e5a22, type: 2}
+      objectReference: {fileID: 9100000, guid: e2cf68ff4b1ffda45a77f7307dd789b9, type: 2}
     - target: {fileID: 100000, guid: 621755ea871d71e4f92d773910feff03, type: 3}
       propertyPath: m_TagString
       value: Player
@@ -61741,7 +61741,7 @@ MonoBehaviour:
   matToFade: {fileID: 2100000, guid: 6bb275fbbc4f3a24a85bf233c96ddf36, type: 2}
   shadowFadeIn: 2
   shadowFadeOut: 2
-  lightFade: 8
+  lightFade: 2
 --- !u!114 &1165292248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85529,9 +85529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clementine: {fileID: 479930962}
-  Markers:
-  - {fileID: 524630907}
-  - {fileID: 1321125568}
+  Markers: []
   previousCam: {fileID: 1249410309}
   activationDist: 2
   duration: 4
