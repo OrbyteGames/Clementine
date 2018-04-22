@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CinematicCamera : MonoBehaviour {
 
-    public GameObject Clementine, Marker1,Marker2;
+    public GameObject Clementine, Marker1;
     public Camera previousCam;
     public float activationDist;
     public float duration;
@@ -29,17 +29,13 @@ public class CinematicCamera : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (!startCount)
-        {
-           
-                if ((Vector3.Distance(Clementine.transform.position, Marker1.transform.position) < activationDist)
-                || (Vector3.Distance(Clementine.transform.position, Marker2.transform.position) < activationDist))
-                {
-                    previousCam.enabled = false;
-                    thisCam.enabled = true;
-                    startCount = true;
-                    tpuc.DisableMovement();
-                    
-                
+        {           
+            if ((Vector3.Distance(Clementine.transform.position, Marker1.transform.position) < activationDist))
+            {
+                previousCam.enabled = false;
+                thisCam.enabled = true;
+                startCount = true;
+                tpuc.DisableMovement();                   
             }
         }
         else {
