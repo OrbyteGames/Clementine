@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 198962177637191772}
   - component: {fileID: 199857981327393720}
   m_Layer: 0
-  m_Name: PS_GutterSmoke
+  m_Name: PS_SewerSmoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
