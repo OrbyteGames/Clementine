@@ -23,6 +23,7 @@ public class Puzzle1_Controller : MonoBehaviour {
     private float Counter;
     private bool startCount, inDistance;
     private Animator anim;
+    private FlickeringLight flickering;
 	// Use this for initialization
 	void Start ()
     {
@@ -35,6 +36,8 @@ public class Puzzle1_Controller : MonoBehaviour {
         solved = false;
         pa1 = gameObject.GetComponent<Puzzle1_Animation>();
         anim = gameObject.GetComponent<Animator>();
+        flickering = gameObject.GetComponent<FlickeringLight>();
+        flickering.duration = doorTimeStamp;
 	}
 	
 	// Update is called once per frame
@@ -59,6 +62,7 @@ public class Puzzle1_Controller : MonoBehaviour {
 
                 if (actualState == SoundState.NONE && Counter > electTimestamp )
                 {
+                    flickering.StartFlicker();
                     actualState = SoundState.SOUNDELEC;
                     electricitySound.Play();
                 }
