@@ -3,53 +3,70 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Puzzle1_Controller : MonoBehaviour {
-    public Light motoLight;
+
+    enum SoundState { NONE, SOUNDELEC, SOUNDENGINE, SOUNDDOOR };
+    private SoundState actualState;
     public GameObject[] fences;
     public GameObject clementine;
     public GameObject wheel, fencewheel1,fencewheel2,lights, electricity;
     public CatAI cat;
-    public float puzzleDist;
+    public float puzzleDist,  electTimestamp,engineTimeStamp,doorTimeStamp;
     public ParticleSystem ps,ps2;
-    [Range(2f,4.2f)]
+    [Range(2f, 4.2f)]
     public float fenceHeight;
+    public AudioSource electricitySound;
+    public AudioSource EngineSound;
+    public AudioSource doors;
     private Puzzle1_Animation pa1;
 	private bool activated;
     public bool solved;
-    private float psCounter;
+    private float Counter;
+    private bool startCount;
 	// Use this for initialization
 	void Start ()
     {
-        psCounter = 0.0f;
+        startCount = false;
+        actualState = SoundState.NONE;
+        Counter = 0.0f;
         lights.SetActive(false);
 		activated = false;
         solved = false;
         pa1 = gameObject.GetComponent<Puzzle1_Animation>();
+
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
         wheel.transform.Rotate(-10f * Time.deltaTime, 0f, 0f);
-
+        if (startCount) Counter += Time.deltaTime;
         float step = 1f * Time.deltaTime;
         float dist = Vector3.Distance(clementine.transform.position, gameObject.transform.position); //fences[0].transform.position);
         if (!activated) {
             if (dist < puzzleDist)
             {
-                if (psCounter > 2.0f)
+                startCount = true;
+                if (Counter > 2.0f)
                 {
-                    
-
-                    
                     activated = true;
                     lights.SetActive(true);
                     Destroy(ps);
                 }
                 else
                 {
+
+                    if (actualState == SoundState.NONE && Counter > electTimestamp )
+                    {
+                        actualState = SoundState.SOUNDELEC;
+                        electricitySound.Play();
+                    }
+                    else if (actualState == SoundState.SOUNDELEC && Counter > engineTimeStamp)
+                    {
+                        actualState = SoundState.SOUNDENGINE;
+                        EngineSound.Play();
+                    }
                     if (!ps.isPlaying)ps.Play();
                     //ps2.Play();
-                    psCounter += Time.deltaTime;
                 }
                
             }
@@ -59,7 +76,11 @@ public class Puzzle1_Controller : MonoBehaviour {
             {
                 motoLight.intensity += 2.0f * Time.deltaTime;
             }*/
-            
+            if (actualState == SoundState.SOUNDENGINE && Counter > doorTimeStamp)
+            {
+                actualState = SoundState.SOUNDDOOR;
+                doors.Play();
+            }
             foreach (GameObject fence in fences)
             {
                 if (fence.transform.position.y < fenceHeight)
