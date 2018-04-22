@@ -70,6 +70,7 @@ public class Puzzle1_Controller : MonoBehaviour {
                 {
                     actualState = SoundState.SOUNDENGINE;
                     EngineSound.Play();
+                    anim.Play("RunMoto");
                 }
                 if (!ps.isPlaying)ps.Play();
             }          
