@@ -6,17 +6,20 @@ public class Puzzle1_Controller : MonoBehaviour {
     public Light motoLight;
     public GameObject[] fences;
     public GameObject clementine;
-    public GameObject wheel, fencewheel1,fencewheel2,lights;
+    public GameObject wheel, fencewheel1,fencewheel2,lights, electricity;
     public CatAI cat;
     public float puzzleDist;
+    public ParticleSystem ps,ps2;
     [Range(2f,4.2f)]
     public float fenceHeight;
     private Puzzle1_Animation pa1;
 	private bool activated;
     public bool solved;
+    private float psCounter;
 	// Use this for initialization
 	void Start ()
     {
+        psCounter = 0.0f;
         lights.SetActive(false);
 		activated = false;
         solved = false;
@@ -26,13 +29,29 @@ public class Puzzle1_Controller : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        wheel.transform.Rotate(-10f * Time.deltaTime, 0f, 0f);
 
         float step = 1f * Time.deltaTime;
         float dist = Vector3.Distance(clementine.transform.position, gameObject.transform.position); //fences[0].transform.position);
         if (!activated) {
-			if (dist < puzzleDist) {			
-				activated = true;
-                lights.SetActive(true);
+            if (dist < puzzleDist)
+            {
+                if (psCounter > 2.0f)
+                {
+                    
+
+                    
+                    activated = true;
+                    lights.SetActive(true);
+                    Destroy(ps);
+                }
+                else
+                {
+                    if (!ps.isPlaying)ps.Play();
+                    //ps2.Play();
+                    psCounter += Time.deltaTime;
+                }
+               
             }
         }
 		else {
@@ -45,10 +64,9 @@ public class Puzzle1_Controller : MonoBehaviour {
             {
                 if (fence.transform.position.y < fenceHeight)
                 {
-                    fence.transform.Translate(0f, 1f * Time.deltaTime, 0f);
-                    wheel.transform.Rotate( -45f * Time.deltaTime, 0f, 0f);
-                    fencewheel1.transform.Rotate(0f, 0f, - 45f * Time.deltaTime );
-                    fencewheel2.transform.Rotate(0f, 0f, - 45f * Time.deltaTime);
+                    fence.transform.Translate(0f, 0.3f * Time.deltaTime, 0f);
+                    fencewheel1.transform.Rotate(0f, 0f, - 10f * Time.deltaTime );
+                    fencewheel2.transform.Rotate(0f, 0f, - 10f * Time.deltaTime);
                 }
                 else
                 {
