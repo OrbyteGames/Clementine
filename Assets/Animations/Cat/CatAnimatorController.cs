@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CatAnimatorController : MonoBehaviour
 {
-
+    Puzzle1_Controller p1c;
     Animator anim;
     // Use this for initialization
     void Start()
@@ -25,6 +25,11 @@ public class CatAnimatorController : MonoBehaviour
             anim.SetBool("idle", false);
             anim.SetBool("walk", true);
 
+        }
+        if (p1c.solved)
+        {
+            anim.SetBool("idle", false);
+            anim.SetBool("walk", true);
         }
     }
 }

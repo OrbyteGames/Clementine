@@ -8446,6 +8446,7 @@ MonoBehaviour:
   cat: {fileID: 0}
   puzzleDist: 2
   fenceHeight: 3.506
+  solved: 0
 --- !u!1 &248079655
 GameObject:
   m_ObjectHideFlags: 0
@@ -18971,18 +18972,6 @@ CapsuleCollider:
   m_Height: 1.288481
   m_Direction: 1
   m_Center: {x: 0, y: -0.000010102987, z: 0}
---- !u!114 &479930971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 479930962}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0587580c50568e44394280dc42966f0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
 --- !u!1 &480526896
 GameObject:
   m_ObjectHideFlags: 0
@@ -44046,7 +44035,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400100, guid: 453b5b91b81969046805766ebf0919de, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.618277
+      value: 13.637
       objectReference: {fileID: 0}
     - target: {fileID: 400100, guid: 453b5b91b81969046805766ebf0919de, type: 3}
       propertyPath: m_LocalPosition.y
@@ -44054,7 +44043,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400100, guid: 453b5b91b81969046805766ebf0919de, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.5640564
+      value: -0.567
       objectReference: {fileID: 0}
     - target: {fileID: 400100, guid: 453b5b91b81969046805766ebf0919de, type: 3}
       propertyPath: m_LocalRotation.x
@@ -95490,12 +95479,11 @@ MeshRenderer:
   m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 0
-  m_DynamicOccludee: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 50ed883d72bf0ac469da777afeb0b302, type: 2}
   - {fileID: 2100000, guid: 50ed883d72bf0ac469da777afeb0b302, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -95529,7 +95517,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1976893302}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3bb99ad48b87d6c46b1df9244db71198, type: 3}
   m_Name: 
@@ -95540,7 +95528,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1976893302}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 521b611700410be45810047f0a74e899, type: 3}
   m_Name: 
@@ -95553,7 +95541,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1976893302}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce7a80d520cacc042b5fe14f373d8173, type: 3}
   m_Name: 
@@ -95581,6 +95569,51 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1976893313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1976893302}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0587580c50568e44394280dc42966f0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+--- !u!114 &1976893314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1976893302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dd9c4076f3db1d439e39892b05084c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camChanged: 0
+  movementEnabled: 0
+  anim: {fileID: 0}
+--- !u!114 &1976893315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1976893302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d9b5b12b8011f4aba2a83bd0cff79c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MovingTurnSpeed: 360
+  m_StationaryTurnSpeed: 180
+  m_JumpPower: 12
+  m_GravityMultiplier: 2
+  m_RunCycleLegOffset: 0.2
+  m_MoveSpeedMultiplier: 1
+  m_AnimSpeedMultiplier: 1
+  m_GroundCheckDistance: 0.1
 --- !u!1 &1977199370
 GameObject:
   m_ObjectHideFlags: 0

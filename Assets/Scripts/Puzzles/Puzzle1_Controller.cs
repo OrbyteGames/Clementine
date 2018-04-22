@@ -11,7 +11,8 @@ public class Puzzle1_Controller : MonoBehaviour {
     [Range(2f,4.2f)]
     public float fenceHeight;
     private Puzzle1_Animation pa1;
-	private bool activated, solved;
+	private bool activated;
+    public bool solved;
 	// Use this for initialization
 	void Start ()
     {

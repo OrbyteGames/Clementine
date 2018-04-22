@@ -15,13 +15,14 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         public bool camChanged;
 
         public bool movementEnabled;
-
+        public Animator anim;
         private void Start()
         {
             movementEnabled = true;
             m_Character = GetComponent<ThirdPersonCharacter>();
             camChanged = true;
             UpdateCameraAxis(ref camChanged);
+            anim.GetComponent<Animator>();
         }
 
         private void Update()
@@ -30,7 +31,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             {
                 if (!m_Jump)
                 {
-                    m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
+                    //m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
                 }
                 if (camChanged)
                 {
@@ -64,7 +65,16 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			// walk speed multiplier
 	        if (Input.GetKey(KeyCode.LeftShift)) m_Move *= 0.5f;
 #endif
-
+            //Moving animation
+            if (h != 0 || v !=0)
+            {
+                anim.SetBool("walk", true);
+                anim.SetBool("idleLook", false);
+                anim.SetBool("idle", false);
+                anim.SetBool("climb0", false);
+                anim.SetBool("BeginWalk", false);
+                anim.SetBool("stopWalk", false);
+            }      
             // pass all parameters to the character control script
             m_Character.Move(m_Move, crouch, m_Jump);
             m_Jump = false;
