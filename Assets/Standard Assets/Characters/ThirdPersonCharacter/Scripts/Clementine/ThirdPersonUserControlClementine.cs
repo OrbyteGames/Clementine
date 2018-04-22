@@ -68,6 +68,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             //Moving animation
             if (h != 0 || v !=0)
             {
+                anim.Play("ToWalk");
                 anim.SetBool("walk", true);
                 anim.SetBool("idleLook", false);
                 anim.SetBool("idle", false);
