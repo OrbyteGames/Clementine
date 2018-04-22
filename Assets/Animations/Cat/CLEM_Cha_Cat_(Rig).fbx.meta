@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 5d8fb6e593e0dc246970fa8506b7c8e5
-timeCreated: 1524347197
+guid: 453b5b91b81969046805766ebf0919de
+timeCreated: 1524388311
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -42,20 +42,20 @@ ModelImporter:
     100068: Cat_R_HindLeg_Knee1SHJnt
     100070: Cat_R_HindLeg_Knee2SHJnt
     100072: Cat_R_HindLeg_ToeSHJnt
-    100074: //RootNode
-    100076: Cat_ROOTSHJnt
-    100078: Cat_Spine_01SHJnt
-    100080: Cat_Spine_02SHJnt
-    100082: Cat_Spine_03SHJnt
-    100084: Cat_Spine_04SHJnt
-    100086: Cat_Spine_TopSHJnt
-    100088: Cat_Tail_01_01SHJnt
-    100090: Cat_Tail_01_02SHJnt
-    100092: Cat_Tail_01_03SHJnt
-    100094: Cat_Tail_01_04SHJnt
-    100096: Cat_Tail_MainSHJnt
-    100098: Cat_TailSHJnt
-    100100: CLEM_Cha_Cat
+    100074: Cat_ROOTSHJnt
+    100076: Cat_Spine_01SHJnt
+    100078: Cat_Spine_02SHJnt
+    100080: Cat_Spine_03SHJnt
+    100082: Cat_Spine_04SHJnt
+    100084: Cat_Spine_TopSHJnt
+    100086: Cat_Tail_01_01SHJnt
+    100088: Cat_Tail_01_02SHJnt
+    100090: Cat_Tail_01_03SHJnt
+    100092: Cat_Tail_01_04SHJnt
+    100094: Cat_Tail_MainSHJnt
+    100096: Cat_TailSHJnt
+    100098: CLEM_Cha_Cat
+    100100: //RootNode
     100102: Cluster03_GRP
     100104: Cluster04_GRP
     100106: Cluster05_GRP
@@ -153,20 +153,20 @@ ModelImporter:
     400068: Cat_R_HindLeg_Knee1SHJnt
     400070: Cat_R_HindLeg_Knee2SHJnt
     400072: Cat_R_HindLeg_ToeSHJnt
-    400074: //RootNode
-    400076: Cat_ROOTSHJnt
-    400078: Cat_Spine_01SHJnt
-    400080: Cat_Spine_02SHJnt
-    400082: Cat_Spine_03SHJnt
-    400084: Cat_Spine_04SHJnt
-    400086: Cat_Spine_TopSHJnt
-    400088: Cat_Tail_01_01SHJnt
-    400090: Cat_Tail_01_02SHJnt
-    400092: Cat_Tail_01_03SHJnt
-    400094: Cat_Tail_01_04SHJnt
-    400096: Cat_Tail_MainSHJnt
-    400098: Cat_TailSHJnt
-    400100: CLEM_Cha_Cat
+    400074: Cat_ROOTSHJnt
+    400076: Cat_Spine_01SHJnt
+    400078: Cat_Spine_02SHJnt
+    400080: Cat_Spine_03SHJnt
+    400082: Cat_Spine_04SHJnt
+    400084: Cat_Spine_TopSHJnt
+    400086: Cat_Tail_01_01SHJnt
+    400088: Cat_Tail_01_02SHJnt
+    400090: Cat_Tail_01_03SHJnt
+    400092: Cat_Tail_01_04SHJnt
+    400094: Cat_Tail_MainSHJnt
+    400096: Cat_TailSHJnt
+    400098: CLEM_Cha_Cat
+    400100: //RootNode
     400102: Cluster03_GRP
     400104: Cluster04_GRP
     400106: Cluster05_GRP

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 802282c08f478b84f841e2ca52901b73
-timeCreated: 1524334118
+guid: 4d83799af37632542aa9148ca7c39618
+timeCreated: 1524388312
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -56,66 +56,7 @@ ModelImporter:
     100096: Cat_TailSHJnt
     100098: CLEM_Cha_Cat
     100100: //RootNode
-    100102: Cluster03_GRP
-    100104: Cluster04_GRP
-    100106: Cluster05_GRP
-    100108: Cluster06_GRP
-    100110: Ear_L_CTRL
-    100112: Ear_R_CTRL
-    100114: Head_CTRL
-    100116: Jaws_CTRL
-    100118: L_Back_AnkeGRP
-    100120: L_Back_Ankle_IK
-    100122: L_Back_Ball_IK
-    100124: L_Back_BallGRP
-    100126: L_Back_Knee_Tgt
-    100128: L_Back_Toe_IK
-    100130: L_Back_ToeGRP
-    100132: L_Back_ToeGRP 1
-    100134: L_Foot_Back_CTRL
-    100136: L_Foot_Front_CTRL
-    100138: L_Front_AnkeGRP
-    100140: L_Front_Ankle_IK
-    100142: L_Front_Ball_IK
-    100144: L_Front_BallGRP
-    100146: L_Front_Knee_Tgt
-    100148: L_Front_Toe_IK
-    100150: L_Front_ToeGRP
-    100152: L_Front_ToeGRP 1
-    100154: MainBodyCTRL
-    100156: Neck01_CTRL
-    100158: Neck02_CTRL
-    100160: Pelvis_CTRL
-    100162: R_Back_AnkeGRP
-    100164: R_Back_Ankle_IK
-    100166: R_Back_Ball_IK
-    100168: R_Back_BallGRP
-    100170: R_Back_Knee_Tgt
-    100172: R_Back_Toe_IK
-    100174: R_Back_ToeGRP
-    100176: R_Back_ToeGRP 1
-    100178: R_Foot_Back_CTRL
-    100180: R_Foot_Front_CTRL
-    100182: R_Front_AnkeGRP
-    100184: R_Front_Ankle_IK
-    100186: R_Front_Ball_IK
-    100188: R_Front_BallGRP
-    100190: R_Front_Knee_Tgt
-    100192: R_Front_Toe_IK
-    100194: R_Front_ToeGRP
-    100196: R_Front_ToeGRP 1
-    100198: Spine01_CTRL
-    100200: Spine01_GRP
-    100202: Spine02_CTRL
-    100204: Spine02_GRP
-    100206: Spine03_CTRL
-    100208: Spine03_GRP
-    100210: Spine04_CTRL
-    100212: Spine04_GRP
-    100214: Tail_01_CTRL
-    100216: Tail_02_CTRL
-    100218: Tail_03_CTRL
-    100220: Tail_04_CTRL
+    100102: MainBodyCTRL
     400000: CAT_CTRL_Global
     400002: Cat_Ear_End_L_Jnt
     400004: Cat_Ear_End_R_Jnt
@@ -167,66 +108,7 @@ ModelImporter:
     400096: Cat_TailSHJnt
     400098: CLEM_Cha_Cat
     400100: //RootNode
-    400102: Cluster03_GRP
-    400104: Cluster04_GRP
-    400106: Cluster05_GRP
-    400108: Cluster06_GRP
-    400110: Ear_L_CTRL
-    400112: Ear_R_CTRL
-    400114: Head_CTRL
-    400116: Jaws_CTRL
-    400118: L_Back_AnkeGRP
-    400120: L_Back_Ankle_IK
-    400122: L_Back_Ball_IK
-    400124: L_Back_BallGRP
-    400126: L_Back_Knee_Tgt
-    400128: L_Back_Toe_IK
-    400130: L_Back_ToeGRP
-    400132: L_Back_ToeGRP 1
-    400134: L_Foot_Back_CTRL
-    400136: L_Foot_Front_CTRL
-    400138: L_Front_AnkeGRP
-    400140: L_Front_Ankle_IK
-    400142: L_Front_Ball_IK
-    400144: L_Front_BallGRP
-    400146: L_Front_Knee_Tgt
-    400148: L_Front_Toe_IK
-    400150: L_Front_ToeGRP
-    400152: L_Front_ToeGRP 1
-    400154: MainBodyCTRL
-    400156: Neck01_CTRL
-    400158: Neck02_CTRL
-    400160: Pelvis_CTRL
-    400162: R_Back_AnkeGRP
-    400164: R_Back_Ankle_IK
-    400166: R_Back_Ball_IK
-    400168: R_Back_BallGRP
-    400170: R_Back_Knee_Tgt
-    400172: R_Back_Toe_IK
-    400174: R_Back_ToeGRP
-    400176: R_Back_ToeGRP 1
-    400178: R_Foot_Back_CTRL
-    400180: R_Foot_Front_CTRL
-    400182: R_Front_AnkeGRP
-    400184: R_Front_Ankle_IK
-    400186: R_Front_Ball_IK
-    400188: R_Front_BallGRP
-    400190: R_Front_Knee_Tgt
-    400192: R_Front_Toe_IK
-    400194: R_Front_ToeGRP
-    400196: R_Front_ToeGRP 1
-    400198: Spine01_CTRL
-    400200: Spine01_GRP
-    400202: Spine02_CTRL
-    400204: Spine02_GRP
-    400206: Spine03_CTRL
-    400208: Spine03_GRP
-    400210: Spine04_CTRL
-    400212: Spine04_GRP
-    400214: Tail_01_CTRL
-    400216: Tail_02_CTRL
-    400218: Tail_03_CTRL
-    400220: Tail_04_CTRL
+    400102: MainBodyCTRL
     2100000: lambert2
     4300000: CLEM_Cha_Cat
     7400000: idle

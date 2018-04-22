@@ -11,7 +11,7 @@ public class ClementineAnimatorController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetButtonDown("1")){
+        if (Input.GetKeyDown(KeyCode.Space)){
             anim.SetBool("climb", true);
             anim.SetBool("idleLook", false);
             anim.SetBool("idle", false);
@@ -19,7 +19,7 @@ public class ClementineAnimatorController : MonoBehaviour {
             anim.SetBool("walk", false);
             anim.SetBool("stopWalk", false);
         }
-        if (Input.GetButtonDown("2"))
+        if (Input.GetKeyDown(KeyCode.U))
         {
             anim.SetBool("BeginWalk", true);
             anim.SetBool("idleLook", false);
@@ -28,7 +28,7 @@ public class ClementineAnimatorController : MonoBehaviour {
             anim.SetBool("walk", false);
             anim.SetBool("stopWalk", false);
         }
-        if (Input.GetButtonDown("3"))
+        if (Input.GetKeyDown(KeyCode.I))
         {
             anim.SetBool("walk", true);
             anim.SetBool("idleLook", false);
@@ -37,7 +37,7 @@ public class ClementineAnimatorController : MonoBehaviour {
             anim.SetBool("BeginWalk", false);
             anim.SetBool("stopWalk", false);
         }
-        if (Input.GetButtonDown("4"))
+        if (Input.GetKeyDown(KeyCode.O))
         {
             anim.SetBool("stopWalk", true);
             anim.SetBool("idleLook", false);
@@ -46,7 +46,7 @@ public class ClementineAnimatorController : MonoBehaviour {
             anim.SetBool("walk", false);
             anim.SetBool("BeginWalk", false);
         }
-        if (Input.GetButtonDown("5"))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             anim.SetBool("stopWalk", true);
             anim.SetBool("idleLook", false);
@@ -55,7 +55,7 @@ public class ClementineAnimatorController : MonoBehaviour {
             anim.SetBool("walk", false);
             anim.SetBool("BeginWalk", false);
         }
-        if (Input.GetButtonDown("6"))
+        if (Input.GetKeyDown(KeyCode.J))
         {
             anim.SetBool("idle", true);
             anim.SetBool("idleLook", false);
@@ -64,7 +64,7 @@ public class ClementineAnimatorController : MonoBehaviour {
             anim.SetBool("walk", false);
             anim.SetBool("BeginWalk", false);
         }
-        if (Input.GetButtonDown("7"))
+        if (Input.GetKeyDown(KeyCode.K))
         {
             anim.SetBool("idleLook", true);
             anim.SetBool("idle", false);

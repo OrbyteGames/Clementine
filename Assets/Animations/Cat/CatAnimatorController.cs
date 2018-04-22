@@ -15,12 +15,12 @@ public class CatAnimatorController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("1"))
+        if (Input.GetKeyDown("1"))
         {
             anim.SetBool("idle", true);
             anim.SetBool("walk", false);
         }
-        if (Input.GetButtonDown("2"))
+        if (Input.GetKeyDown("2"))
         {
             anim.SetBool("idle", false);
             anim.SetBool("walk", true);
