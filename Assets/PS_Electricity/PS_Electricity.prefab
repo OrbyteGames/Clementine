@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 198563507062153788}
   - component: {fileID: 199226988019622676}
   m_Layer: 0
-  m_Name: PS_TorchOn
+  m_Name: PS_Electricity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
