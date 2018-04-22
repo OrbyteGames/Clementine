@@ -21,10 +21,12 @@ public class Puzzle1_Controller : MonoBehaviour {
 	private bool activated;
     public bool solved;
     private float Counter;
-    private bool startCount;
+    private bool startCount, inDistance;
+    private Animator anim;
 	// Use this for initialization
 	void Start ()
     {
+        inDistance = false;
         startCount = false;
         actualState = SoundState.NONE;
         Counter = 0.0f;
@@ -32,7 +34,7 @@ public class Puzzle1_Controller : MonoBehaviour {
 		activated = false;
         solved = false;
         pa1 = gameObject.GetComponent<Puzzle1_Animation>();
-
+        anim = gameObject.GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -42,40 +44,34 @@ public class Puzzle1_Controller : MonoBehaviour {
         if (startCount) Counter += Time.deltaTime;
         float step = 1f * Time.deltaTime;
         float dist = Vector3.Distance(clementine.transform.position, gameObject.transform.position); //fences[0].transform.position);
-        if (!activated) {
-            if (dist < puzzleDist)
+        if (dist < puzzleDist) inDistance = true;
+        if (inDistance) { 
+            inDistance = true;
+            startCount = true;
+            if (Counter > 2.0f)
             {
-                startCount = true;
-                if (Counter > 2.0f)
-                {
-                    activated = true;
-                    lights.SetActive(true);
-                    Destroy(ps);
-                }
-                else
-                {
-
-                    if (actualState == SoundState.NONE && Counter > electTimestamp )
-                    {
-                        actualState = SoundState.SOUNDELEC;
-                        electricitySound.Play();
-                    }
-                    else if (actualState == SoundState.SOUNDELEC && Counter > engineTimeStamp)
-                    {
-                        actualState = SoundState.SOUNDENGINE;
-                        EngineSound.Play();
-                    }
-                    if (!ps.isPlaying)ps.Play();
-                    //ps2.Play();
-                }
-               
+                activated = true;
+                lights.SetActive(true);
+                Destroy(ps);
             }
-        }
-		else {
-            /*if (motoLight.intensity < 5 && !solved)
+            else
             {
-                motoLight.intensity += 2.0f * Time.deltaTime;
-            }*/
+
+                if (actualState == SoundState.NONE && Counter > electTimestamp )
+                {
+                    actualState = SoundState.SOUNDELEC;
+                    electricitySound.Play();
+                }
+                else if (actualState == SoundState.SOUNDELEC && Counter > engineTimeStamp)
+                {
+                    actualState = SoundState.SOUNDENGINE;
+                    EngineSound.Play();
+                }
+                if (!ps.isPlaying)ps.Play();
+            }          
+        }
+		if (activated) {
+
             if (actualState == SoundState.SOUNDENGINE && Counter > doorTimeStamp)
             {
                 actualState = SoundState.SOUNDDOOR;
@@ -102,11 +98,7 @@ public class Puzzle1_Controller : MonoBehaviour {
                 {
                     cat.setSolved();
                 }
-                /* if (motoLight.intensity > 0.0f)
-                 {
-                     motoLight.intensity -= 3.0f * Time.deltaTime;
-                 }*/
-                lights.SetActive(false);
+
                 pa1.StartAnimation();
                 enabled = false;
             }                      
