@@ -92,6 +92,7 @@ public class Puzzle1_Controller : MonoBehaviour {
                 }
                 else
                 {
+                    doors.Stop();
                     if (!solved) solved = true;
                 }
 
