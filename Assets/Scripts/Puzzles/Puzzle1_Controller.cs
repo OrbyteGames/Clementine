@@ -8,29 +8,28 @@ public class Puzzle1_Controller : MonoBehaviour {
     private SoundState actualState;
     public GameObject[] fences;
     public GameObject clementine;
-    public GameObject wheel, fencewheel1,fencewheel2,lights, electricity;
+    public GameObject wheel, fencewheel1, fencewheel2, lights, electricity;
     public CatAI cat;
-    public float puzzleDist,  electTimestamp,engineTimeStamp,doorTimeStamp;
-    public ParticleSystem ps,ps2;
+    public bool solved;
+    public float puzzleDist, Counter, electTimestamp, engineTimeStamp, doorTimeStamp, energyIncreaseValue;
     [Range(2f, 4.2f)]
     public float fenceHeight;
-    public AudioSource electricitySound;
-    public AudioSource EngineSound;
-    public AudioSource doors;
+    public ParticleSystem ps, ps2;
+    public AudioSource electricitySound, EngineSound, doors;
+    private float storedEnergy;
     private Puzzle1_Animation pa1;
-	private bool activated;
-    public bool solved;
-    private float Counter;
-    private bool startCount, inDistance;
+    private bool activated, startCount, startPlaying;
     private Animator anim;
     private FlickeringLight flickering;
 	// Use this for initialization
 	void Start ()
     {
-        inDistance = false;
+        startPlaying = false;
         startCount = false;
         actualState = SoundState.NONE;
         Counter = 0.0f;
+        energyIncreaseValue = 10.0f;
+        storedEnergy = 0.0f;
         lights.SetActive(false);
 		activated = false;
         solved = false;
@@ -44,22 +43,32 @@ public class Puzzle1_Controller : MonoBehaviour {
 	void Update ()
     {
         wheel.transform.Rotate(-10f * Time.deltaTime, 0f, 0f);
-        if (startCount) Counter += Time.deltaTime;
         float step = 1f * Time.deltaTime;
         float dist = Vector3.Distance(clementine.transform.position, gameObject.transform.position); //fences[0].transform.position);
-        if (dist < puzzleDist) inDistance = true;
-        if (inDistance) { 
-            inDistance = true;
+        if (startCount) Counter += Time.deltaTime;
+        if (!startPlaying && !activated)
+        {
+            storedEnergy -= Time.deltaTime;
+            if (dist < puzzleDist)
+            {
+                if (Input.GetButton("Fire1"))
+                {
+                    storedEnergy += energyIncreaseValue;
+                }
+                if (storedEnergy > 50) startPlaying = true;
+            }
+        }
+        else { 
             startCount = true;
             if (Counter > 2.0f)
             {
                 activated = true;
                 lights.SetActive(true);
                 Destroy(ps);
+                startPlaying = false;
             }
             else
             {
-
                 if (actualState == SoundState.NONE && Counter > electTimestamp )
                 {
                     flickering.StartFlicker();
@@ -72,7 +81,7 @@ public class Puzzle1_Controller : MonoBehaviour {
                     EngineSound.Play();
                     anim.Play("RunMoto");
                 }
-                if (!ps.isPlaying)ps.Play();
+                if (!ps.isPlaying) ps.Play();
             }          
         }
 		if (activated) {
@@ -95,7 +104,6 @@ public class Puzzle1_Controller : MonoBehaviour {
                     doors.Stop();
                     if (!solved) solved = true;
                 }
-
             }
 
             if (solved)
