@@ -21,7 +21,7 @@ public class CatAI : MonoBehaviour {
     public NavMeshAgent agent;
     public float moveNextDistance = 4.0f;
     public float movePreviousDistance = 30.0f;
-
+    public Animator anim;
     // Use this for initialization
     void Start() {
         solved = false;
@@ -36,6 +36,7 @@ public class CatAI : MonoBehaviour {
     void Update() {
         switch (actualState) {
             case state.WAITING_PUZZLE:
+                anim.Play("(Idle)");
                 if (solved) {
                     solved = false;
                     targetMarker = actualMarker.GetComponent<MarkerScript>().getNextMarker();
@@ -51,6 +52,7 @@ public class CatAI : MonoBehaviour {
                 }
                 break;
             case state.WAITING_PLAYER:
+                anim.Play("(Idle)");
                 dist = Vector3.Distance(playerTransform.position, gameObject.transform.position);
                 if (!(dist > moveNextDistance && dist <= movePreviousDistance))
                 {
@@ -73,6 +75,7 @@ public class CatAI : MonoBehaviour {
                 }
                 break;
             case state.MOVING_TO_POINT:
+                anim.Play("(Run)");
                 float pointDistance = Vector3.Distance(gameObject.transform.position, actualMarker.GetComponent<MarkerScript>().getNextMarker().gameObject.transform.position);
                 if (pointDistance < 1.0f) {
                     actualMarker = targetMarker;
