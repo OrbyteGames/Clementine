@@ -32,7 +32,6 @@ public class AutoActiveCamera : MonoBehaviour
             //hasChanged = true;
             ////clement.transform.forward = forwardPoint.forward;
 
-            Debug.Log("Controls might have changed");
 
         }
     }

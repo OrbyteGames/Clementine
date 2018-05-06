@@ -19,11 +19,13 @@ public class CameraRotation : MonoBehaviour {
     public GameObject target;
 
     private Camera cam;
+    private AudioListener audioList;
     private bool start;
     // Use this for initialization
     void Start() {
         start = false;
         cam = gameObject.GetComponent<Camera>();
+        audioList = gameObject.GetComponent<AudioListener>();
     }
 
     // Update is called once per frame
@@ -57,11 +59,13 @@ public class CameraRotation : MonoBehaviour {
     {
         start = true;
         cam.enabled = true;
+        audioList.enabled = true;
     }
 
     public void DeactivateCam()
     {
         start = false;
         cam.enabled = false;
+        audioList.enabled = false;
     }
 }

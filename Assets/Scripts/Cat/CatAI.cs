@@ -13,8 +13,7 @@ public class CatAI : MonoBehaviour {
     private float dist;
     private state actualState;
     public bool solved = false;
-        private bool cinematic_ended;
-    private int torches_enabled;
+    private bool cinematic_ended;
     private Puzzle_solved_cinematic pcs;
     public GameObject actualMarker;
     public GameObject targetMarker;
@@ -26,7 +25,6 @@ public class CatAI : MonoBehaviour {
     void Start() {
         solved = false;
         cinematic_ended = false;
-        torches_enabled = 0;
         dist = 0.0f;
         actualState = state.WAITING_PUZZLE;
         pcs = gameObject.GetComponent<Puzzle_solved_cinematic>();
@@ -44,10 +42,6 @@ public class CatAI : MonoBehaviour {
                     {
                         agent.SetDestination(targetMarker.gameObject.transform.position);
                         actualState = state.MOVING_TO_POINT;
-                    }
-                    if (torches_enabled > 3)
-                    {
-                        //start cinematic finish
                     }
                 }
                 break;
@@ -93,8 +87,6 @@ public class CatAI : MonoBehaviour {
                             break;
                         case MarkerScript.markerType.FISHBONES:
                             actualState = state.CINEMATIC_STATE;
-                            pcs.StartCinematic(torches_enabled);
-                            ++torches_enabled;
                             //  Start glowing effect script
                             break;
                     }

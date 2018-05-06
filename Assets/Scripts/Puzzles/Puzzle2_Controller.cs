@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Puzzle2_Controller : MonoBehaviour {
-    public GameObject shadow,clementine, container, RobotLight;
+    public GameObject clementine, container, RobotLight;
     public Transform target;
     Material material;
     public float robotSpeed = 1;
@@ -16,7 +16,6 @@ public class Puzzle2_Controller : MonoBehaviour {
     void Start ()
     {
         energyIncreaseValue = 10.0f;
-        shadow.SetActive(false);
         RobotLight.SetActive(false);
         material = GetComponent<Renderer>().material;
     }
@@ -37,7 +36,6 @@ public class Puzzle2_Controller : MonoBehaviour {
                 if (storedEnergy > 50)
                 {
                     RobotLight.SetActive(true);
-                    shadow.SetActive(true);
                     startWalking = true;
                 }
             }
@@ -46,8 +44,9 @@ public class Puzzle2_Controller : MonoBehaviour {
                 transform.position += new Vector3(-robotSpeed, 0.0f,0.0f);
             }
         }
-        if(transform.position == target.position)
+        if(Mathf.Abs(transform.position.x) <= Mathf.Abs(target.position.x - 0.1f))
         {
+            startWalking = false;
             cat.setSolved();
             enabled = false;
         }
