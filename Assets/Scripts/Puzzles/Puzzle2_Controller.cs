@@ -8,7 +8,6 @@ public class Puzzle2_Controller : MonoBehaviour {
     Material material;
     public float robotSpeed = 1;
     public float energyIncreaseValue;
-    Rigidbody containerRB;
     public int puzzleTriggerDist;
     public CatAI cat;
     private float storedEnergy;
@@ -20,7 +19,6 @@ public class Puzzle2_Controller : MonoBehaviour {
         shadow.SetActive(false);
         RobotLight.SetActive(false);
         material = GetComponent<Renderer>().material;
-       containerRB = container.GetComponent<Rigidbody>();
     }
 	
 	// Update is called once per frame
@@ -36,18 +34,20 @@ public class Puzzle2_Controller : MonoBehaviour {
                 {
                     storedEnergy += energyIncreaseValue;
                 }
-                if (storedEnergy > 50) startWalking = true;
+                if (storedEnergy > 50)
+                {
+                    RobotLight.SetActive(true);
+                    shadow.SetActive(true);
+                    startWalking = true;
+                }
             }
             else
             {
-                RobotLight.SetActive(true);
-                shadow.SetActive(true);
-                transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+                transform.position += new Vector3(-robotSpeed, 0.0f,0.0f);
             }
         }
         if(transform.position == target.position)
         {
-            containerRB.constraints = RigidbodyConstraints.FreezeAll;
             cat.setSolved();
             enabled = false;
         }
