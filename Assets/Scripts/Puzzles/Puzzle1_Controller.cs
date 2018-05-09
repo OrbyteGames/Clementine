@@ -16,7 +16,7 @@ public class Puzzle1_Controller : MonoBehaviour {
     public float fenceHeight;
     public ParticleSystem ps, ps2;
     public AudioSource electricitySound, EngineSound, doors;
-    private float storedEnergy;
+    public float storedEnergy;
     private Puzzle1_Animation pa1;
     private bool activated, startCount, startPlaying;
     private Animator anim;
@@ -48,10 +48,10 @@ public class Puzzle1_Controller : MonoBehaviour {
         if (startCount) Counter += Time.deltaTime;
         if (!startPlaying && !activated)
         {
-            storedEnergy -= Time.deltaTime;
+            if (storedEnergy > 0)storedEnergy -= Time.deltaTime;
             if (dist < puzzleDist)
             {
-                if (Input.GetButton("Fire1"))
+                if (Input.GetButtonDown("Fire1"))
                 {
                     storedEnergy += energyIncreaseValue;
                 }

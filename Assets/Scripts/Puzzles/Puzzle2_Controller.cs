@@ -10,11 +10,12 @@ public class Puzzle2_Controller : MonoBehaviour {
     public float energyIncreaseValue;
     public int puzzleTriggerDist;
     public CatAI cat;
-    private float storedEnergy;
+    public float storedEnergy;
     private bool startWalking;
     // Use this for initialization
     void Start ()
     {
+        storedEnergy = 0.0f;
         energyIncreaseValue = 10.0f;
         RobotLight.SetActive(false);
         material = GetComponent<Renderer>().material;
@@ -25,11 +26,12 @@ public class Puzzle2_Controller : MonoBehaviour {
     {
         float step = robotSpeed * Time.deltaTime;
         float dist = Vector3.Distance(clementine.transform.position, transform.position);
-        if (dist< puzzleTriggerDist)
+
+        if (!startWalking)
         {
-            if (!startWalking)
+            if (dist < puzzleTriggerDist)
             {
-                if (Input.GetButton("Fire1"))
+                if (Input.GetButtonDown("Fire1"))
                 {
                     storedEnergy += energyIncreaseValue;
                 }
@@ -39,17 +41,20 @@ public class Puzzle2_Controller : MonoBehaviour {
                     startWalking = true;
                 }
             }
-            else
+        }
+        else
+        {
+            gameObject.transform.Translate(new Vector3(-robotSpeed, 0.0f, 0.0f)*Time.deltaTime);
+            container.transform.Translate(new Vector3(-robotSpeed, 0.0f, 0.0f) * Time.deltaTime);
+            //transform.position += new Vector3(-robotSpeed, 0.0f, 0.0f);
+            if (gameObject.transform.position == target.position)
             {
-                transform.position += new Vector3(-robotSpeed, 0.0f,0.0f);
+                startWalking = false;
+                cat.setSolved();
+                enabled = false;
             }
         }
-        if(Mathf.Abs(transform.position.x) <= Mathf.Abs(target.position.x - 0.1f))
-        {
-            startWalking = false;
-            cat.setSolved();
-            enabled = false;
-        }
+              
     }
 
 }
