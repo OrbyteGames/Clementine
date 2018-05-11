@@ -44,10 +44,10 @@ public class Puzzle2_Controller : MonoBehaviour {
         }
         else
         {
-            gameObject.transform.Translate(new Vector3(-robotSpeed, 0.0f, 0.0f)*Time.deltaTime);
-            container.transform.Translate(new Vector3(-robotSpeed, 0.0f, 0.0f) * Time.deltaTime);
+            gameObject.transform.position += (new Vector3(-robotSpeed, 0.0f, 0.0f) * Time.deltaTime);
+            container.transform.position += (new Vector3(-robotSpeed, 0.0f, 0.0f) * Time.deltaTime);
             //transform.position += new Vector3(-robotSpeed, 0.0f, 0.0f);
-            if (gameObject.transform.position == target.position)
+            if (Mathf.Abs(container.transform.position.x - target.position.x) < 0.1)
             {
                 startWalking = false;
                 cat.setSolved();
