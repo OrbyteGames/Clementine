@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlashBackToyHorse : MonoBehaviour {
-
-    public Animator animator;
+public class FlashBackFamilyWindow : MonoBehaviour {
     [Tooltip("External light to flicker; you can leave this null if you attach script to a light")]
     public new Light light;
     public GameObject clementine;
@@ -16,21 +14,20 @@ public class FlashBackToyHorse : MonoBehaviour {
     [Tooltip("How much to smooth out the randomness; lower values = sparks, higher = lantern")]
     [Range(1, 50)]
     public int smoothing = 5;
-    public ParticleSystem ps;
+
 
     private float counter;
     // Music Options
-    [Tooltip("Horse,Leitmotiv,Laugh")]
-    public AudioSource[] fx;    // Horse Music, Leitmotiv, Laugh
+    [Tooltip("Leitmotiv,Laugh")]
+    public AudioSource[] fx;    //Leitmotiv, Laugh
     public float stage1Counter = 2.0f;
     public float stage2Counter = 4.0f;
-    public float stage3Counter = 8.0f;
     public float finishCounter = 10.0f;
     public float soundFade = 2.0f;
-    public float horseMusicFade = 2.0f;
     public float leitmotivFade = 2.0f;
     public float laughFade = 2.0f;
-
+    public float laughStart = 5.0f;
+    public float fadeStart = 7.0f;
     // ShadowOptions
     public Material matToFade;
     public float shadowFadeIn = 1.0f;
@@ -44,13 +41,13 @@ public class FlashBackToyHorse : MonoBehaviour {
     Queue<float> smoothQueue;
     float lastSum = 0;
 
-    enum FlashBackState { NONE, STAGE1, STAGE2, STAGE3, STAGE4, STAGE5 };
+    enum FlashBackState { NONE, STAGE1, STAGE2 };
     private FlashBackState actualState;
 
 
     // Use this for initialization
-    void Start () {
-        ps.Stop();
+    void Start()
+    {
         actualState = FlashBackState.NONE;
         smoothQueue = new Queue<float>(smoothing);
         // External or internal light?
@@ -58,8 +55,6 @@ public class FlashBackToyHorse : MonoBehaviour {
         {
             light = gameObject.GetComponent<Light>();
         }
-        animator = gameObject.GetComponent<Animator>();
-        
     }
 
     /// <summary>
@@ -74,7 +69,8 @@ public class FlashBackToyHorse : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
+    void Update()
+    {
         if (light == null)
             return;
         if (actualState != FlashBackState.NONE)
@@ -84,76 +80,67 @@ public class FlashBackToyHorse : MonoBehaviour {
             switch (actualState)
             {
                 case FlashBackState.STAGE1:
-                    // shadow fade
                     if (light.intensity < 15)
                     {
                         light.intensity += lightFade * Time.deltaTime;
                     }
+                    //currentColor.a = Mathf.Lerp(0.0f, 1.0f, shadowFadeIn);
+                    if (counter > stage1Counter)
+                    {                       
+                        actualState = FlashBackState.STAGE2;
+                        fx[0].Play();
+                    }
+                    break;
+                case FlashBackState.STAGE2:
+                    // shadow fade
+                   
                     if (currentColor.a < 1.0)
                     {
                         currentColor.a += Time.deltaTime * (1.0f / shadowFadeIn);
                         matToFade.SetColor("_Color", currentColor);
                     }
-                    //currentColor.a = Mathf.Lerp(0.0f, 1.0f, shadowFadeIn);
-                    if (counter > 1.0f && ps.isPlaying)
-                    {
-                        ps.Stop();
-                    }
-                    if (counter > stage1Counter) {
-                        currentColor.a = 1.0f;
-                        matToFade.SetColor("_Color", currentColor);
-                        actualState = FlashBackState.STAGE2;
-                    }
-                    break;
-                case FlashBackState.STAGE2:                   
                     if (counter > stage2Counter)
                     {
+                        currentColor.a = 1.0f;
+                        matToFade.SetColor("_Color", currentColor);
                         if (fx[0].volume > 0)
                         {
                             fx[0].volume -= 2 * Time.deltaTime;
-                            if (fx[0].volume  <= 0) fx[0].Stop();
+                            if (fx[0].volume <= 0) fx[0].Stop();
                         }
                         else
                         {
                             fx[1].Play();
-                            fx[2].Play();
-                            animator.SetBool("startAnim", false);
-                            actualState = FlashBackState.STAGE3;
                         }
                     }
-                    break;
-                case FlashBackState.STAGE3:                   
-                    if (counter > stage3Counter)
+                    if (counter > fadeStart)
                     {
-                        actualState = FlashBackState.STAGE4;
-                    }                   
-                    break;
-                case FlashBackState.STAGE4:
-                    if (currentColor.a > 0.0)
-                    {
-                        currentColor.a -= Time.deltaTime * (1.0f / shadowFadeOut);
-                        matToFade.SetColor("_Color",currentColor);
-                    }
-                    //currentColor.a = Mathf.Lerp(1.0f, 0.0f, shadowFadeOut);
-                    if (fx[2].volume > 0)
-                    {
-                        fx[2].volume -= laughFade * Time.deltaTime;
-                        if (fx[2].volume <= 0) fx[2].Stop();
-                    }
-                    if (fx[1].volume > 0)
-                    {
-                        fx[1].volume -= leitmotivFade * Time.deltaTime;
-                        if (fx[1].volume <= 0) fx[1].Stop();
-                    }
-                    if (light.intensity > 0)
-                    {
-                        light.intensity -= lightFade * Time.deltaTime;   
+                        if (currentColor.a > 0.0)
+                        {
+                            currentColor.a -= Time.deltaTime * (1.0f / shadowFadeOut);
+                            matToFade.SetColor("_Color", currentColor);
+                        }
+                        //currentColor.a = Mathf.Lerp(1.0f, 0.0f, shadowFadeOut);
+                        if (fx[0].volume > 0)
+                        {
+                            fx[0].volume -= laughFade * Time.deltaTime;
+                            if (fx[0].volume <= 0) fx[0].Stop();
+                        }
+                        if (fx[1].volume > 0)
+                        {
+                            fx[1].volume -= leitmotivFade * Time.deltaTime;
+                            if (fx[1].volume <= 0) fx[1].Stop();
+                        }
+                        if (light.intensity > 0)
+                        {
+                            light.intensity -= lightFade * Time.deltaTime;
+                        }
                     }
                     if (counter > finishCounter)
                     {
                         currentColor.a = 0.0f;
                         matToFade.SetColor("_Color", currentColor);
-                        enabled = false;   
+                        enabled = false;
                     }
                     break;
             }
@@ -185,9 +172,6 @@ public class FlashBackToyHorse : MonoBehaviour {
     public void StartScene()
     {
         fx[0].Play();
-        // fx[3].Play();
-        ps.Play();
-        animator.SetBool("startAnim", true);
         actualState = FlashBackState.STAGE1;
     }
 }
