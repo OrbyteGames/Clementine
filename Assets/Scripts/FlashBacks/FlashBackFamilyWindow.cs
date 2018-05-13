@@ -21,7 +21,7 @@ public class FlashBackFamilyWindow : MonoBehaviour {
     [Tooltip("Leitmotiv,Laugh")]
     public AudioSource[] fx;    //Leitmotiv, Laugh
     public float stage1Counter = 2.0f;
-    public float stage2Counter = 4.0f;
+    public float stage2Counter = 6.0f;
     public float finishCounter = 10.0f;
     public float soundFade = 2.0f;
     public float leitmotivFade = 2.0f;
@@ -77,6 +77,7 @@ public class FlashBackFamilyWindow : MonoBehaviour {
         {
             counter += Time.deltaTime;
             Color currentColor = matToFade.GetColor("_Color");
+            Debug.Log(currentColor);
             switch (actualState)
             {
                 case FlashBackState.STAGE1:
@@ -93,27 +94,21 @@ public class FlashBackFamilyWindow : MonoBehaviour {
                     break;
                 case FlashBackState.STAGE2:
                     // shadow fade
-                   
-                    if (currentColor.a < 1.0)
+                    if (counter < fadeStart)
                     {
-                        currentColor.a += Time.deltaTime * (1.0f / shadowFadeIn);
-                        matToFade.SetColor("_Color", currentColor);
-                    }
-                    if (counter > stage2Counter)
-                    {
-                        currentColor.a = 1.0f;
-                        matToFade.SetColor("_Color", currentColor);
-                        if (fx[0].volume > 0)
+                        if (currentColor.a < 1.0 && counter < fadeStart)
                         {
-                            fx[0].volume -= 2 * Time.deltaTime;
-                            if (fx[0].volume <= 0) fx[0].Stop();
+                            currentColor.a += Time.deltaTime * (1.0f / shadowFadeIn);
+                            matToFade.SetColor("_Color", currentColor);
                         }
-                        else
+                        if (counter > stage2Counter)
                         {
-                            fx[1].Play();
+                            currentColor.a = 1.0f;
+                            matToFade.SetColor("_Color", currentColor);
                         }
+
                     }
-                    if (counter > fadeStart)
+                    else
                     {
                         if (currentColor.a > 0.0)
                         {
@@ -124,20 +119,25 @@ public class FlashBackFamilyWindow : MonoBehaviour {
                         if (fx[0].volume > 0)
                         {
                             fx[0].volume -= laughFade * Time.deltaTime;
-                            if (fx[0].volume <= 0) fx[0].Stop();
+                            if (fx[0].volume <= 0 && fx[0].isPlaying) fx[0].Stop();
                         }
                         if (fx[1].volume > 0)
                         {
                             fx[1].volume -= leitmotivFade * Time.deltaTime;
-                            if (fx[1].volume <= 0) fx[1].Stop();
+                            if (fx[1].volume <= 0 && fx[1].isPlaying) fx[1].Stop();
                         }
                         if (light.intensity > 0)
                         {
                             light.intensity -= lightFade * Time.deltaTime;
                         }
                     }
+                    if (counter > laughStart && !fx[1].isPlaying)
+                    {
+                        fx[1].Play();
+                    }
                     if (counter > finishCounter)
                     {
+                        light.enabled = false;
                         currentColor.a = 0.0f;
                         matToFade.SetColor("_Color", currentColor);
                         enabled = false;
