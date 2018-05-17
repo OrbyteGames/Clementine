@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: c406f81f128cef84a9edd8903d99ab1b
+timeCreated: 1526539882
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: CLEM_Zona1_BalconyBuildingA001
+    100002: CLEM_Zona1_ResidentialBuilding001
+    100004: CLEM_Zona1_SkinnyBabeBuilding001
+    100006: CLEM_Zona7_A
+    100008: CLEM_Zona7_B
+    100010: CLEM_Zona7_F
+    100012: CLEM_Zona7_G
+    100014: CLEM_Zona7_H
+    100016: CLEM_Zona7_I
+    100018: CLEM_Zona7_SidewalkA
+    100020: //RootNode
+    400000: CLEM_Zona1_BalconyBuildingA001
+    400002: CLEM_Zona1_ResidentialBuilding001
+    400004: CLEM_Zona1_SkinnyBabeBuilding001
+    400006: CLEM_Zona7_A
+    400008: CLEM_Zona7_B
+    400010: CLEM_Zona7_F
+    400012: CLEM_Zona7_G
+    400014: CLEM_Zona7_H
+    400016: CLEM_Zona7_I
+    400018: CLEM_Zona7_SidewalkA
+    400020: //RootNode
+    2100000: No Name
+    2100002: 'Material #451'
+    2100004: 'Material #472'
+    2100006: 'Material #473'
+    2100008: 'Material #474'
+    2100010: 'Material #475'
+    2100012: 'Material #467'
+    2100014: 'Material #469'
+    2100016: 'Material #471'
+    2100018: 'Material #466'
+    2100020: 'Material #468'
+    2100022: 'Material #470'
+    2100024: 'Material #461'
+    2100026: 'Material #463'
+    2100028: 'Material #465'
+    2100030: 'Material #460'
+    2100032: 'Material #462'
+    2100034: 'Material #464'
+    2100036: 'Material #455'
+    2100038: 'Material #457'
+    2100040: 'Material #459'
+    2100042: 'Material #454'
+    2100044: 'Material #456'
+    2100046: 'Material #458'
+    2100048: 'Material #450'
+    2100050: 'Material #452'
+    2100052: 'Material #453'
+    2100054: 'Material #447'
+    2100056: 'Material #448'
+    2100058: 'Material #449'
+    2100060: 'Material #292'
+    2100062: 'Material #264'
+    2100064: 'Material #394'
+    2100066: 'Material #393'
+    2300000: CLEM_Zona1_BalconyBuildingA001
+    2300002: CLEM_Zona1_ResidentialBuilding001
+    2300004: CLEM_Zona1_SkinnyBabeBuilding001
+    2300006: CLEM_Zona7_A
+    2300008: CLEM_Zona7_B
+    2300010: CLEM_Zona7_F
+    2300012: CLEM_Zona7_G
+    2300014: CLEM_Zona7_H
+    2300016: CLEM_Zona7_I
+    2300018: CLEM_Zona7_SidewalkA
+    3300000: CLEM_Zona1_BalconyBuildingA001
+    3300002: CLEM_Zona1_ResidentialBuilding001
+    3300004: CLEM_Zona1_SkinnyBabeBuilding001
+    3300006: CLEM_Zona7_A
+    3300008: CLEM_Zona7_B
+    3300010: CLEM_Zona7_F
+    3300012: CLEM_Zona7_G
+    3300014: CLEM_Zona7_H
+    3300016: CLEM_Zona7_I
+    3300018: CLEM_Zona7_SidewalkA
+    4300000: CLEM_Zona7_SidewalkA
+    4300002: CLEM_Zona7_A
+    4300004: CLEM_Zona7_B
+    4300006: CLEM_Zona1_SkinnyBabeBuilding001
+    4300008: CLEM_Zona1_BalconyBuildingA001
+    4300010: CLEM_Zona1_ResidentialBuilding001
+    4300012: CLEM_Zona7_F
+    4300014: CLEM_Zona7_G
+    4300016: CLEM_Zona7_H
+    4300018: CLEM_Zona7_I
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
