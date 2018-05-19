@@ -16,7 +16,6 @@ public class LightFlickerEffect : MonoBehaviour
 {
     [Tooltip("External light to flicker; you can leave this null if you attach script to a light")]
     public new Light light;
-    public GameObject clementine;
     public float maxDistance = 3f;
     [Tooltip("Minimum random light intensity")]
     public float minIntensity = 0f;
@@ -51,7 +50,7 @@ public class LightFlickerEffect : MonoBehaviour
         if (light == null)
         {
             light = GetComponent<Light>();
-           
+            StartCoroutine(Cooldown());
         }
     }
 
@@ -59,12 +58,8 @@ public class LightFlickerEffect : MonoBehaviour
     {
         if (light == null)
             return;
-        float distance = Vector3.Distance(transform.position, clementine.transform.position);
         // pop off an item if too big
-        if (distance < maxDistance)
-        {
-            StartCoroutine(Cooldown());
-        }
+
     }
 
     IEnumerator Cooldown()
@@ -85,16 +80,15 @@ public class LightFlickerEffect : MonoBehaviour
         {
             lastSum -= smoothQueue.Dequeue();
         }
-
         // Generate random new item, calculate new average
         float newVal = Random.Range(minIntensity, maxIntensity);
         smoothQueue.Enqueue(newVal);
         lastSum += newVal;
-
         // Calculate new smoothed average
         light.intensity = lastSum / (float)smoothQueue.Count;
     }
 
-
+    public void StartFlicker() {
+    }
 
 }
