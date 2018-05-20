@@ -20,7 +20,7 @@ public class LightFlickerEffect : MonoBehaviour
     [Tooltip("Minimum random light intensity")]
     public float minIntensity = 0f;
     [Tooltip("Maximum random light intensity")]
-    public float maxIntensity = 1f;
+    public float maxIntensity = 9f;
     [Tooltip("How much to smooth out the randomness; lower values = sparks, higher = lantern")]
     [Range(1, 50)]
     public int smoothing = 5;
@@ -31,6 +31,8 @@ public class LightFlickerEffect : MonoBehaviour
     Queue<float> smoothQueue;
     float lastSum = 0;
 
+    public Material OnMaterial;
+    public Material OffMaterial;
 
     /// <summary>
     /// Reset the randomness and start again. You usually don't need to call
@@ -49,9 +51,10 @@ public class LightFlickerEffect : MonoBehaviour
         // External or internal light?
         if (light == null)
         {
-            light = GetComponent<Light>();
-            StartCoroutine(Cooldown());
+            light = gameObject.GetComponent<Light>();
         }
+        StartCoroutine(Cooldown());
+
     }
 
     void Update()
@@ -66,10 +69,12 @@ public class LightFlickerEffect : MonoBehaviour
     {
         //Reset Values
 
+        while (true)
+        {
+            yield return new WaitForSeconds(0.5f);
 
-        yield return new WaitForSeconds(0.5f);
-
-        Flickering();
+            Flickering();
+        }
 
     }
 
@@ -85,10 +90,16 @@ public class LightFlickerEffect : MonoBehaviour
         smoothQueue.Enqueue(newVal);
         lastSum += newVal;
         // Calculate new smoothed average
-        light.intensity = lastSum / (float)smoothQueue.Count;
+
+        //light.intensity = lastSum / (float)smoothQueue.Count;
+
+        light.enabled = !light.enabled;
+        if (light.enabled) gameObject.GetComponent<Renderer>().material = OnMaterial;
+        else gameObject.GetComponent<Renderer>().material = OffMaterial;
     }
 
     public void StartFlicker() {
+        StartCoroutine(Cooldown());
     }
 
 }

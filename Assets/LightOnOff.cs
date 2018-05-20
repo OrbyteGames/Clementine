@@ -2,36 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightFlickerScript : MonoBehaviour {
-
+public class LightOnOff : MonoBehaviour {
     public Material OnMaterial;
     public Material OffMaterial;
 
     private Light objectlight;
-   
-    private LightFlickerEffect lfe;
+
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         gameObject.GetComponent<Renderer>().material = OffMaterial;
-        lfe = gameObject.GetComponent<LightFlickerEffect>();
 
         objectlight = gameObject.GetComponent<Light>();
         if (objectlight) objectlight.enabled = false;
-        lfe.enabled = false;
     }
 
     // Update is called once per frame
-    void Update () {
-		
-	}
+    void Update()
+    {
+
+    }
 
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Player")
         {
             Debug.Log("Entered collider");
-            lfe.enabled = true;
             gameObject.GetComponent<Renderer>().material = OnMaterial;
             if (objectlight) objectlight.enabled = true;
         }
@@ -42,7 +39,6 @@ public class LightFlickerScript : MonoBehaviour {
         if (collision.gameObject.tag == "Player")
         {
             Debug.Log("Exited collider");
-            lfe.enabled = false;
             gameObject.GetComponent<Renderer>().material = OffMaterial;
             if (objectlight) objectlight.enabled = false;
         }

@@ -828,8 +828,10 @@ MonoBehaviour:
   light: {fileID: 1282601751}
   maxDistance: 3
   minIntensity: 0
-  maxIntensity: 1
+  maxIntensity: 9
   smoothing: 5
+  OnMaterial: {fileID: 2100000, guid: 398f36ab9ec1b0c4a9eccef5d1b99ad0, type: 2}
+  OffMaterial: {fileID: 2100000, guid: 6bd1c73619f4b8b45a8a404672e764a4, type: 2}
 --- !u!108 &1282601751
 Light:
   m_ObjectHideFlags: 0
@@ -933,8 +935,8 @@ GameObject:
   - component: {fileID: 1306940222}
   - component: {fileID: 1306940221}
   - component: {fileID: 1306940220}
-  - component: {fileID: 1306940219}
   - component: {fileID: 1306940224}
+  - component: {fileID: 1306940219}
   m_Layer: 0
   m_Name: LightOn/OFF
   m_TagString: Untagged
@@ -950,7 +952,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1306940218}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 767d57c85ff5a6f40ba7a13cbc412855, type: 3}
+  m_Script: {fileID: 11500000, guid: d4966b6882913a2408290cd9b979b5c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   OnMaterial: {fileID: 2100000, guid: 398f36ab9ec1b0c4a9eccef5d1b99ad0, type: 2}
