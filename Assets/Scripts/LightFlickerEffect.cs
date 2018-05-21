@@ -34,6 +34,15 @@ public class LightFlickerEffect : MonoBehaviour
     public Material OnMaterial;
     public Material OffMaterial;
 
+    bool loop;
+    public float minFlickeringTime, maxFlickeringTime;
+    public float minPauseTime, maxPauseTime;
+    public int maxFlickerings;
+    [SerializeField]
+    private float pauseTime, flickeringTime;
+    [SerializeField]
+    private int numFlickerings;
+    private bool pause;
     /// <summary>
     /// Reset the randomness and start again. You usually don't need to call
     /// this, deactivating/reactivating is usually fine but if you want a strict
@@ -47,14 +56,18 @@ public class LightFlickerEffect : MonoBehaviour
 
     void Start()
     {
+        loop = false;
+        pause = false;
         smoothQueue = new Queue<float>(smoothing);
         // External or internal light?
         if (light == null)
         {
             light = gameObject.GetComponent<Light>();
         }
-        StartCoroutine(Cooldown());
-
+        pauseTime = 0;
+        flickeringTime = Random.Range(minFlickeringTime,maxFlickeringTime);
+        numFlickerings = Random.Range(1,maxFlickerings);
+        //StartCoroutine(Cooldown());
     }
 
     void Update()
@@ -68,14 +81,31 @@ public class LightFlickerEffect : MonoBehaviour
     IEnumerator Cooldown()
     {
         //Reset Values
-
-        while (true)
+        float count = 0;
+        while (loop)
         {
-            yield return new WaitForSeconds(0.5f);
+            if (!pause)
+            {
+                yield return new WaitForSeconds(flickeringTime);
 
-            Flickering();
+                Flickering();
+                if (numFlickerings <= 0)
+                {
+                    flickeringTime = Random.Range(minFlickeringTime, maxFlickeringTime);
+                    pauseTime = Random.Range(minPauseTime, maxPauseTime);
+                    numFlickerings = Random.Range(1, maxFlickerings);
+                    count = 0.0f;
+                    pause = true;
+                }
+            }
+            else
+            {
+                yield return new WaitForSeconds(pauseTime);
+                pause = false;
+            }
         }
-
+        light.enabled = false;
+        gameObject.GetComponent<Renderer>().material = OffMaterial;
     }
 
 
@@ -94,12 +124,22 @@ public class LightFlickerEffect : MonoBehaviour
         //light.intensity = lastSum / (float)smoothQueue.Count;
 
         light.enabled = !light.enabled;
-        if (light.enabled) gameObject.GetComponent<Renderer>().material = OnMaterial;
+        if (light.enabled)
+        {
+            gameObject.GetComponent<Renderer>().material = OnMaterial;
+            --numFlickerings;
+        }
         else gameObject.GetComponent<Renderer>().material = OffMaterial;
     }
 
     public void StartFlicker() {
+        loop = true;
         StartCoroutine(Cooldown());
     }
 
+    public void StopFlicker()
+    {
+        loop = false;
+        
+    }
 }

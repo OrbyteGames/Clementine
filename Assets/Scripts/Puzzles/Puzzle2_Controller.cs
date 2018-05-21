@@ -50,7 +50,7 @@ public class Puzzle2_Controller : MonoBehaviour {
             if (Mathf.Abs(container.transform.position.x - target.position.x) < 0.1)
             {
                 startWalking = false;
-                cat.setSolved();
+                if (cat != null) cat.setSolved();
                 enabled = false;
             }
         }

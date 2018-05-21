@@ -18,7 +18,6 @@ public class LightFlickerScript : MonoBehaviour {
 
         objectlight = gameObject.GetComponent<Light>();
         if (objectlight) objectlight.enabled = false;
-        lfe.enabled = false;
     }
 
     // Update is called once per frame
@@ -31,7 +30,7 @@ public class LightFlickerScript : MonoBehaviour {
         if (collision.gameObject.tag == "Player")
         {
             Debug.Log("Entered collider");
-            lfe.enabled = true;
+            lfe.StartFlicker();
             gameObject.GetComponent<Renderer>().material = OnMaterial;
             if (objectlight) objectlight.enabled = true;
         }
@@ -42,7 +41,7 @@ public class LightFlickerScript : MonoBehaviour {
         if (collision.gameObject.tag == "Player")
         {
             Debug.Log("Exited collider");
-            lfe.enabled = false;
+            lfe.StopFlicker();
             gameObject.GetComponent<Renderer>().material = OffMaterial;
             if (objectlight) objectlight.enabled = false;
         }
