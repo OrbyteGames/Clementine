@@ -9,12 +9,13 @@ public class NPCController : MonoBehaviour {
     public Transform origin;
     public Transform destination;
     public Material matToFade;
+    public float speed = 3f;
     public float eachFadeTime = 2f;
     public float fadeWaitTime = 5f;
     public float minAlpha = 0f;
     public float maxAlpha = 1f;
     public float fadeDuration = 3f;
-   
+    
 
     public NavMeshAgent agent;
 	// Use this for initialization
@@ -23,6 +24,7 @@ public class NPCController : MonoBehaviour {
 	void Start ()
     {
         transform.position = origin.position;
+        agent.speed = speed;
         StartCoroutine(fadeInAndOutRepeat(matToFade, fadeDuration, fadeWaitTime));
     }
 
