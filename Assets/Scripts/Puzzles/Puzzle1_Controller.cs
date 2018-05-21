@@ -14,15 +14,16 @@ public class Puzzle1_Controller : MonoBehaviour {
     public float puzzleDist, Counter, electTimestamp, engineTimeStamp, doorTimeStamp, energyIncreaseValue;
     [Range(2f, 4.2f)]
     public float fenceHeight;
-    public ParticleSystem ps, ps2;
+    public ParticleSystem ps, ps2, particleAura;
     public AudioSource electricitySound, EngineSound, doors;
     public float storedEnergy;
     private Puzzle1_Animation pa1;
     private bool activated, startCount, startPlaying;
     private Animator anim;
     private FlickeringLight flickering;
-	// Use this for initialization
-	void Start ()
+    public int IntensityAura = 0;
+    // Use this for initialization
+    void Start ()
     {
         startPlaying = false;
         startCount = false;
@@ -51,11 +52,17 @@ public class Puzzle1_Controller : MonoBehaviour {
             if (storedEnergy > 0)storedEnergy -= Time.deltaTime;
             if (dist < puzzleDist)
             {
+                particleAura.Play(true);
+                if(IntensityAura<5)particleAura.Emit(IntensityAura + 1);
                 if (Input.GetButtonDown("Fire1"))
                 {
                     storedEnergy += energyIncreaseValue;
                 }
                 if (storedEnergy > 50) startPlaying = true;
+            }else
+            {
+                if (IntensityAura > 0) particleAura.Emit(IntensityAura--);
+                else if (IntensityAura == 0) particleAura.Stop();
             }
         }
         else { 

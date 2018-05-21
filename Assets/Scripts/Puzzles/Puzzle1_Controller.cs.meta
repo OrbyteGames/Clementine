@@ -5,7 +5,20 @@ licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - clementine: {instanceID: 0}
+  - wheel: {instanceID: 0}
+  - fencewheel1: {instanceID: 0}
+  - fencewheel2: {instanceID: 0}
+  - lights: {instanceID: 0}
+  - electricity: {instanceID: 0}
+  - cat: {instanceID: 0}
+  - ps: {instanceID: 0}
+  - ps2: {instanceID: 0}
+  - electricitySound: {instanceID: 0}
+  - EngineSound: {instanceID: 0}
+  - doors: {instanceID: 0}
+  - particleAura: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

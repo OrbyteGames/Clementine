@@ -2,9 +2,11 @@
 using System.Collections;
 public class PlayerController : MonoBehaviour
 {
+    
     Vector3 newPosition;
     private bool toMove;
     private bool toRotate;
+    
     public float speed = 3f;
     int Layer = 0;
     
@@ -39,6 +41,7 @@ public class PlayerController : MonoBehaviour
         }
         if (Vector3.Distance(transform.position, newPosition) < 0.5f)
         {
+
             toMove = false;
         }
       
