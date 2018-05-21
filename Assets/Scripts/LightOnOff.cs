@@ -28,7 +28,6 @@ public class LightOnOff : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("Entered collider");
             gameObject.GetComponent<Renderer>().material = OnMaterial;
             if (objectlight) objectlight.enabled = true;
         }
@@ -38,7 +37,6 @@ public class LightOnOff : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("Exited collider");
             gameObject.GetComponent<Renderer>().material = OffMaterial;
             if (objectlight) objectlight.enabled = false;
         }
