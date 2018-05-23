@@ -12,6 +12,7 @@ public class Puzzle2_Controller : MonoBehaviour {
     public CatAI cat;
     public float storedEnergy;
     private bool startWalking;
+    private float energyTime;
     // Use this for initialization
     void Start ()
     {
@@ -31,9 +32,16 @@ public class Puzzle2_Controller : MonoBehaviour {
         {
             if (dist < puzzleTriggerDist)
             {
+                if (energyTime > 0.0f) {
+                    energyTime -= Time.deltaTime;
+                    gameObject.transform.position += (new Vector3(-robotSpeed, 0.0f, 0.0f) * Time.deltaTime);
+                    container.transform.position += (new Vector3(-robotSpeed, 0.0f, 0.0f) * Time.deltaTime);
+                    if (Mathf.Abs(container.transform.position.x - target.position.x) < 0.1) Deactivate();
+                }
                 if (Input.GetButtonDown("Fire1"))
                 {
                     storedEnergy += energyIncreaseValue;
+                    energyTime = 1.0f;
                 }
                 if (storedEnergy > 50)
                 {
@@ -47,14 +55,15 @@ public class Puzzle2_Controller : MonoBehaviour {
             gameObject.transform.position += (new Vector3(-robotSpeed, 0.0f, 0.0f) * Time.deltaTime);
             container.transform.position += (new Vector3(-robotSpeed, 0.0f, 0.0f) * Time.deltaTime);
             //transform.position += new Vector3(-robotSpeed, 0.0f, 0.0f);
-            if (Mathf.Abs(container.transform.position.x - target.position.x) < 0.1)
-            {
-                startWalking = false;
-                if (cat != null) cat.setSolved();
-                enabled = false;
-            }
+            if (Mathf.Abs(container.transform.position.x - target.position.x) < 0.1) Deactivate();
         }
               
     }
 
+
+    public void Deactivate() {
+        startWalking = false;
+        if (cat != null) cat.setSolved();
+        enabled = false;
+    }
 }
