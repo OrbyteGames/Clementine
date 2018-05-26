@@ -44729,6 +44729,7 @@ GameObject:
   - component: {fileID: 738240815}
   - component: {fileID: 738240817}
   - component: {fileID: 738240816}
+  - component: {fileID: 738240818}
   m_Layer: 0
   m_Name: CLEM_Zona1_Swing2
   m_TagString: Untagged
@@ -44792,6 +44793,23 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 738240814}
   m_Mesh: {fileID: 4300008, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!95 &738240818
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 738240814}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &738966340
 GameObject:
   m_ObjectHideFlags: 0
@@ -88802,6 +88820,7 @@ GameObject:
   - component: {fileID: 1413900852}
   - component: {fileID: 1413900854}
   - component: {fileID: 1413900853}
+  - component: {fileID: 1413900855}
   m_Layer: 0
   m_Name: CLEM_Zona1_Playgroundturnything
   m_TagString: Untagged
@@ -88865,6 +88884,23 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1413900851}
   m_Mesh: {fileID: 4300048, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!95 &1413900855
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1413900851}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3526390d7d3b294449e0408680089ff5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1414811935
 GameObject:
   m_ObjectHideFlags: 0
