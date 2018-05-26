@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Swing
+  m_Name: Swing2
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -18,21 +18,21 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: {x: 42.851, y: -90.00001, z: -85.747}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
+        value: {x: 42.851, y: -90.00001, z: -90.79201}
+        inSlope: {x: 0, y: 0, z: -0.09176444}
+        outSlope: {x: 0, y: 0, z: -0.09176444}
         tangentMode: 0
       - serializedVersion: 2
         time: 3
-        value: {x: 42.851, y: -90.00001, z: -89.976006}
+        value: {x: 42.851, y: -90.00001, z: -85.193}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
         time: 6
-        value: {x: 42.851, y: -90.00001, z: -85.747}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
+        value: {x: 42.851, y: -90.00001, z: -90.79201}
+        inSlope: {x: 0, y: 0, z: -0.09176444}
+        outSlope: {x: 0, y: 0, z: -0.09176444}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -139,22 +139,22 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: -85.747
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
+        value: -90.79201
+        inSlope: -0.09176444
+        outSlope: -0.09176444
+        tangentMode: 0
       - serializedVersion: 2
         time: 3
-        value: -89.976006
+        value: -85.193
         inSlope: 0
         outSlope: 0
-        tangentMode: 136
+        tangentMode: 0
       - serializedVersion: 2
         time: 6
-        value: -85.747
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
+        value: -90.79201
+        inSlope: -0.09176444
+        outSlope: -0.09176444
+        tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
