@@ -1,0 +1,1124 @@
+fileFormatVersion: 2
+guid: 07e8827b00dfceb4ca691ed68f878f0a
+timeCreated: 1527313624
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: base
+    100002: box023
+    100004: box044
+    100006: Box3578
+    100008: Box3620
+    100010: Box3691
+    100012: Box3703
+    100014: Box3770
+    100016: Box4639
+    100018: //RootNode
+    100020: CLEM_Zona1_2FloodlightPole
+    100022: CLEM_Zona1_AirconboxL
+    100024: CLEM_Zona1_AirconboxM
+    100026: CLEM_Zona1_AirconboxS
+    100028: CLEM_Zona1_AirconboxXL
+    100030: CLEM_Zona1_AirconboxXS
+    100032: CLEM_Zona1_BalconyBuildingA
+    100034: CLEM_Zona1_BalconyBuildingB
+    100036: CLEM_Zona1_BallLight
+    100038: CLEM_Zona1_BarrierDiamond
+    100040: CLEM_Zona1_BarrierDiamondDouble002
+    100042: CLEM_Zona1_Bench003
+    100044: CLEM_Zona1_BendyRoof
+    100046: CLEM_Zona1_BendyRoofS
+    100048: CLEM_Zona1_BigTree001
+    100050: CLEM_Zona1_BinBag
+    100052: CLEM_Zona1_BuildingGateStraight
+    100054: CLEM_Zona1_CityBin004
+    100056: CLEM_Zona1_ClothingHanger
+    100058: CLEM_Zona1_ClothingL
+    100060: CLEM_Zona1_ClothingM
+    100062: CLEM_Zona1_ClothingS
+    100064: CLEM_Zona1_ClothingXS
+    100066: CLEM_Zona1_ConeCeilingLight
+    100068: CLEM_Zona1_ContainerbinL
+    100070: CLEM_Zona1_ContainerbinS
+    100072: CLEM_Zona1_ElectricCableRandomBalconyBuilding
+    100074: CLEM_Zona1_ElectricCableResidentialBuilding
+    100076: CLEM_Zona1_ElectricityOutletL
+    100078: CLEM_Zona1_ElectricityOutletS
+    100080: CLEM_Zona1_FloodLight004
+    100082: CLEM_Zona1_Floor
+    100084: CLEM_Zona1_Flourescentlight
+    100086: CLEM_Zona1_GateDoor
+    100088: CLEM_Zona1_GlassBottleOpen
+    100090: CLEM_Zona1_Gutter
+    100092: CLEM_Zona1_GutterShopperBuilding
+    100094: CLEM_Zona1_Mailbox
+    100096: CLEM_Zona1_PaperLanternRound
+    100098: CLEM_Zona1_PipesResidentialBuilding
+    100100: CLEM_Zona1_Plantpotshort
+    100102: CLEM_Zona1_PlasticBottleOpen
+    100104: CLEM_Zona1_PlasticBox
+    100106: CLEM_Zona1_Playgroundfloor
+    100108: CLEM_Zona1_PlaygroundGate
+    100110: CLEM_Zona1_Playgroundsign002
+    100112: CLEM_Zona1_Playgroundturnything
+    100114: CLEM_Zona1_RandomBalconyBuilding
+    100116: CLEM_Zona1_Rectangularplantpot
+    100118: CLEM_Zona1_ResidentialBuilding
+    100120: CLEM_Zona1_RollerGarageDoor
+    100122: CLEM_Zona1_Seasaw
+    100124: CLEM_Zona1_ShopperBuilding
+    100126: CLEM_Zona1_sidewalk
+    100128: CLEM_Zona1_Sidewalk002
+    100130: CLEM_Zona1_Sidewalk1
+    100132: CLEM_Zona1_SkinnyBabeBuilding
+    100134: CLEM_Zona1_SkinnyPipeShopperBuilding
+    100136: CLEM_Zona1_StickClothingHanger
+    100138: CLEM_Zona1_StickClothingHanger172
+    100140: CLEM_Zona1_SupportDoorPaperLantern
+    100142: CLEM_Zona1_Swing
+    100144: CLEM_Zona1_Swing1
+    100146: CLEM_Zona1_Swing2
+    100148: CLEM_Zona1_TreeBase001
+    100150: CLEM_Zona1_TVantenna
+    100152: CLEM_Zona1_TVantennabig
+    100154: CLEM_Zona1_TVDish
+    100156: CLEM_Zona1_TVDish+Antenna
+    100158: CLEM_Zona1_Vent
+    100160: CLEM_Zona1_WallLight
+    100162: CLEM_Zona1_WindowCover
+    100164: CLEM_Zona1_WindowLedge
+    100166: CLEM_Zona1_WindowlessBuilding
+    100168: CLEM_Zona1_WoodenPallete
+    100170: CLEM_Zona2_A
+    100172: CLEM_Zona2_B
+    100174: CLEM_Zona2_C
+    100176: CLEM_Zona2_C001
+    100178: CLEM_Zona2_D
+    100180: CLEM_Zona2_E
+    100182: CLEM_Zona2_F
+    100184: CLEM_Zona2_Floor
+    100186: CLEM_Zona2_G
+    100188: CLEM_Zona2_I
+    100190: CLEM_Zona2_J
+    100192: CLEM_Zona2_K
+    100194: CLEM_Zona2_L
+    100196: CLEM_Zona2_M
+    100198: CLEM_Zona2_N
+    100200: CLEM_Zona2_O
+    100202: CLEM_Zona3_A
+    100204: CLEM_Zona3_C
+    100206: CLEM_Zona3_D
+    100208: CLEM_Zona3_E
+    100210: CLEM_Zona3_F
+    100212: CLEM_Zona3_Floor
+    100214: CLEM_Zona3_G
+    100216: CLEM_Zona3_H
+    100218: CLEM_Zona3_SidewalkB
+    100220: CLEM_Zona3_SidewalkC
+    100222: CLEM_Zona4_A
+    100224: CLEM_Zona4_A_Stairs
+    100226: CLEM_Zona4_B
+    100228: CLEM_Zona4_B_Stairs
+    100230: CLEM_Zona4_Bridge
+    100232: CLEM_Zona4_Traintrack
+    100234: CLEM_Zona5_A
+    100236: CLEM_Zona5_A_Railings1
+    100238: CLEM_Zona5_A_Railings2
+    100240: CLEM_Zona5_A_Railings3
+    100242: CLEM_Zona5_A_Railings5
+    100244: CLEM_Zona5_A_Stairs
+    100246: CLEM_Zona5_B
+    100248: CLEM_Zona5_B_Railings
+    100250: CLEM_Zona5_Floor
+    100252: CLEM_Zona5_PianoBridge_Ceiling
+    100254: CLEM_Zona5_PianoBridge_Floor
+    100256: CLEM_Zona5_PianoBridge_Railings1
+    100258: CLEM_Zona5_PianoBridge_Railings2
+    100260: CLEM_Zona5_Traintrack
+    100262: CLEM_Zona6_A
+    100264: CLEM_Zona6_B
+    100266: CLEM_Zona6_C
+    100268: CLEM_Zona6_ConstructionStairs
+    100270: CLEM_Zona6_D
+    100272: CLEM_Zona6_E
+    100274: CLEM_Zona6_F
+    100276: CLEM_Zona6_Floor
+    100278: CLEM_Zona6_G
+    100280: CLEM_Zona6_GiantColumn
+    100282: CLEM_Zona6_H
+    100284: CLEM_Zona6_I
+    100286: CLEM_Zona6_J
+    100288: CLEM_Zona6_SidewalkA
+    100290: CLEM_Zona6_SidewalkB
+    100292: CLEM_Zona6_SidewalkC
+    100294: CLEM_Zona6_Skytrain
+    100296: CLEM_Zona6_SkyWalkway_Floor
+    100298: CLEM_Zona6_SkyWalkway_Railings1
+    100300: CLEM_Zona6_SkyWalkway_Railings2
+    100302: CLEM_Zona6_SkyWalkway_Stairs
+    100304: CLEM_Zona6_Trainstation_Floor
+    100306: CLEM_Zona6_Trainstation_Railings
+    100308: CLEM_Zona6_Trainstation_Stairs
+    100310: CLEM_Zona6_Traintrack
+    100312: CLEM_Zona7_A
+    100314: CLEM_Zona7_B
+    100316: CLEM_Zona7_C
+    100318: CLEM_Zona7_D
+    100320: CLEM_Zona7_E
+    100322: CLEM_Zona7_F
+    100324: CLEM_Zona7_H
+    100326: CLEM_Zona7_H 1
+    100328: CLEM_Zona7_I
+    100330: CLEM_Zona7_SidewalkA
+    100332: CLEM_Zone1_WindChime
+    100334: CLEM_Zone1_WindChimeCling
+    100336: CLEM_Zone1_WindChimeFive
+    100338: CLEM_Zone1_WindChimeFour
+    100340: CLEM_Zone1_WindChimeMain
+    100342: CLEM_Zone1_WindChimeOne
+    100344: CLEM_Zone1_WindChimeSix
+    100346: CLEM_Zone1_WindChimeThree
+    100348: CLEM_Zone1_WindChimeTwo
+    100350: CLEM_Zone2_SidewalkA
+    100352: CLEM_Zone2_SidewalkB
+    100354: CLEM_Zone2_Stairs
+    100356: CLEM_Zone3_PuzzleFloor
+    100358: CLEM_Zone3_SidewalkA
+    100360: CLEM_Zone4_Floor
+    100362: Cone112
+    100364: Cylinder1553
+    100366: light
+    100368: smallbinbody010
+    100370: swingbars
+    100372: Zona1
+    100374: Zona2
+    100376: ZOna3
+    100378: Zona3
+    100380: Zona4
+    100382: Zona5
+    100384: Zona5_A_Railings4
+    100386: Zona6
+    100388: Zona7
+    400000: base
+    400002: box023
+    400004: box044
+    400006: Box3578
+    400008: Box3620
+    400010: Box3691
+    400012: Box3703
+    400014: Box3770
+    400016: Box4639
+    400018: //RootNode
+    400020: CLEM_Zona1_2FloodlightPole
+    400022: CLEM_Zona1_AirconboxL
+    400024: CLEM_Zona1_AirconboxM
+    400026: CLEM_Zona1_AirconboxS
+    400028: CLEM_Zona1_AirconboxXL
+    400030: CLEM_Zona1_AirconboxXS
+    400032: CLEM_Zona1_BalconyBuildingA
+    400034: CLEM_Zona1_BalconyBuildingB
+    400036: CLEM_Zona1_BallLight
+    400038: CLEM_Zona1_BarrierDiamond
+    400040: CLEM_Zona1_BarrierDiamondDouble002
+    400042: CLEM_Zona1_Bench003
+    400044: CLEM_Zona1_BendyRoof
+    400046: CLEM_Zona1_BendyRoofS
+    400048: CLEM_Zona1_BigTree001
+    400050: CLEM_Zona1_BinBag
+    400052: CLEM_Zona1_BuildingGateStraight
+    400054: CLEM_Zona1_CityBin004
+    400056: CLEM_Zona1_ClothingHanger
+    400058: CLEM_Zona1_ClothingL
+    400060: CLEM_Zona1_ClothingM
+    400062: CLEM_Zona1_ClothingS
+    400064: CLEM_Zona1_ClothingXS
+    400066: CLEM_Zona1_ConeCeilingLight
+    400068: CLEM_Zona1_ContainerbinL
+    400070: CLEM_Zona1_ContainerbinS
+    400072: CLEM_Zona1_ElectricCableRandomBalconyBuilding
+    400074: CLEM_Zona1_ElectricCableResidentialBuilding
+    400076: CLEM_Zona1_ElectricityOutletL
+    400078: CLEM_Zona1_ElectricityOutletS
+    400080: CLEM_Zona1_FloodLight004
+    400082: CLEM_Zona1_Floor
+    400084: CLEM_Zona1_Flourescentlight
+    400086: CLEM_Zona1_GateDoor
+    400088: CLEM_Zona1_GlassBottleOpen
+    400090: CLEM_Zona1_Gutter
+    400092: CLEM_Zona1_GutterShopperBuilding
+    400094: CLEM_Zona1_Mailbox
+    400096: CLEM_Zona1_PaperLanternRound
+    400098: CLEM_Zona1_PipesResidentialBuilding
+    400100: CLEM_Zona1_Plantpotshort
+    400102: CLEM_Zona1_PlasticBottleOpen
+    400104: CLEM_Zona1_PlasticBox
+    400106: CLEM_Zona1_Playgroundfloor
+    400108: CLEM_Zona1_PlaygroundGate
+    400110: CLEM_Zona1_Playgroundsign002
+    400112: CLEM_Zona1_Playgroundturnything
+    400114: CLEM_Zona1_RandomBalconyBuilding
+    400116: CLEM_Zona1_Rectangularplantpot
+    400118: CLEM_Zona1_ResidentialBuilding
+    400120: CLEM_Zona1_RollerGarageDoor
+    400122: CLEM_Zona1_Seasaw
+    400124: CLEM_Zona1_ShopperBuilding
+    400126: CLEM_Zona1_sidewalk
+    400128: CLEM_Zona1_Sidewalk002
+    400130: CLEM_Zona1_Sidewalk1
+    400132: CLEM_Zona1_SkinnyBabeBuilding
+    400134: CLEM_Zona1_SkinnyPipeShopperBuilding
+    400136: CLEM_Zona1_StickClothingHanger
+    400138: CLEM_Zona1_StickClothingHanger172
+    400140: CLEM_Zona1_SupportDoorPaperLantern
+    400142: CLEM_Zona1_Swing
+    400144: CLEM_Zona1_Swing1
+    400146: CLEM_Zona1_Swing2
+    400148: CLEM_Zona1_TreeBase001
+    400150: CLEM_Zona1_TVantenna
+    400152: CLEM_Zona1_TVantennabig
+    400154: CLEM_Zona1_TVDish
+    400156: CLEM_Zona1_TVDish+Antenna
+    400158: CLEM_Zona1_Vent
+    400160: CLEM_Zona1_WallLight
+    400162: CLEM_Zona1_WindowCover
+    400164: CLEM_Zona1_WindowLedge
+    400166: CLEM_Zona1_WindowlessBuilding
+    400168: CLEM_Zona1_WoodenPallete
+    400170: CLEM_Zona2_A
+    400172: CLEM_Zona2_B
+    400174: CLEM_Zona2_C
+    400176: CLEM_Zona2_C001
+    400178: CLEM_Zona2_D
+    400180: CLEM_Zona2_E
+    400182: CLEM_Zona2_F
+    400184: CLEM_Zona2_Floor
+    400186: CLEM_Zona2_G
+    400188: CLEM_Zona2_I
+    400190: CLEM_Zona2_J
+    400192: CLEM_Zona2_K
+    400194: CLEM_Zona2_L
+    400196: CLEM_Zona2_M
+    400198: CLEM_Zona2_N
+    400200: CLEM_Zona2_O
+    400202: CLEM_Zona3_A
+    400204: CLEM_Zona3_C
+    400206: CLEM_Zona3_D
+    400208: CLEM_Zona3_E
+    400210: CLEM_Zona3_F
+    400212: CLEM_Zona3_Floor
+    400214: CLEM_Zona3_G
+    400216: CLEM_Zona3_H
+    400218: CLEM_Zona3_SidewalkB
+    400220: CLEM_Zona3_SidewalkC
+    400222: CLEM_Zona4_A
+    400224: CLEM_Zona4_A_Stairs
+    400226: CLEM_Zona4_B
+    400228: CLEM_Zona4_B_Stairs
+    400230: CLEM_Zona4_Bridge
+    400232: CLEM_Zona4_Traintrack
+    400234: CLEM_Zona5_A
+    400236: CLEM_Zona5_A_Railings1
+    400238: CLEM_Zona5_A_Railings2
+    400240: CLEM_Zona5_A_Railings3
+    400242: CLEM_Zona5_A_Railings5
+    400244: CLEM_Zona5_A_Stairs
+    400246: CLEM_Zona5_B
+    400248: CLEM_Zona5_B_Railings
+    400250: CLEM_Zona5_Floor
+    400252: CLEM_Zona5_PianoBridge_Ceiling
+    400254: CLEM_Zona5_PianoBridge_Floor
+    400256: CLEM_Zona5_PianoBridge_Railings1
+    400258: CLEM_Zona5_PianoBridge_Railings2
+    400260: CLEM_Zona5_Traintrack
+    400262: CLEM_Zona6_A
+    400264: CLEM_Zona6_B
+    400266: CLEM_Zona6_C
+    400268: CLEM_Zona6_ConstructionStairs
+    400270: CLEM_Zona6_D
+    400272: CLEM_Zona6_E
+    400274: CLEM_Zona6_F
+    400276: CLEM_Zona6_Floor
+    400278: CLEM_Zona6_G
+    400280: CLEM_Zona6_GiantColumn
+    400282: CLEM_Zona6_H
+    400284: CLEM_Zona6_I
+    400286: CLEM_Zona6_J
+    400288: CLEM_Zona6_SidewalkA
+    400290: CLEM_Zona6_SidewalkB
+    400292: CLEM_Zona6_SidewalkC
+    400294: CLEM_Zona6_Skytrain
+    400296: CLEM_Zona6_SkyWalkway_Floor
+    400298: CLEM_Zona6_SkyWalkway_Railings1
+    400300: CLEM_Zona6_SkyWalkway_Railings2
+    400302: CLEM_Zona6_SkyWalkway_Stairs
+    400304: CLEM_Zona6_Trainstation_Floor
+    400306: CLEM_Zona6_Trainstation_Railings
+    400308: CLEM_Zona6_Trainstation_Stairs
+    400310: CLEM_Zona6_Traintrack
+    400312: CLEM_Zona7_A
+    400314: CLEM_Zona7_B
+    400316: CLEM_Zona7_C
+    400318: CLEM_Zona7_D
+    400320: CLEM_Zona7_E
+    400322: CLEM_Zona7_F
+    400324: CLEM_Zona7_H
+    400326: CLEM_Zona7_H 1
+    400328: CLEM_Zona7_I
+    400330: CLEM_Zona7_SidewalkA
+    400332: CLEM_Zone1_WindChime
+    400334: CLEM_Zone1_WindChimeCling
+    400336: CLEM_Zone1_WindChimeFive
+    400338: CLEM_Zone1_WindChimeFour
+    400340: CLEM_Zone1_WindChimeMain
+    400342: CLEM_Zone1_WindChimeOne
+    400344: CLEM_Zone1_WindChimeSix
+    400346: CLEM_Zone1_WindChimeThree
+    400348: CLEM_Zone1_WindChimeTwo
+    400350: CLEM_Zone2_SidewalkA
+    400352: CLEM_Zone2_SidewalkB
+    400354: CLEM_Zone2_Stairs
+    400356: CLEM_Zone3_PuzzleFloor
+    400358: CLEM_Zone3_SidewalkA
+    400360: CLEM_Zone4_Floor
+    400362: Cone112
+    400364: Cylinder1553
+    400366: light
+    400368: smallbinbody010
+    400370: swingbars
+    400372: Zona1
+    400374: Zona2
+    400376: ZOna3
+    400378: Zona3
+    400380: Zona4
+    400382: Zona5
+    400384: Zona5_A_Railings4
+    400386: Zona6
+    400388: Zona7
+    2100000: No Name
+    2100002: 'Material #178'
+    2100004: 'Material #177'
+    2100006: 'Material #190'
+    2100008: 'Material #191'
+    2100010: 'Material #451'
+    2100012: 'Material #472'
+    2100014: 'Material #473'
+    2100016: 'Material #474'
+    2100018: 'Material #475'
+    2100020: 'Material #467'
+    2100022: 'Material #469'
+    2100024: 'Material #471'
+    2100026: 'Material #466'
+    2100028: 'Material #468'
+    2100030: 'Material #470'
+    2100032: 'Material #461'
+    2100034: 'Material #463'
+    2100036: 'Material #465'
+    2100038: 'Material #460'
+    2100040: 'Material #462'
+    2100042: 'Material #464'
+    2100044: 'Material #455'
+    2100046: 'Material #457'
+    2100048: 'Material #459'
+    2100050: 'Material #454'
+    2100052: 'Material #456'
+    2100054: 'Material #458'
+    2100056: 'Material #450'
+    2100058: 'Material #452'
+    2100060: 'Material #453'
+    2100062: 'Material #447'
+    2100064: 'Material #448'
+    2100066: 'Material #449'
+    2100068: 'Material #559'
+    2100070: 'Material #575'
+    2100072: 'Material #576'
+    2100074: 'Material #577'
+    2100076: 'Material #578'
+    2100078: 'Material #579'
+    2100080: 'Material #570'
+    2100082: 'Material #571'
+    2100084: 'Material #572'
+    2100086: 'Material #573'
+    2100088: 'Material #574'
+    2100090: 'Material #565'
+    2100092: 'Material #566'
+    2100094: 'Material #567'
+    2100096: 'Material #568'
+    2100098: 'Material #569'
+    2100100: 'Material #560'
+    2100102: 'Material #561'
+    2100104: 'Material #562'
+    2100106: 'Material #563'
+    2100108: 'Material #564'
+    2100110: 'Material #583'
+    2100112: 'Material #582'
+    2100114: 'Material #581'
+    2100116: 'Material #580'
+    2100118: 'Material #597'
+    2100120: 'Material #598'
+    2100122: 'Material #599'
+    2100124: 'Material #600'
+    2100126: 'Material #601'
+    2100128: 'Material #589'
+    2100130: 'Material #590'
+    2100132: 'Material #591'
+    2100134: 'Material #592'
+    2100136: 'Material #593'
+    2100138: 'Material #584'
+    2100140: 'Material #585'
+    2100142: 'Material #586'
+    2100144: 'Material #587'
+    2100146: 'Material #588'
+    2100148: 'Material #596'
+    2100150: 'Material #595'
+    2100152: 'Material #594'
+    2100154: 'Material #394'
+    2100156: 'Material #393'
+    2100158: 'Material #488'
+    2100160: 'Material #487'
+    2100162: 'Material #613'
+    2100164: 'Material #616'
+    2100166: 'Material #614'
+    2100168: 'Material #630'
+    2100170: 'Material #631'
+    2100172: 'Material #203'
+    2100174: 'Material #204'
+    2100176: 'Material #216'
+    2100178: 'Material #217'
+    2100180: 'Material #312'
+    2100182: 'Material #336'
+    2100184: 'Material #337'
+    2100186: 'Material #338'
+    2100188: 'Material #339'
+    2100190: 'Material #332'
+    2100192: 'Material #333'
+    2100194: 'Material #334'
+    2100196: 'Material #335'
+    2100198: 'Material #328'
+    2100200: 'Material #329'
+    2100202: 'Material #330'
+    2100204: 'Material #331'
+    2100206: 'Material #324'
+    2100208: 'Material #325'
+    2100210: 'Material #326'
+    2100212: 'Material #327'
+    2100214: 'Material #320'
+    2100216: 'Material #321'
+    2100218: 'Material #322'
+    2100220: 'Material #323'
+    2100222: 'Material #316'
+    2100224: 'Material #317'
+    2100226: 'Material #318'
+    2100228: 'Material #319'
+    2100230: 'Material #348'
+    2100232: 'Material #313'
+    2100234: 'Material #314'
+    2100236: 'Material #315'
+    2100238: 'Material #344'
+    2100240: 'Material #345'
+    2100242: 'Material #346'
+    2100244: 'Material #347'
+    2100246: 'Material #349'
+    2100248: 'Material #341'
+    2100250: 'Material #342'
+    2100252: 'Material #343'
+    2100254: 'Material #647'
+    2100256: 'Material #648'
+    2100258: 'Material #292'
+    2100260: 'Material #264'
+    2100262: 'Material #649'
+    2300000: base
+    2300002: box023
+    2300004: box044
+    2300006: Box3578
+    2300008: Box3620
+    2300010: Box3691
+    2300012: Box3703
+    2300014: Box3770
+    2300016: Box4639
+    2300018: CLEM_Zona1_AirconboxXL
+    2300020: CLEM_Zona1_BalconyBuildingA
+    2300022: CLEM_Zona1_BalconyBuildingB
+    2300024: CLEM_Zona1_BallLight
+    2300026: CLEM_Zona1_Bench003
+    2300028: CLEM_Zona1_BendyRoof
+    2300030: CLEM_Zona1_BendyRoofS
+    2300032: CLEM_Zona1_BigTree001
+    2300034: CLEM_Zona1_BinBag
+    2300036: CLEM_Zona1_BuildingGateStraight
+    2300038: CLEM_Zona1_CityBin004
+    2300040: CLEM_Zona1_ClothingHanger
+    2300042: CLEM_Zona1_ClothingL
+    2300044: CLEM_Zona1_ClothingM
+    2300046: CLEM_Zona1_ClothingS
+    2300048: CLEM_Zona1_ClothingXS
+    2300050: CLEM_Zona1_ConeCeilingLight
+    2300052: CLEM_Zona1_ContainerbinL
+    2300054: CLEM_Zona1_ElectricCableRandomBalconyBuilding
+    2300056: CLEM_Zona1_ElectricCableResidentialBuilding
+    2300058: CLEM_Zona1_ElectricityOutletL
+    2300060: CLEM_Zona1_FloodLight004
+    2300062: CLEM_Zona1_Floor
+    2300064: CLEM_Zona1_GateDoor
+    2300066: CLEM_Zona1_GlassBottleOpen
+    2300068: CLEM_Zona1_Gutter
+    2300070: CLEM_Zona1_GutterShopperBuilding
+    2300072: CLEM_Zona1_Mailbox
+    2300074: CLEM_Zona1_PaperLanternRound
+    2300076: CLEM_Zona1_PipesResidentialBuilding
+    2300078: CLEM_Zona1_Plantpotshort
+    2300080: CLEM_Zona1_PlasticBottleOpen
+    2300082: CLEM_Zona1_PlasticBox
+    2300084: CLEM_Zona1_Playgroundfloor
+    2300086: CLEM_Zona1_PlaygroundGate
+    2300088: CLEM_Zona1_Playgroundturnything
+    2300090: CLEM_Zona1_RandomBalconyBuilding
+    2300092: CLEM_Zona1_Rectangularplantpot
+    2300094: CLEM_Zona1_ResidentialBuilding
+    2300096: CLEM_Zona1_RollerGarageDoor
+    2300098: CLEM_Zona1_Seasaw
+    2300100: CLEM_Zona1_ShopperBuilding
+    2300102: CLEM_Zona1_sidewalk
+    2300104: CLEM_Zona1_Sidewalk002
+    2300106: CLEM_Zona1_Sidewalk1
+    2300108: CLEM_Zona1_SkinnyBabeBuilding
+    2300110: CLEM_Zona1_SkinnyPipeShopperBuilding
+    2300112: CLEM_Zona1_StickClothingHanger
+    2300114: CLEM_Zona1_StickClothingHanger172
+    2300116: CLEM_Zona1_SupportDoorPaperLantern
+    2300118: CLEM_Zona1_Swing1
+    2300120: CLEM_Zona1_Swing2
+    2300122: CLEM_Zona1_TreeBase001
+    2300124: CLEM_Zona1_TVantenna
+    2300126: CLEM_Zona1_TVantennabig
+    2300128: CLEM_Zona1_TVDish+Antenna
+    2300130: CLEM_Zona1_Vent
+    2300132: CLEM_Zona1_WallLight
+    2300134: CLEM_Zona1_WindowLedge
+    2300136: CLEM_Zona1_WindowlessBuilding
+    2300138: CLEM_Zona1_WoodenPallete
+    2300140: CLEM_Zona2_A
+    2300142: CLEM_Zona2_B
+    2300144: CLEM_Zona2_C
+    2300146: CLEM_Zona2_C001
+    2300148: CLEM_Zona2_D
+    2300150: CLEM_Zona2_E
+    2300152: CLEM_Zona2_F
+    2300154: CLEM_Zona2_Floor
+    2300156: CLEM_Zona2_G
+    2300158: CLEM_Zona2_I
+    2300160: CLEM_Zona2_J
+    2300162: CLEM_Zona2_K
+    2300164: CLEM_Zona2_L
+    2300166: CLEM_Zona2_M
+    2300168: CLEM_Zona2_N
+    2300170: CLEM_Zona2_O
+    2300172: CLEM_Zona3_A
+    2300174: CLEM_Zona3_C
+    2300176: CLEM_Zona3_D
+    2300178: CLEM_Zona3_E
+    2300180: CLEM_Zona3_F
+    2300182: CLEM_Zona3_Floor
+    2300184: CLEM_Zona3_G
+    2300186: CLEM_Zona3_H
+    2300188: CLEM_Zona3_SidewalkB
+    2300190: CLEM_Zona3_SidewalkC
+    2300192: CLEM_Zona4_A
+    2300194: CLEM_Zona4_A_Stairs
+    2300196: CLEM_Zona4_B
+    2300198: CLEM_Zona4_B_Stairs
+    2300200: CLEM_Zona4_Bridge
+    2300202: CLEM_Zona4_Traintrack
+    2300204: CLEM_Zona5_A
+    2300206: CLEM_Zona5_A_Railings1
+    2300208: CLEM_Zona5_A_Railings2
+    2300210: CLEM_Zona5_A_Railings3
+    2300212: CLEM_Zona5_A_Railings5
+    2300214: CLEM_Zona5_A_Stairs
+    2300216: CLEM_Zona5_B
+    2300218: CLEM_Zona5_B_Railings
+    2300220: CLEM_Zona5_Floor
+    2300222: CLEM_Zona5_PianoBridge_Ceiling
+    2300224: CLEM_Zona5_PianoBridge_Floor
+    2300226: CLEM_Zona5_PianoBridge_Railings1
+    2300228: CLEM_Zona5_PianoBridge_Railings2
+    2300230: CLEM_Zona5_Traintrack
+    2300232: CLEM_Zona6_A
+    2300234: CLEM_Zona6_B
+    2300236: CLEM_Zona6_C
+    2300238: CLEM_Zona6_ConstructionStairs
+    2300240: CLEM_Zona6_D
+    2300242: CLEM_Zona6_E
+    2300244: CLEM_Zona6_F
+    2300246: CLEM_Zona6_Floor
+    2300248: CLEM_Zona6_G
+    2300250: CLEM_Zona6_GiantColumn
+    2300252: CLEM_Zona6_H
+    2300254: CLEM_Zona6_I
+    2300256: CLEM_Zona6_J
+    2300258: CLEM_Zona6_SidewalkA
+    2300260: CLEM_Zona6_SidewalkB
+    2300262: CLEM_Zona6_SidewalkC
+    2300264: CLEM_Zona6_Skytrain
+    2300266: CLEM_Zona6_SkyWalkway_Floor
+    2300268: CLEM_Zona6_SkyWalkway_Railings1
+    2300270: CLEM_Zona6_SkyWalkway_Railings2
+    2300272: CLEM_Zona6_SkyWalkway_Stairs
+    2300274: CLEM_Zona6_Trainstation_Floor
+    2300276: CLEM_Zona6_Trainstation_Railings
+    2300278: CLEM_Zona6_Trainstation_Stairs
+    2300280: CLEM_Zona6_Traintrack
+    2300282: CLEM_Zona7_A
+    2300284: CLEM_Zona7_B
+    2300286: CLEM_Zona7_C
+    2300288: CLEM_Zona7_D
+    2300290: CLEM_Zona7_E
+    2300292: CLEM_Zona7_F
+    2300294: CLEM_Zona7_H
+    2300296: CLEM_Zona7_H 1
+    2300298: CLEM_Zona7_I
+    2300300: CLEM_Zona7_SidewalkA
+    2300302: CLEM_Zone1_WindChimeCling
+    2300304: CLEM_Zone1_WindChimeFive
+    2300306: CLEM_Zone1_WindChimeFour
+    2300308: CLEM_Zone1_WindChimeMain
+    2300310: CLEM_Zone1_WindChimeOne
+    2300312: CLEM_Zone1_WindChimeSix
+    2300314: CLEM_Zone1_WindChimeThree
+    2300316: CLEM_Zone1_WindChimeTwo
+    2300318: CLEM_Zone2_SidewalkA
+    2300320: CLEM_Zone2_SidewalkB
+    2300322: CLEM_Zone2_Stairs
+    2300324: CLEM_Zone3_PuzzleFloor
+    2300326: CLEM_Zone3_SidewalkA
+    2300328: CLEM_Zone4_Floor
+    2300330: Cone112
+    2300332: Cylinder1553
+    2300334: light
+    2300336: smallbinbody010
+    2300338: swingbars
+    2300340: Zona5_A_Railings4
+    3300000: base
+    3300002: box023
+    3300004: box044
+    3300006: Box3578
+    3300008: Box3620
+    3300010: Box3691
+    3300012: Box3703
+    3300014: Box3770
+    3300016: Box4639
+    3300018: CLEM_Zona1_AirconboxXL
+    3300020: CLEM_Zona1_BalconyBuildingA
+    3300022: CLEM_Zona1_BalconyBuildingB
+    3300024: CLEM_Zona1_BallLight
+    3300026: CLEM_Zona1_Bench003
+    3300028: CLEM_Zona1_BendyRoof
+    3300030: CLEM_Zona1_BendyRoofS
+    3300032: CLEM_Zona1_BigTree001
+    3300034: CLEM_Zona1_BinBag
+    3300036: CLEM_Zona1_BuildingGateStraight
+    3300038: CLEM_Zona1_CityBin004
+    3300040: CLEM_Zona1_ClothingHanger
+    3300042: CLEM_Zona1_ClothingL
+    3300044: CLEM_Zona1_ClothingM
+    3300046: CLEM_Zona1_ClothingS
+    3300048: CLEM_Zona1_ClothingXS
+    3300050: CLEM_Zona1_ConeCeilingLight
+    3300052: CLEM_Zona1_ContainerbinL
+    3300054: CLEM_Zona1_ElectricCableRandomBalconyBuilding
+    3300056: CLEM_Zona1_ElectricCableResidentialBuilding
+    3300058: CLEM_Zona1_ElectricityOutletL
+    3300060: CLEM_Zona1_FloodLight004
+    3300062: CLEM_Zona1_Floor
+    3300064: CLEM_Zona1_GateDoor
+    3300066: CLEM_Zona1_GlassBottleOpen
+    3300068: CLEM_Zona1_Gutter
+    3300070: CLEM_Zona1_GutterShopperBuilding
+    3300072: CLEM_Zona1_Mailbox
+    3300074: CLEM_Zona1_PaperLanternRound
+    3300076: CLEM_Zona1_PipesResidentialBuilding
+    3300078: CLEM_Zona1_Plantpotshort
+    3300080: CLEM_Zona1_PlasticBottleOpen
+    3300082: CLEM_Zona1_PlasticBox
+    3300084: CLEM_Zona1_Playgroundfloor
+    3300086: CLEM_Zona1_PlaygroundGate
+    3300088: CLEM_Zona1_Playgroundturnything
+    3300090: CLEM_Zona1_RandomBalconyBuilding
+    3300092: CLEM_Zona1_Rectangularplantpot
+    3300094: CLEM_Zona1_ResidentialBuilding
+    3300096: CLEM_Zona1_RollerGarageDoor
+    3300098: CLEM_Zona1_Seasaw
+    3300100: CLEM_Zona1_ShopperBuilding
+    3300102: CLEM_Zona1_sidewalk
+    3300104: CLEM_Zona1_Sidewalk002
+    3300106: CLEM_Zona1_Sidewalk1
+    3300108: CLEM_Zona1_SkinnyBabeBuilding
+    3300110: CLEM_Zona1_SkinnyPipeShopperBuilding
+    3300112: CLEM_Zona1_StickClothingHanger
+    3300114: CLEM_Zona1_StickClothingHanger172
+    3300116: CLEM_Zona1_SupportDoorPaperLantern
+    3300118: CLEM_Zona1_Swing1
+    3300120: CLEM_Zona1_Swing2
+    3300122: CLEM_Zona1_TreeBase001
+    3300124: CLEM_Zona1_TVantenna
+    3300126: CLEM_Zona1_TVantennabig
+    3300128: CLEM_Zona1_TVDish+Antenna
+    3300130: CLEM_Zona1_Vent
+    3300132: CLEM_Zona1_WallLight
+    3300134: CLEM_Zona1_WindowLedge
+    3300136: CLEM_Zona1_WindowlessBuilding
+    3300138: CLEM_Zona1_WoodenPallete
+    3300140: CLEM_Zona2_A
+    3300142: CLEM_Zona2_B
+    3300144: CLEM_Zona2_C
+    3300146: CLEM_Zona2_C001
+    3300148: CLEM_Zona2_D
+    3300150: CLEM_Zona2_E
+    3300152: CLEM_Zona2_F
+    3300154: CLEM_Zona2_Floor
+    3300156: CLEM_Zona2_G
+    3300158: CLEM_Zona2_I
+    3300160: CLEM_Zona2_J
+    3300162: CLEM_Zona2_K
+    3300164: CLEM_Zona2_L
+    3300166: CLEM_Zona2_M
+    3300168: CLEM_Zona2_N
+    3300170: CLEM_Zona2_O
+    3300172: CLEM_Zona3_A
+    3300174: CLEM_Zona3_C
+    3300176: CLEM_Zona3_D
+    3300178: CLEM_Zona3_E
+    3300180: CLEM_Zona3_F
+    3300182: CLEM_Zona3_Floor
+    3300184: CLEM_Zona3_G
+    3300186: CLEM_Zona3_H
+    3300188: CLEM_Zona3_SidewalkB
+    3300190: CLEM_Zona3_SidewalkC
+    3300192: CLEM_Zona4_A
+    3300194: CLEM_Zona4_A_Stairs
+    3300196: CLEM_Zona4_B
+    3300198: CLEM_Zona4_B_Stairs
+    3300200: CLEM_Zona4_Bridge
+    3300202: CLEM_Zona4_Traintrack
+    3300204: CLEM_Zona5_A
+    3300206: CLEM_Zona5_A_Railings1
+    3300208: CLEM_Zona5_A_Railings2
+    3300210: CLEM_Zona5_A_Railings3
+    3300212: CLEM_Zona5_A_Railings5
+    3300214: CLEM_Zona5_A_Stairs
+    3300216: CLEM_Zona5_B
+    3300218: CLEM_Zona5_B_Railings
+    3300220: CLEM_Zona5_Floor
+    3300222: CLEM_Zona5_PianoBridge_Ceiling
+    3300224: CLEM_Zona5_PianoBridge_Floor
+    3300226: CLEM_Zona5_PianoBridge_Railings1
+    3300228: CLEM_Zona5_PianoBridge_Railings2
+    3300230: CLEM_Zona5_Traintrack
+    3300232: CLEM_Zona6_A
+    3300234: CLEM_Zona6_B
+    3300236: CLEM_Zona6_C
+    3300238: CLEM_Zona6_ConstructionStairs
+    3300240: CLEM_Zona6_D
+    3300242: CLEM_Zona6_E
+    3300244: CLEM_Zona6_F
+    3300246: CLEM_Zona6_Floor
+    3300248: CLEM_Zona6_G
+    3300250: CLEM_Zona6_GiantColumn
+    3300252: CLEM_Zona6_H
+    3300254: CLEM_Zona6_I
+    3300256: CLEM_Zona6_J
+    3300258: CLEM_Zona6_SidewalkA
+    3300260: CLEM_Zona6_SidewalkB
+    3300262: CLEM_Zona6_SidewalkC
+    3300264: CLEM_Zona6_Skytrain
+    3300266: CLEM_Zona6_SkyWalkway_Floor
+    3300268: CLEM_Zona6_SkyWalkway_Railings1
+    3300270: CLEM_Zona6_SkyWalkway_Railings2
+    3300272: CLEM_Zona6_SkyWalkway_Stairs
+    3300274: CLEM_Zona6_Trainstation_Floor
+    3300276: CLEM_Zona6_Trainstation_Railings
+    3300278: CLEM_Zona6_Trainstation_Stairs
+    3300280: CLEM_Zona6_Traintrack
+    3300282: CLEM_Zona7_A
+    3300284: CLEM_Zona7_B
+    3300286: CLEM_Zona7_C
+    3300288: CLEM_Zona7_D
+    3300290: CLEM_Zona7_E
+    3300292: CLEM_Zona7_F
+    3300294: CLEM_Zona7_H
+    3300296: CLEM_Zona7_H 1
+    3300298: CLEM_Zona7_I
+    3300300: CLEM_Zona7_SidewalkA
+    3300302: CLEM_Zone1_WindChimeCling
+    3300304: CLEM_Zone1_WindChimeFive
+    3300306: CLEM_Zone1_WindChimeFour
+    3300308: CLEM_Zone1_WindChimeMain
+    3300310: CLEM_Zone1_WindChimeOne
+    3300312: CLEM_Zone1_WindChimeSix
+    3300314: CLEM_Zone1_WindChimeThree
+    3300316: CLEM_Zone1_WindChimeTwo
+    3300318: CLEM_Zone2_SidewalkA
+    3300320: CLEM_Zone2_SidewalkB
+    3300322: CLEM_Zone2_Stairs
+    3300324: CLEM_Zone3_PuzzleFloor
+    3300326: CLEM_Zone3_SidewalkA
+    3300328: CLEM_Zone4_Floor
+    3300330: Cone112
+    3300332: Cylinder1553
+    3300334: light
+    3300336: smallbinbody010
+    3300338: swingbars
+    3300340: Zona5_A_Railings4
+    4300000: base
+    4300002: light
+    4300004: swingbars
+    4300006: CLEM_Zona1_Swing1
+    4300008: CLEM_Zona1_Swing2
+    4300010: CLEM_Zone1_WindChimeThree
+    4300012: CLEM_Zone1_WindChimeTwo
+    4300014: CLEM_Zone1_WindChimeOne
+    4300016: CLEM_Zone1_WindChimeFour
+    4300018: CLEM_Zone1_WindChimeFive
+    4300020: CLEM_Zone1_WindChimeCling
+    4300022: CLEM_Zone1_WindChimeSix
+    4300024: CLEM_Zone1_WindChimeMain
+    4300026: Box3770
+    4300028: CLEM_Zona1_ClothingS
+    4300030: CLEM_Zona1_ClothingXS
+    4300032: CLEM_Zona1_ClothingM
+    4300034: CLEM_Zona1_ClothingL
+    4300036: CLEM_Zona1_ClothingHanger
+    4300038: Cylinder1553
+    4300040: CLEM_Zona1_TVDish+Antenna
+    4300042: CLEM_Zona1_ElectricityOutletL
+    4300044: CLEM_Zona1_ContainerbinL
+    4300046: CLEM_Zona1_PlaygroundGate
+    4300048: CLEM_Zona1_Playgroundturnything
+    4300050: CLEM_Zona1_Seasaw
+    4300052: CLEM_Zona1_Bench003
+    4300054: CLEM_Zona1_WoodenPallete
+    4300056: CLEM_Zona1_WindowlessBuilding
+    4300058: CLEM_Zona1_WindowLedge
+    4300060: Box3691
+    4300062: CLEM_Zona1_WallLight
+    4300064: CLEM_Zona1_Vent
+    4300066: CLEM_Zona1_TreeBase001
+    4300068: CLEM_Zona1_TVantennabig
+    4300070: CLEM_Zona1_TVantenna
+    4300072: Cone112
+    4300074: CLEM_Zona1_SupportDoorPaperLantern
+    4300076: CLEM_Zona1_StickClothingHanger172
+    4300078: CLEM_Zona1_StickClothingHanger
+    4300080: CLEM_Zona1_SkinnyPipeShopperBuilding
+    4300082: CLEM_Zona1_SkinnyBabeBuilding
+    4300084: CLEM_Zona1_ShopperBuilding
+    4300086: CLEM_Zona1_RollerGarageDoor
+    4300088: CLEM_Zona1_ResidentialBuilding
+    4300090: CLEM_Zona1_Rectangularplantpot
+    4300092: CLEM_Zona1_RandomBalconyBuilding
+    4300094: Box3703
+    4300096: CLEM_Zona1_Playgroundfloor
+    4300098: CLEM_Zona1_PlasticBox
+    4300100: CLEM_Zona1_PlasticBottleOpen
+    4300102: CLEM_Zona1_Plantpotshort
+    4300104: CLEM_Zona1_PaperLanternRound
+    4300106: CLEM_Zona1_Mailbox
+    4300108: CLEM_Zona1_GutterShopperBuilding
+    4300110: CLEM_Zona1_Gutter
+    4300112: CLEM_Zona1_GlassBottleOpen
+    4300114: CLEM_Zona1_GateDoor
+    4300116: CLEM_Zona1_ElectricCableRandomBalconyBuilding
+    4300118: CLEM_Zona1_ElectricCableResidentialBuilding
+    4300120: smallbinbody010
+    4300122: CLEM_Zona1_ConeCeilingLight
+    4300124: CLEM_Zona1_CityBin004
+    4300126: CLEM_Zona1_BuildingGateStraight
+    4300128: CLEM_Zona1_BinBag
+    4300130: CLEM_Zona1_BigTree001
+    4300132: CLEM_Zona1_BendyRoofS
+    4300134: CLEM_Zona1_BendyRoof
+    4300136: CLEM_Zona1_PipesResidentialBuilding
+    4300138: Box3578
+    4300140: Box3620
+    4300142: CLEM_Zona1_BallLight
+    4300144: CLEM_Zona1_BalconyBuildingB
+    4300146: CLEM_Zona1_sidewalk
+    4300148: Box4639
+    4300150: CLEM_Zona1_AirconboxXL
+    4300152: box044
+    4300154: box023
+    4300156: CLEM_Zona1_FloodLight004
+    4300158: CLEM_Zona1_Sidewalk1
+    4300160: CLEM_Zona1_Sidewalk002
+    4300162: CLEM_Zona1_BalconyBuildingA
+    4300164: CLEM_Zona1_Floor
+    4300166: CLEM_Zona2_A
+    4300168: CLEM_Zona2_B
+    4300170: CLEM_Zona2_C
+    4300172: CLEM_Zona2_D
+    4300174: CLEM_Zona2_F
+    4300176: CLEM_Zona2_E
+    4300178: CLEM_Zona2_G
+    4300180: CLEM_Zona7_H
+    4300182: CLEM_Zona2_I
+    4300184: CLEM_Zona2_J
+    4300186: CLEM_Zona2_L
+    4300188: CLEM_Zona2_M
+    4300190: CLEM_Zona2_O
+    4300192: CLEM_Zona2_K
+    4300194: CLEM_Zona2_N
+    4300196: CLEM_Zone2_Stairs
+    4300198: CLEM_Zona2_Floor
+    4300200: CLEM_Zone2_SidewalkB
+    4300202: CLEM_Zone2_SidewalkA
+    4300204: CLEM_Zona7_F
+    4300206: CLEM_Zona7_SidewalkA
+    4300208: CLEM_Zona7_E
+    4300210: CLEM_Zona7_H
+    4300212: CLEM_Zona7_D
+    4300214: CLEM_Zona7_C
+    4300216: CLEM_Zona7_B
+    4300218: CLEM_Zona7_A
+    4300220: CLEM_Zona7_I
+    4300222: CLEM_Zona2_C001
+    4300224: CLEM_Zona3_C
+    4300226: CLEM_Zona3_D
+    4300228: CLEM_Zona3_E
+    4300230: CLEM_Zona3_F
+    4300232: CLEM_Zona3_G
+    4300234: CLEM_Zona3_H
+    4300236: CLEM_Zone3_PuzzleFloor
+    4300238: CLEM_Zona3_Floor
+    4300240: CLEM_Zona3_SidewalkB
+    4300242: CLEM_Zone3_SidewalkA
+    4300244: CLEM_Zona3_SidewalkC
+    4300246: CLEM_Zona3_A
+    4300248: CLEM_Zona5_Traintrack
+    4300250: CLEM_Zona5_Floor
+    4300252: CLEM_Zona5_PianoBridge_Floor
+    4300254: CLEM_Zona5_PianoBridge_Railings1
+    4300256: CLEM_Zona5_PianoBridge_Ceiling
+    4300258: CLEM_Zona5_PianoBridge_Railings2
+    4300260: CLEM_Zona5_B
+    4300262: CLEM_Zona5_A
+    4300264: CLEM_Zona5_B_Railings
+    4300266: CLEM_Zona5_A_Railings5
+    4300268: CLEM_Zona5_A_Railings3
+    4300270: CLEM_Zona5_A_Railings2
+    4300272: CLEM_Zona5_A_Railings1
+    4300274: Zona5_A_Railings4
+    4300276: CLEM_Zona5_A_Stairs
+    4300278: CLEM_Zona6_SidewalkC
+    4300280: CLEM_Zona6_GiantColumn
+    4300282: CLEM_Zona6_SidewalkB
+    4300284: CLEM_Zona6_SidewalkA
+    4300286: CLEM_Zona6_Floor
+    4300288: CLEM_Zona6_SkyWalkway_Floor
+    4300290: CLEM_Zona6_SkyWalkway_Railings2
+    4300292: CLEM_Zona6_SkyWalkway_Railings1
+    4300294: CLEM_Zona6_SkyWalkway_Stairs
+    4300296: CLEM_Zona6_A
+    4300298: CLEM_Zona6_Traintrack
+    4300300: CLEM_Zona6_Skytrain
+    4300302: CLEM_Zona6_ConstructionStairs
+    4300304: CLEM_Zona6_Trainstation_Stairs
+    4300306: CLEM_Zona6_Trainstation_Railings
+    4300308: CLEM_Zona6_B
+    4300310: CLEM_Zona6_C
+    4300312: CLEM_Zona6_D
+    4300314: CLEM_Zona6_E
+    4300316: CLEM_Zona6_F
+    4300318: CLEM_Zona6_H
+    4300320: CLEM_Zona6_G
+    4300322: CLEM_Zona6_J
+    4300324: CLEM_Zona6_I
+    4300326: CLEM_Zona6_Trainstation_Floor
+    4300328: CLEM_Zone4_Floor
+    4300330: CLEM_Zona4_Traintrack
+    4300332: CLEM_Zona4_A
+    4300334: CLEM_Zona4_B
+    4300336: CLEM_Zona4_B_Stairs
+    4300338: CLEM_Zona4_A_Stairs
+    4300340: CLEM_Zona4_Bridge
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
