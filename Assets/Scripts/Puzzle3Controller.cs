@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Puzzle3Controller : MonoBehaviour {
 
-    public GameObject bridge;
+    public GameObject bridge, player;
     public Light spotlight;
     public float speedLerpMultiplier = 1.0f;
     public float bridgeDuration = 5.0f;
     public float energyIncreaseValue = 10.0f;
     private bool startcountdown = false;
-    public float counter;
+    public float counter, activationDistance;
     private float storedEnergy;
 	// Use this for initialization
 	void Start ()
@@ -41,18 +41,20 @@ public class Puzzle3Controller : MonoBehaviour {
         /*
          check if in distance
          */
-        if (Input.GetButtonDown("Fire1"))
-        {
-            storedEnergy += energyIncreaseValue;
-            if (storedEnergy > 50)
+        if (Vector3.Distance(player.transform.position, gameObject.transform.position) < activationDistance) {
+            if (Input.GetButtonDown("Fire1"))
             {
-                spotlight.enabled = true;
-                bridge.SetActive(true);
-                bridge.GetComponent<BoxCollider>().enabled = true;
-                startcountdown = true;
-                counter = 0.0f;
+                storedEnergy += energyIncreaseValue;
+                if (storedEnergy > 50)
+                {
+                    spotlight.enabled = true;
+                    bridge.SetActive(true);
+                    bridge.GetComponent<BoxCollider>().enabled = true;
+                    startcountdown = true;
+                    counter = 0.0f;
+                }
             }
-        }       
+        }
     }
 
 
