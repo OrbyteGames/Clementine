@@ -6,7 +6,6 @@ public class Puzzle3Controller : MonoBehaviour {
 
     public GameObject bridge, player;
     public Light spotlight;
-    public float speedLerpMultiplier = 1.0f;
     public float bridgeDuration = 5.0f;
     public float energyIncreaseValue = 10.0f;
     private bool startcountdown = false;

@@ -58,14 +58,14 @@ public class CameraRotation : MonoBehaviour {
     public void ActivateCam()
     {
         start = true;
-        cam.enabled = true;
+        if(!cam.enabled) cam.enabled = true;
         audioList.enabled = true;
     }
 
     public void DeactivateCam()
     {
         start = false;
-        cam.enabled = false;
+        if (cam.enabled) cam.enabled = false;
         audioList.enabled = false;
     }
 }

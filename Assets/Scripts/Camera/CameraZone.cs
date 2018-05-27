@@ -8,12 +8,13 @@ public class CameraZone : MonoBehaviour
     public Camera cam;
     public bool isStill;
 
-    private CameraRotation associatedCamScript;
-
+    private CameraRotation associatedRotationCamScript;
+ 
     // Use this for initialization
     void Start()
     {
-        associatedCamScript = cam.GetComponent<CameraRotation>();
+        associatedRotationCamScript = cam.GetComponent<CameraRotation>();
+
     }
 
     // Update is called once per frame
@@ -27,7 +28,8 @@ public class CameraZone : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             //playerCam.enabled = false;
-            associatedCamScript.ActivateCam();
+            cam.enabled = true;
+            associatedRotationCamScript.ActivateCam();
         }
     }
 
@@ -36,7 +38,8 @@ public class CameraZone : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             //playerCam.enabled = true;
-            associatedCamScript.DeactivateCam();
+            cam.enabled = false;
+            associatedRotationCamScript.DeactivateCam();
         }
     }
 }
