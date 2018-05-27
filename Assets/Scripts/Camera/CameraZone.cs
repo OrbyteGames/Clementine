@@ -29,7 +29,7 @@ public class CameraZone : MonoBehaviour
         {
             //playerCam.enabled = false;
             cam.enabled = true;
-            associatedRotationCamScript.ActivateCam();
+            if (associatedRotationCamScript) associatedRotationCamScript.ActivateCam();
         }
     }
 
@@ -39,7 +39,7 @@ public class CameraZone : MonoBehaviour
         {
             //playerCam.enabled = true;
             cam.enabled = false;
-            associatedRotationCamScript.DeactivateCam();
+            if (associatedRotationCamScript) associatedRotationCamScript.DeactivateCam();
         }
     }
 }

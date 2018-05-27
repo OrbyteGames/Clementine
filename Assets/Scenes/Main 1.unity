@@ -5390,7 +5390,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 124230943}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &124230946
 Behaviour:
   m_ObjectHideFlags: 0
@@ -13781,6 +13781,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: afea5c03f83fd484fafe4526de9ca8df, type: 3}
   m_IsPrefabParent: 0
+--- !u!198 &369713805 stripped
+ParticleSystem:
+  m_PrefabParentObject: {fileID: 198563507062153788, guid: f15dccb87021d354fa536f649cdfda15,
+    type: 2}
+  m_PrefabInternal: {fileID: 1186213194}
 --- !u!1 &370566605
 GameObject:
   m_ObjectHideFlags: 0
@@ -18369,6 +18374,10 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!4 &481344771 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400004, guid: f6c8e1e8f3346a64e9c92224783b6add, type: 3}
+  m_PrefabInternal: {fileID: 481344766}
 --- !u!1 &484490113
 GameObject:
   m_ObjectHideFlags: 0
@@ -43184,7 +43193,7 @@ MonoBehaviour:
   minIntensity: 0
   maxIntensity: 15
   smoothing: 5
-  ps: {fileID: 0}
+  ps: {fileID: 369713805}
   fx:
   - {fileID: 1165292252}
   - {fileID: 1165292251}
@@ -43234,7 +43243,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 50
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -44073,6 +44082,48 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1183887304}
   m_Mesh: {fileID: 4300036, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!1001 &1186213194
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 481344771}
+    m_Modifications:
+    - target: {fileID: 4071467110998940, guid: f15dccb87021d354fa536f649cdfda15, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071467110998940, guid: f15dccb87021d354fa536f649cdfda15, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071467110998940, guid: f15dccb87021d354fa536f649cdfda15, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071467110998940, guid: f15dccb87021d354fa536f649cdfda15, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071467110998940, guid: f15dccb87021d354fa536f649cdfda15, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071467110998940, guid: f15dccb87021d354fa536f649cdfda15, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071467110998940, guid: f15dccb87021d354fa536f649cdfda15, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071467110998940, guid: f15dccb87021d354fa536f649cdfda15, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f15dccb87021d354fa536f649cdfda15, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1187400059
 GameObject:
   m_ObjectHideFlags: 0
@@ -46421,7 +46472,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1249410305}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!124 &1249410307
 Behaviour:
   m_ObjectHideFlags: 0
@@ -48711,7 +48762,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1297131985}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &1297131988
 Behaviour:
   m_ObjectHideFlags: 0
@@ -66958,7 +67009,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1728261949}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &1728261954
 Behaviour:
   m_ObjectHideFlags: 0

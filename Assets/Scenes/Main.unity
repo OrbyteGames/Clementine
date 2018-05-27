@@ -5390,7 +5390,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 124230943}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &124230946
 Behaviour:
   m_ObjectHideFlags: 0
@@ -18369,6 +18369,10 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!4 &481344771 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400004, guid: f6c8e1e8f3346a64e9c92224783b6add, type: 3}
+  m_PrefabInternal: {fileID: 481344766}
 --- !u!1 &484490113
 GameObject:
   m_ObjectHideFlags: 0
@@ -23728,6 +23732,60 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 628907783}
   m_Mesh: {fileID: 4300034, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!1001 &629819141
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 481344771}
+    m_Modifications:
+    - target: {fileID: 4071467110998940, guid: f15dccb87021d354fa536f649cdfda15, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.115478
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071467110998940, guid: f15dccb87021d354fa536f649cdfda15, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071467110998940, guid: f15dccb87021d354fa536f649cdfda15, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071467110998940, guid: f15dccb87021d354fa536f649cdfda15, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071467110998940, guid: f15dccb87021d354fa536f649cdfda15, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071467110998940, guid: f15dccb87021d354fa536f649cdfda15, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071467110998940, guid: f15dccb87021d354fa536f649cdfda15, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071467110998940, guid: f15dccb87021d354fa536f649cdfda15, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071467110998940, guid: f15dccb87021d354fa536f649cdfda15, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.3800553
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071467110998940, guid: f15dccb87021d354fa536f649cdfda15, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.3800555
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071467110998940, guid: f15dccb87021d354fa536f649cdfda15, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.3800555
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f15dccb87021d354fa536f649cdfda15, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &634464831
 GameObject:
   m_ObjectHideFlags: 0
@@ -43184,7 +43242,7 @@ MonoBehaviour:
   minIntensity: 0
   maxIntensity: 15
   smoothing: 5
-  ps: {fileID: 0}
+  ps: {fileID: 1559318065}
   fx:
   - {fileID: 1165292252}
   - {fileID: 1165292251}
@@ -46421,7 +46479,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1249410305}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!124 &1249410307
 Behaviour:
   m_ObjectHideFlags: 0
@@ -48711,7 +48769,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1297131985}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &1297131988
 Behaviour:
   m_ObjectHideFlags: 0
@@ -59756,6 +59814,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1556301159}
   m_Mesh: {fileID: 4300040, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!198 &1559318065 stripped
+ParticleSystem:
+  m_PrefabParentObject: {fileID: 198563507062153788, guid: f15dccb87021d354fa536f649cdfda15,
+    type: 2}
+  m_PrefabInternal: {fileID: 629819141}
 --- !u!1 &1562152209
 GameObject:
   m_ObjectHideFlags: 0
@@ -66958,7 +67021,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1728261949}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &1728261954
 Behaviour:
   m_ObjectHideFlags: 0
