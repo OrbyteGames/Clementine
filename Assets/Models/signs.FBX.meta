@@ -1,0 +1,230 @@
+fileFormatVersion: 2
+guid: 56e654f1a3a6a3844ad8b103e88ca556
+timeCreated: 1527401193
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: CLEM_Zona2_FloorSignA
+    100002: CLEM_Zona2_FloorSignB
+    100004: CLEM_Zona2_SignA
+    100006: CLEM_Zona2_SignB
+    100008: CLEM_Zona2_SignC
+    100010: CLEM_Zona2_SignD
+    100012: CLEM_Zona2_SignE
+    100014: CLEM_Zona2_SignF
+    100016: CLEM_Zona2_SignG
+    100018: CLEM_Zona2_SignH
+    100020: CLEM_Zona2_SignI
+    100022: CLEM_Zona2_SignJ
+    100024: CLEM_Zona2_SignK
+    100026: CLEM_Zona3_SignA
+    100028: //RootNode
+    400000: CLEM_Zona2_FloorSignA
+    400002: CLEM_Zona2_FloorSignB
+    400004: CLEM_Zona2_SignA
+    400006: CLEM_Zona2_SignB
+    400008: CLEM_Zona2_SignC
+    400010: CLEM_Zona2_SignD
+    400012: CLEM_Zona2_SignE
+    400014: CLEM_Zona2_SignF
+    400016: CLEM_Zona2_SignG
+    400018: CLEM_Zona2_SignH
+    400020: CLEM_Zona2_SignI
+    400022: CLEM_Zona2_SignJ
+    400024: CLEM_Zona2_SignK
+    400026: CLEM_Zona3_SignA
+    400028: //RootNode
+    2100000: 'Material #927'
+    2100002: 'Material #926'
+    2100004: 'Material #929'
+    2100006: 'Material #928'
+    2100008: 'Material #939'
+    2100010: 'Material #938'
+    2100012: 'Material #937'
+    2100014: 'Material #936'
+    2100016: 'Material #940'
+    2100018: 'Material #934'
+    2100020: 'Material #933'
+    2100022: 'Material #932'
+    2100024: 'Material #931'
+    2100026: 'Material #930'
+    2100028: 'Material #941'
+    2100030: 'Material #935'
+    2100032: 'Material #925'
+    2100034: 'Material #919'
+    2100036: 'Material #921'
+    2100038: 'Material #920'
+    2100040: 'Material #918'
+    2100042: 'Material #822'
+    2100044: 'Material #824'
+    2100046: 'Material #825'
+    2100048: 'Material #826'
+    2100050: 'Material #827'
+    2100052: 'Material #828'
+    2100054: 'Material #829'
+    2100056: 'Material #830'
+    2100058: 'Material #807'
+    2100060: 'Material #823'
+    2100062: 'Material #820'
+    2100064: 'Material #821'
+    2100066: 'Material #901'
+    2100068: 'Material #902'
+    2100070: 'Material #904'
+    2100072: 'Material #905'
+    2100074: 'Material #906'
+    2100076: 'Material #903'
+    2100078: 'Material #846'
+    2100080: 'Material #845'
+    2100082: 'Material #858'
+    2100084: 'Material #859'
+    2100086: 'Material #860'
+    2100088: 'Material #861'
+    2100090: 'Material #756'
+    2100092: 'Material #768'
+    2100094: 'Material #769'
+    2100096: 'Material #770'
+    2100098: 'Material #754'
+    2100100: 'Material #755'
+    2100102: 'Material #741'
+    2100104: 'Material #740'
+    2100106: 'Material #742'
+    2100108: 'Material #793'
+    2100110: 'Material #794'
+    2100112: 'Material #795'
+    2100114: 'Material #796'
+    2100116: 'Material #965'
+    2100118: 'Material #966'
+    2100120: 'Material #967'
+    2100122: 'Material #968'
+    2100124: 'Material #991'
+    2100126: 'Material #992'
+    2100128: 'Material #889'
+    2100130: 'Material #887'
+    2100132: 'Material #888'
+    2100134: 'Material #875'
+    2100136: 'Material #873'
+    2100138: 'Material #874'
+    2300000: CLEM_Zona2_FloorSignA
+    2300002: CLEM_Zona2_FloorSignB
+    2300004: CLEM_Zona2_SignA
+    2300006: CLEM_Zona2_SignB
+    2300008: CLEM_Zona2_SignC
+    2300010: CLEM_Zona2_SignD
+    2300012: CLEM_Zona2_SignE
+    2300014: CLEM_Zona2_SignF
+    2300016: CLEM_Zona2_SignG
+    2300018: CLEM_Zona2_SignH
+    2300020: CLEM_Zona2_SignI
+    2300022: CLEM_Zona2_SignJ
+    2300024: CLEM_Zona2_SignK
+    2300026: CLEM_Zona3_SignA
+    3300000: CLEM_Zona2_FloorSignA
+    3300002: CLEM_Zona2_FloorSignB
+    3300004: CLEM_Zona2_SignA
+    3300006: CLEM_Zona2_SignB
+    3300008: CLEM_Zona2_SignC
+    3300010: CLEM_Zona2_SignD
+    3300012: CLEM_Zona2_SignE
+    3300014: CLEM_Zona2_SignF
+    3300016: CLEM_Zona2_SignG
+    3300018: CLEM_Zona2_SignH
+    3300020: CLEM_Zona2_SignI
+    3300022: CLEM_Zona2_SignJ
+    3300024: CLEM_Zona2_SignK
+    3300026: CLEM_Zona3_SignA
+    4300000: CLEM_Zona2_SignJ
+    4300002: CLEM_Zona2_SignK
+    4300004: CLEM_Zona2_SignF
+    4300006: CLEM_Zona2_SignI
+    4300008: CLEM_Zona2_SignE
+    4300010: CLEM_Zona2_SignD
+    4300012: CLEM_Zona2_SignB
+    4300014: CLEM_Zona2_SignA
+    4300016: CLEM_Zona2_SignC
+    4300018: CLEM_Zona3_SignA
+    4300020: CLEM_Zona2_FloorSignA
+    4300022: CLEM_Zona2_FloorSignB
+    4300024: CLEM_Zona2_SignH
+    4300026: CLEM_Zona2_SignG
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
