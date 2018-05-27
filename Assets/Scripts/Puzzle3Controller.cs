@@ -41,7 +41,7 @@ public class Puzzle3Controller : MonoBehaviour {
          check if in distance
          */
         if (Vector3.Distance(player.transform.position, gameObject.transform.position) < activationDistance) {
-            if (Input.GetButtonDown("Fire1"))
+            if (Input.GetButtonDown("Fire1") && !startcountdown)
             {
                 storedEnergy += energyIncreaseValue;
                 if (storedEnergy > 50)
@@ -50,6 +50,7 @@ public class Puzzle3Controller : MonoBehaviour {
                     bridge.SetActive(true);
                     bridge.GetComponent<BoxCollider>().enabled = true;
                     startcountdown = true;
+                    storedEnergy = 0.0f;
                     counter = 0.0f;
                 }
             }
