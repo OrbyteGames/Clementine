@@ -26,6 +26,10 @@ public class NPCController : MonoBehaviour {
         transform.position = origin.position;
         agent.speed = speed;
         StartCoroutine(fadeInAndOutRepeat(matToFade, fadeDuration, fadeWaitTime));
+        if(destination == null)
+        {
+            transform.position = destination.position;
+        }
     }
 
     // Update is called once per frame
