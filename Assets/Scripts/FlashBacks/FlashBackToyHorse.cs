@@ -30,7 +30,7 @@ public class FlashBackToyHorse : MonoBehaviour {
     public float horseMusicFade = 2.0f;
     public float leitmotivFade = 2.0f;
     public float laughFade = 2.0f;
-
+    
     // ShadowOptions
     public Material matToFade;
     public float shadowFadeIn = 1.0f;
@@ -75,8 +75,7 @@ public class FlashBackToyHorse : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (light == null)
-            return;
+        if (light == null) return;
         if (actualState != FlashBackState.NONE)
         {
             counter += Time.deltaTime;
@@ -85,11 +84,12 @@ public class FlashBackToyHorse : MonoBehaviour {
             {
                 case FlashBackState.STAGE1:
                     // shadow fade
-                    if (light.intensity < 15)
+                    Debug.Log("Inside stage1");
+                    if (light.intensity < 15.0f)
                     {
                         light.intensity += lightFade * Time.deltaTime;
                     }
-                    if (currentColor.a < 1.0)
+                    if (currentColor.a < 1.0f)
                     {
                         currentColor.a += Time.deltaTime * (1.0f / shadowFadeIn);
                         matToFade.SetColor("_Color", currentColor);
@@ -153,14 +153,15 @@ public class FlashBackToyHorse : MonoBehaviour {
                     {
                         currentColor.a = 0.0f;
                         matToFade.SetColor("_Color", currentColor);
-                        enabled = false;   
+                        enabled = false;
+                        animator.StopPlayback();
                     }
                     break;
             }
         }
     }
 
-    IEnumerator Cooldown()
+   /* IEnumerator Cooldown()
     {
         //Reset Values
         yield return new WaitForSeconds(0.5f);
@@ -180,7 +181,7 @@ public class FlashBackToyHorse : MonoBehaviour {
         lastSum += newVal;
         // Calculate new smoothed average
         light.intensity = lastSum / (float)smoothQueue.Count;
-    }
+    }*/
 
     public void StartScene()
     {
