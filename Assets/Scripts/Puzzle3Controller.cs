@@ -11,6 +11,8 @@ public class Puzzle3Controller : MonoBehaviour {
     private bool startcountdown = false;
     public float counter, activationDistance;
     private float storedEnergy;
+    private AudioSource audioSource;
+    public AudioClip electricSound;
 	// Use this for initialization
 	void Start ()
     {
@@ -20,6 +22,8 @@ public class Puzzle3Controller : MonoBehaviour {
         spotlight.enabled = false;
         bridge.SetActive(false);
         bridge.GetComponent<BoxCollider>().enabled = false;
+        audioSource = gameObject.GetComponent<AudioSource>();
+        if (electricSound!=null && audioSource !=null) audioSource.clip = electricSound;
 	}
 	
 	// Update is called once per frame
@@ -43,6 +47,7 @@ public class Puzzle3Controller : MonoBehaviour {
         if (Vector3.Distance(player.transform.position, gameObject.transform.position) < activationDistance) {
             if (Input.GetButtonDown("Fire1") && !startcountdown)
             {
+                if (electricSound != null && audioSource != null) audioSource.Play();
                 storedEnergy += energyIncreaseValue;
                 if (storedEnergy > 50)
                 {

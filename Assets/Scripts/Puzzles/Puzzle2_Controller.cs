@@ -13,6 +13,8 @@ public class Puzzle2_Controller : MonoBehaviour {
     public float storedEnergy;
     private bool startWalking;
     private float energyTime;
+    private AudioSource audioSource;
+    public AudioClip electricSound;
     // Use this for initialization
     void Start ()
     {
@@ -20,6 +22,8 @@ public class Puzzle2_Controller : MonoBehaviour {
         energyIncreaseValue = 10.0f;
         RobotLight.SetActive(false);
         material = GetComponent<Renderer>().material;
+        audioSource = gameObject.GetComponent<AudioSource>();
+        if (electricSound != null && audioSource != null) audioSource.clip = electricSound;
     }
 	
 	// Update is called once per frame
@@ -40,6 +44,7 @@ public class Puzzle2_Controller : MonoBehaviour {
                 }
                 if (Input.GetButtonDown("Fire1"))
                 {
+                    if (electricSound != null && audioSource != null) audioSource.Play();
                     storedEnergy += energyIncreaseValue;
                     energyTime = 1.0f;
                 }
