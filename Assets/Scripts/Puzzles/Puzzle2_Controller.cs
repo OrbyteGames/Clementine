@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Puzzle2_Controller : MonoBehaviour {
     public GameObject clementine, container, RobotLight;
     public Transform target;
@@ -14,6 +15,7 @@ public class Puzzle2_Controller : MonoBehaviour {
     private bool startWalking;
     private float energyTime;
     private AudioSource audioSource;
+    public Puzzle2_Animation anim;
     public AudioClip electricSound;
     // Use this for initialization
     void Start ()
@@ -44,6 +46,7 @@ public class Puzzle2_Controller : MonoBehaviour {
                 }
                 if (Input.GetButtonDown("Fire1"))
                 {
+                    anim.active = true;
                     if (electricSound != null && audioSource != null) audioSource.Play();
                     storedEnergy += energyIncreaseValue;
                     energyTime = 1.0f;
@@ -60,6 +63,7 @@ public class Puzzle2_Controller : MonoBehaviour {
             gameObject.transform.position += (new Vector3(-robotSpeed, 0.0f, 0.0f) * Time.deltaTime);
             container.transform.position += (new Vector3(-robotSpeed, 0.0f, 0.0f) * Time.deltaTime);
             //transform.position += new Vector3(-robotSpeed, 0.0f, 0.0f);
+            anim.StopWalking();
             if (Mathf.Abs(container.transform.position.x - target.position.x) < 0.1) Deactivate();
         }
               

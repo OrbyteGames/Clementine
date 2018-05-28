@@ -5,7 +5,7 @@ using UnityEngine;
 public class Puzzle2_Animation : MonoBehaviour {
 
     Animator animator;
-
+    public bool active = false;
     // Use this for initialization
     void Start()
     {
@@ -16,6 +16,13 @@ public class Puzzle2_Animation : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        if (active) {
+            active = false;
+            StartWalking();
+        }else
+        {
+            //StopWalking();
+        }
     }
 
     IEnumerator Wait()

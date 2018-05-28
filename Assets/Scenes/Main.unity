@@ -61834,6 +61834,8 @@ GameObject:
   - component: {fileID: 1627454767}
   - component: {fileID: 1627454766}
   - component: {fileID: 1627454768}
+  - component: {fileID: 1627454769}
+  - component: {fileID: 1627454770}
   m_Layer: 0
   m_Name: CLEM_ZonaBasura_Robotto
   m_TagString: Untagged
@@ -61847,13 +61849,13 @@ Transform:
   m_PrefabParentObject: {fileID: 401960, guid: 6562c828d66e44c4494e6b35d22f56e3, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1627454764}
-  m_LocalRotation: {x: -0.82072026, y: 0.3104825, z: 0.4274251, w: -0.21754716}
-  m_LocalPosition: {x: 90.58, y: -0.521148, z: -36.27}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.72002935, y: -0.048318326, z: -0.019721419, w: 0.69197845}
+  m_LocalPosition: {x: 90.12956, y: -0.6608696, z: -36.35573}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children: []
   m_Father: {fileID: 1569479941}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 5.26, y: 154.15901, z: -135.68901}
+  m_LocalEulerAnglesHint: {x: -93.245995, y: 402.794, z: -408.31097}
 --- !u!23 &1627454766
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -61896,7 +61898,7 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1627454764}
-  m_Mesh: {fileID: 4300004, guid: 6562c828d66e44c4494e6b35d22f56e3, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 7eec4f29440509c41ba79dcc12b6987c, type: 3}
 --- !u!114 &1627454768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61917,7 +61919,37 @@ MonoBehaviour:
   puzzleTriggerDist: 2
   cat: {fileID: 1841034744}
   storedEnergy: 0
+  anim: {fileID: 1627454770}
   electricSound: {fileID: 8300000, guid: 8c6048ed52b4fb647af27ea5ae7b54eb, type: 3}
+--- !u!95 &1627454769
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1627454764}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f7a419ffa860f0b48a1a1c21f2d04152, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1627454770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1627454764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a88248c8f2888346be4193949b835ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 0
 --- !u!1 &1628311571
 GameObject:
   m_ObjectHideFlags: 0
@@ -72156,7 +72188,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1779273576
+  randomSeed: -824458204
   InitialModule:
     serializedVersion: 3
     enabled: 1
