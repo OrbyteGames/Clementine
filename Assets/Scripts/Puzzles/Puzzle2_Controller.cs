@@ -13,6 +13,7 @@ public class Puzzle2_Controller : MonoBehaviour {
     public CatAI cat;
     public float storedEnergy;
     private bool startWalking;
+    private bool nearActivate = false;
     private float energyTime;
     private AudioSource audioSource;
     public Puzzle2_Animation anim;
@@ -38,6 +39,11 @@ public class Puzzle2_Controller : MonoBehaviour {
         {
             if (dist < puzzleTriggerDist)
             {
+                if (!nearActivate)
+                {
+                    anim.nearActivate();
+                    nearActivate = true;
+                }
                 if (energyTime > 0.0f) {
                     energyTime -= Time.deltaTime;
                     gameObject.transform.position += (new Vector3(-robotSpeed, 0.0f, 0.0f) * Time.deltaTime);

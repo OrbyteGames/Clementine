@@ -30,16 +30,22 @@ public class Puzzle2_Animation : MonoBehaviour {
         yield return new WaitForSeconds(2f);
         //   PM.enabled = true;
     }
+    public void nearActivate()
+    {
+        //animator.Play("wake");
+    }
 
     public void StartWalking()
     {
         animator.SetBool("stopWalk", false);
         animator.SetBool("startWalk", true);
+       // animator.Play("walk");
     }
 
     public void StopWalking()
     {
         animator.SetBool("startWalk", false);
         animator.SetBool("stopWalk", true);
+        //animator.Play("idle");
     }
 }
