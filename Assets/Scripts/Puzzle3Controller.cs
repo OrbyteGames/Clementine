@@ -5,6 +5,7 @@ using UnityEngine;
 public class Puzzle3Controller : MonoBehaviour {
 
     public GameObject bridge, player;
+    public GameObject colliders;
     public Light spotlight;
     public float bridgeDuration = 5.0f;
     public float energyIncreaseValue = 10.0f;
@@ -38,7 +39,8 @@ public class Puzzle3Controller : MonoBehaviour {
                 bridge.SetActive(false);
                 startcountdown = false;
                 spotlight.enabled = false;
-                bridge.GetComponent<BoxCollider>().enabled = false;
+                //bridge.GetComponent<BoxCollider>().enabled = false;
+                colliders.SetActive(false);
             }
         }
         /*
@@ -53,7 +55,8 @@ public class Puzzle3Controller : MonoBehaviour {
                 {
                     spotlight.enabled = true;
                     bridge.SetActive(true);
-                    bridge.GetComponent<BoxCollider>().enabled = true;
+                    //bridge.GetComponent<BoxCollider>().enabled = true;
+                    colliders.SetActive(true);
                     startcountdown = true;
                     storedEnergy = 0.0f;
                     counter = 0.0f;
