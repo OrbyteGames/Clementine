@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Puzzle2_Animation : MonoBehaviour {
+public class Puzzle2_Animation : MonoBehaviour
+{
 
     Animator animator;
     public bool active = false;
+    public bool solved = false;
     // Use this for initialization
     void Start()
     {
@@ -16,12 +18,14 @@ public class Puzzle2_Animation : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (active) {
+        if (active)
+        {
             active = false;
             StartWalking();
-        }else
+        }
+        else
         {
-            //StopWalking();
+            if (solved) StopWalking();
         }
     }
 
@@ -39,7 +43,7 @@ public class Puzzle2_Animation : MonoBehaviour {
     {
         animator.SetBool("stopWalk", false);
         animator.SetBool("startWalk", true);
-       // animator.Play("walk");
+        // animator.Play("walk");
     }
 
     public void StopWalking()

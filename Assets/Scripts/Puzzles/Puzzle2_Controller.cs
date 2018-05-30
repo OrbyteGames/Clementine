@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Puzzle2_Controller : MonoBehaviour {
+public class Puzzle2_Controller : MonoBehaviour
+{
     public GameObject clementine, container, RobotLight;
     public Transform target;
     Material material;
@@ -19,7 +20,7 @@ public class Puzzle2_Controller : MonoBehaviour {
     public Puzzle2_Animation anim;
     public AudioClip electricSound;
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         storedEnergy = 0.0f;
         energyIncreaseValue = 10.0f;
@@ -28,9 +29,9 @@ public class Puzzle2_Controller : MonoBehaviour {
         audioSource = gameObject.GetComponent<AudioSource>();
         if (electricSound != null && audioSource != null) audioSource.clip = electricSound;
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
         float step = robotSpeed * Time.deltaTime;
         float dist = Vector3.Distance(clementine.transform.position, transform.position);
@@ -44,7 +45,8 @@ public class Puzzle2_Controller : MonoBehaviour {
                     anim.nearActivate();
                     nearActivate = true;
                 }
-                if (energyTime > 0.0f) {
+                if (energyTime > 0.0f)
+                {
                     energyTime -= Time.deltaTime;
                     gameObject.transform.position += (new Vector3(-robotSpeed, 0.0f, 0.0f) * Time.deltaTime);
                     container.transform.position += (new Vector3(-robotSpeed, 0.0f, 0.0f) * Time.deltaTime);
@@ -74,12 +76,14 @@ public class Puzzle2_Controller : MonoBehaviour {
             anim.StopWalking();
             if (Mathf.Abs(container.transform.position.x - target.position.x) < 0.1) Deactivate();
         }
-              
+
     }
 
 
-    public void Deactivate() {
+    public void Deactivate()
+    {
         startWalking = false;
+        anim.solved = true;
         if (cat != null) cat.setSolved();
         enabled = false;
     }
