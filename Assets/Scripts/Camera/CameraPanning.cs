@@ -11,6 +11,7 @@ public class CameraPanning : MonoBehaviour {
 	void Start ()
     {
         cam = GetComponent<Camera>();
+        clement = GameObject.FindGameObjectWithTag("Player");
     }
 	
 	// Update is called once per frame

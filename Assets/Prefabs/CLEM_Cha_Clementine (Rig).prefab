@@ -1108,6 +1108,7 @@ MonoBehaviour:
   m_MoveSpeedMultiplier: 1
   m_AnimSpeedMultiplier: 1
   m_GroundCheckDistance: 0.1
+  m_IsGrounded: 0
 --- !u!114 &114099207209298230
 MonoBehaviour:
   m_ObjectHideFlags: 1

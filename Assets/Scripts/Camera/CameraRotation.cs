@@ -26,6 +26,7 @@ public class CameraRotation : MonoBehaviour {
         start = false;
         cam = gameObject.GetComponent<Camera>();
         audioList = gameObject.GetComponent<AudioListener>();
+        target = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame

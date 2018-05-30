@@ -103,10 +103,15 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetButtonDown("Jump"))
             {
                 _verticalVelocity = _jumpForce;
+                _animator.SetTrigger("Climb");
+                _animator.SetBool("Idle", false);
+                _animator.SetBool("Walking", false);
+
             }
             else
             {
-                if (!_isWalking && new Vector2(axisX, axisY).normalized.magnitude >= 0.01f)
+                bool b = new Vector2(axisX, axisY).normalized.magnitude >= 0.01f;
+                if (!_isWalking && b)
                 {
                     Debug.Log("Walking");
 
@@ -115,7 +120,7 @@ public class PlayerMovement : MonoBehaviour
                     _animator.SetBool("Idle", false);
                     _isWalking = true;
                 }
-                else if (_isWalking)
+                else if (_isWalking && !b)
                 {
                     Debug.Log("Iddle");
                     _isWalking = false;
