@@ -13,7 +13,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Vector3 m_Move;
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
         public bool camChanged;
-
+        Animator animator;
         public bool movementEnabled;
 
         private void Start()
@@ -22,6 +22,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             m_Character = GetComponent<ThirdPersonCharacter>();
             camChanged = true;
             UpdateCameraAxis(ref camChanged);
+            animator = GetComponent<Animator>();
+            WakeMovement();
         }
 
         private void Update()
@@ -106,6 +108,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         public void DisableMovement()
         {
             movementEnabled = false;
+        }
+        public void WakeMovement()
+        {
+            DisableMovement();
+            //animator.SetBool("stopWalk", false);
+            animator.SetBool("wake", true);
+            EnableMovement();
         }
     }    
 }
