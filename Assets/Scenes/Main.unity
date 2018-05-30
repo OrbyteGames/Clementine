@@ -13738,7 +13738,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bridge: {fileID: 1651664603}
   player: {fileID: 1355799846}
-  colliders: {fileID: 532799082}
+  colliders: {fileID: 390513524}
   spotlight: {fileID: 1704688730}
   bridgeDuration: 5
   energyIncreaseValue: 10
@@ -17795,7 +17795,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bridge: {fileID: 72531796}
   player: {fileID: 1355799846}
-  colliders: {fileID: 390513524}
+  colliders: {fileID: 532799082}
   spotlight: {fileID: 1216716916}
   bridgeDuration: 5
   energyIncreaseValue: 10
@@ -48596,7 +48596,7 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 5972d3b7fc9f8b749a57e6749172958e, type: 2}
+      objectReference: {fileID: 2100000, guid: 6076980a0463b1a41ace107cedd70986, type: 2}
     - target: {fileID: 137885844165307670, guid: 4153f35645853f0408311aa08b655762,
         type: 2}
       propertyPath: m_CastShadows
