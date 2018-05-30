@@ -13,6 +13,7 @@ public class FlashbackCamera : MonoBehaviour {
     private Camera thisCam;
     private bool startCount, played;
     private UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl tpuc;
+    private PlayerMovement pm;
     private Vector3 posMarker;
     private FlashBackToyHorse fbth;
 
@@ -22,7 +23,8 @@ public class FlashbackCamera : MonoBehaviour {
         count = 0.0f;
         thisCam = gameObject.GetComponent<Camera>();
         thisCam.enabled = false;
-        tpuc = Clementine.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl>();
+        //tpuc = Clementine.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl>();
+        pm = Clementine.GetComponent<PlayerMovement>();
         startCount = false;
          posMarker = Marker1.transform.position;
         fbth = gameObject.GetComponent<FlashBackToyHorse>();
@@ -39,6 +41,7 @@ public class FlashbackCamera : MonoBehaviour {
                 previousCam.enabled = false;
                 thisCam.enabled = true;
                 startCount = true;
+                if (pm) pm.LockMovement();
                 //tpuc.DisableMovement();
                 fbth.StartScene();
             }
@@ -53,6 +56,7 @@ public class FlashbackCamera : MonoBehaviour {
             else
             {
                 //tpuc.EnableMovement();
+                if (pm) pm.UnlockMovement();
                 thisCam.enabled = false;
                 previousCam.enabled = true;
                 Destroy(gameObject);

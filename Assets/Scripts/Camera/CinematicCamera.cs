@@ -13,13 +13,15 @@ public class CinematicCamera : MonoBehaviour {
     private Camera thisCam;
     private AudioSource meowSound;
     private bool startCount, played;
-    private UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl tpuc;
+    //private UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl tpuc;
+    private PlayerMovement pm;
 
     // Use this for initialization
     void Start () {
         count = 0.0f;
         thisCam = gameObject.GetComponent<Camera>();
         //tpuc = Clementine.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl>();
+        pm = Clementine.GetComponent<PlayerMovement>();
         meowSound = gameObject.GetComponent<AudioSource>();
         startCount = false;
 
@@ -35,6 +37,7 @@ public class CinematicCamera : MonoBehaviour {
                 previousCam.enabled = false;
                 thisCam.enabled = true;
                 startCount = true;
+                if (pm) pm.LockMovement();
                 //tpuc.DisableMovement();                   
             }
         }
@@ -50,6 +53,7 @@ public class CinematicCamera : MonoBehaviour {
             }
             else
             {
+                if (pm) pm.UnlockMovement();
                 //tpuc.EnableMovement();
                 thisCam.enabled = false;
                 previousCam.enabled = true;

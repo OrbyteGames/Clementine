@@ -26,7 +26,6 @@ public class PlayerMovement : MonoBehaviour
 
     float _verticalVelocity = 0;
 
-
     // Use this for initialization
     void Start()
     {
@@ -39,12 +38,12 @@ public class PlayerMovement : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    void LockMovement()
+    public void LockMovement()
     {
         _isMovementLocked = true;
     }
 
-    void UnlockMovement()
+    public void UnlockMovement()
     {
         _isMovementLocked = false;
     }
@@ -69,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        ManageMovement();
+        if (!_isMovementLocked) ManageMovement();
 
     }
 

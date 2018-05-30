@@ -6,10 +6,10 @@ using UnityEngine;
 public class Puzzle2_Controller : MonoBehaviour
 {
     public GameObject clementine, container, RobotLight;
-    public Transform target;
+    public Transform target, robotTarget;
     Material material;
     public float robotSpeed = 1;
-    public float energyIncreaseValue;
+    public float energyIncreaseValue, containerSpeed, timeIncrease;
     public int puzzleTriggerDist;
     public CatAI cat;
     public float storedEnergy;
@@ -49,8 +49,11 @@ public class Puzzle2_Controller : MonoBehaviour
                 {
                     energyTime -= Time.deltaTime;
                     gameObject.transform.position += (new Vector3(-robotSpeed, 0.0f, 0.0f) * Time.deltaTime);
-                    container.transform.position += (new Vector3(-robotSpeed, 0.0f, 0.0f) * Time.deltaTime);
-                    if (Mathf.Abs(container.transform.position.x - target.position.x) < 0.1) Deactivate();
+                    /*container.transform.position += (new Vector3(-robotSpeed, 0.0f, 0.0f) * Time.deltaTime);*/
+                    if (Mathf.Abs(gameObject.transform.position.x - robotTarget.position.x) < 0.1) {
+                        startWalking = true;
+
+                    }
                 }
                 else RobotLight.SetActive(false);
                 if (Input.GetButtonDown("Fire1"))
@@ -59,19 +62,19 @@ public class Puzzle2_Controller : MonoBehaviour
                     if (electricSound != null && audioSource != null) audioSource.Play();
                     if (!RobotLight.activeSelf) RobotLight.SetActive(true);
                     storedEnergy += energyIncreaseValue;
-                    energyTime = 1.0f;
+                    energyTime = timeIncrease;
                 }
                 if (storedEnergy > 50)
                 {
                     RobotLight.SetActive(true);
-                    startWalking = true;
+                    energyTime = 10.0f;
                 }
             }
         }
         else
         {
             gameObject.transform.position += (new Vector3(-robotSpeed, 0.0f, 0.0f) * Time.deltaTime);
-            container.transform.position += (new Vector3(-robotSpeed, 0.0f, 0.0f) * Time.deltaTime);
+            container.transform.position += (new Vector3(-containerSpeed, 0.0f, 0.0f) * Time.deltaTime);
             //transform.position += new Vector3(-robotSpeed, 0.0f, 0.0f);
             anim.StopWalking();
             if (Mathf.Abs(container.transform.position.x - target.position.x) < 0.1) Deactivate();
