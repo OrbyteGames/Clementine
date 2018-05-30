@@ -39,7 +39,7 @@ public class FlashbackCamera : MonoBehaviour {
                 previousCam.enabled = false;
                 thisCam.enabled = true;
                 startCount = true;
-                tpuc.DisableMovement();
+                //tpuc.DisableMovement();
                 fbth.StartScene();
             }
            
@@ -52,7 +52,7 @@ public class FlashbackCamera : MonoBehaviour {
             }
             else
             {
-                tpuc.EnableMovement();
+                //tpuc.EnableMovement();
                 thisCam.enabled = false;
                 previousCam.enabled = true;
                 Destroy(gameObject);

@@ -50,10 +50,12 @@ public class Puzzle2_Controller : MonoBehaviour {
                     container.transform.position += (new Vector3(-robotSpeed, 0.0f, 0.0f) * Time.deltaTime);
                     if (Mathf.Abs(container.transform.position.x - target.position.x) < 0.1) Deactivate();
                 }
+                else RobotLight.SetActive(false);
                 if (Input.GetButtonDown("Fire1"))
                 {
                     anim.active = true;
                     if (electricSound != null && audioSource != null) audioSource.Play();
+                    if (!RobotLight.activeSelf) RobotLight.SetActive(true);
                     storedEnergy += energyIncreaseValue;
                     energyTime = 1.0f;
                 }
