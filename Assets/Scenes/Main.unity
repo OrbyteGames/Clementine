@@ -421,6 +421,7 @@ GameObject:
   - component: {fileID: 8618125}
   - component: {fileID: 8618127}
   - component: {fileID: 8618126}
+  - component: {fileID: 8618128}
   m_Layer: 0
   m_Name: CLEM_Zona5_PianoBridge_Railings1
   m_TagString: Untagged
@@ -484,6 +485,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 8618124}
   m_Mesh: {fileID: 4300254, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!65 &8618128
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 8618124}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7432898, y: 51.49129, z: 19.845383}
+  m_Center: {x: 1.0481884, y: 24.276716, z: 9.922668}
 --- !u!1 &8655607
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,6 +601,55 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 9507181}
   m_Mesh: {fileID: 4300038, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!1 &10416706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 10416707}
+  - component: {fileID: 10416709}
+  - component: {fileID: 10416708}
+  m_Layer: 0
+  m_Name: Zone6_SkyWalkway_Stairs_Collider18
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &10416707
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 10416706}
+  m_LocalRotation: {x: -0, y: 0.000000029802319, z: -0, w: 1}
+  m_LocalPosition: {x: 1.46, y: 1.4, z: -9.33}
+  m_LocalScale: {x: 1.14268, y: 0.16945006, z: 5.323767}
+  m_Children: []
+  m_Father: {fileID: 1438537271}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &10416708
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 10416706}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000039, y: 1.0000001, z: 1.0000001}
+  m_Center: {x: 0, y: -0.000015258789, z: 0}
+--- !u!33 &10416709
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 10416706}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &10830961
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,6 +1003,55 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 25668215}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &26008652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 26008653}
+  - component: {fileID: 26008655}
+  - component: {fileID: 26008654}
+  m_Layer: 0
+  m_Name: Zone6_SkyWalkway_Stairs_Collider2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &26008653
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 26008652}
+  m_LocalRotation: {x: 0.6531627, y: 0.2708847, z: -0.2708847, w: 0.6531627}
+  m_LocalPosition: {x: -4.663, y: 0.748, z: 14.42}
+  m_LocalScale: {x: 0.19059354, y: 1.4505036, z: 1.6225965}
+  m_Children: []
+  m_Father: {fileID: 1438537271}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &26008654
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 26008652}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &26008655
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 26008652}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &30739172
 GameObject:
@@ -1773,6 +1884,55 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 54125119}
   m_Mesh: {fileID: 4300086, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!1 &55258965
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 55258966}
+  - component: {fileID: 55258968}
+  - component: {fileID: 55258967}
+  m_Layer: 0
+  m_Name: Zone6_SkyWalkway_Stairs_Collider15
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &55258966
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 55258965}
+  m_LocalRotation: {x: 0.6531627, y: 0.2708847, z: -0.2708847, w: 0.6531627}
+  m_LocalPosition: {x: 0.37799913, y: 0.01200486, z: -6.1370025}
+  m_LocalScale: {x: 3.3027701, y: 1.5638102, z: 0.18003002}
+  m_Children: []
+  m_Father: {fileID: 1438537271}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &55258967
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 55258965}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &55258968
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 55258965}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &56418097
 GameObject:
   m_ObjectHideFlags: 0
@@ -2234,6 +2394,55 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 65587610}
   m_Mesh: {fileID: 4300148, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!1 &67469174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 67469175}
+  - component: {fileID: 67469177}
+  - component: {fileID: 67469176}
+  m_Layer: 0
+  m_Name: Zone5_B_Railing2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &67469175
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 67469174}
+  m_LocalRotation: {x: -0.0054666847, y: 0.46027225, z: -0.005466717, w: 0.8877441}
+  m_LocalPosition: {x: 268.7, y: -0.6, z: -341.1}
+  m_LocalScale: {x: 174.75133, y: 4.3413715, z: 52.102974}
+  m_Children: []
+  m_Father: {fileID: 524793911}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -0.268, y: 54.813004, z: -0.84400004}
+--- !u!65 &67469176
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 67469174}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &67469177
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 67469174}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &69787185
 GameObject:
   m_ObjectHideFlags: 0
@@ -4205,6 +4414,55 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 109455396}
   m_Mesh: {fileID: 4300058, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!1 &109502843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 109502844}
+  - component: {fileID: 109502846}
+  - component: {fileID: 109502845}
+  m_Layer: 0
+  m_Name: Zone5_B_Railing6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &109502844
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 109502843}
+  m_LocalRotation: {x: -0.0054666847, y: 0.46027225, z: -0.005466717, w: 0.8877441}
+  m_LocalPosition: {x: 106.3, y: -341.2, z: -103.3}
+  m_LocalScale: {x: 357.8515, y: 4.3413715, z: 52.102974}
+  m_Children: []
+  m_Father: {fileID: 524793911}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: -0.268, y: 54.813004, z: -0.84400004}
+--- !u!65 &109502845
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 109502843}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &109502846
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 109502843}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &110614766
 GameObject:
   m_ObjectHideFlags: 0
@@ -4361,6 +4619,8 @@ GameObject:
   - component: {fileID: 112512422}
   - component: {fileID: 112512424}
   - component: {fileID: 112512423}
+  - component: {fileID: 112512426}
+  - component: {fileID: 112512425}
   m_Layer: 0
   m_Name: CLEM_Zona6_SkyWalkway_Railings1
   m_TagString: Untagged
@@ -4424,6 +4684,30 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 112512421}
   m_Mesh: {fileID: 4300292, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!65 &112512425
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 112512421}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 539.95435, y: 2.9483888, z: 3.6067138}
+  m_Center: {x: -469.56284, y: 0.5332736, z: -0.017018447}
+--- !u!65 &112512426
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 112512421}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 169.50267, y: 2.9483888, z: 3.6067138}
+  m_Center: {x: -81.44886, y: 0.5332736, z: -0.017018447}
 --- !u!1 &115082301
 GameObject:
   m_ObjectHideFlags: 0
@@ -5686,6 +5970,11 @@ GameObject:
   - component: {fileID: 145582373}
   - component: {fileID: 145582375}
   - component: {fileID: 145582374}
+  - component: {fileID: 145582380}
+  - component: {fileID: 145582379}
+  - component: {fileID: 145582378}
+  - component: {fileID: 145582377}
+  - component: {fileID: 145582376}
   m_Layer: 0
   m_Name: CLEM_Zona6_Trainstation_Railings
   m_TagString: Untagged
@@ -5749,6 +6038,66 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 145582372}
   m_Mesh: {fileID: 4300306, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!65 &145582376
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 145582372}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 369.97687, y: 11.168562, z: 50.47386}
+  m_Center: {x: -1032.8146, y: -16.063982, z: 25.231422}
+--- !u!65 &145582377
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 145582372}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 370.72046, y: 10.777095, z: 50.47386}
+  m_Center: {x: -1032.4414, y: -661.3651, z: 25.2315}
+--- !u!65 &145582378
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 145582372}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 740.44916, y: 16.55718, z: 50.47386}
+  m_Center: {x: -327.97964, y: -6.995869, z: 25.231339}
+--- !u!65 &145582379
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 145582372}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 741.8513, y: 17.078625, z: 50.47386}
+  m_Center: {x: -328.6826, y: -650.3613, z: 25.231415}
+--- !u!65 &145582380
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 145582372}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.994791, y: 668.0364, z: 50.47386}
+  m_Center: {x: -1210.1066, y: -332.7396, z: 25.231483}
 --- !u!1 &146862539
 GameObject:
   m_ObjectHideFlags: 0
@@ -8734,6 +9083,104 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 231340944}
   m_Mesh: {fileID: 4300038, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!1 &232785970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 232785971}
+  - component: {fileID: 232785973}
+  - component: {fileID: 232785972}
+  m_Layer: 0
+  m_Name: Zone5_B_Railing4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &232785971
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 232785970}
+  m_LocalRotation: {x: -0.0054666847, y: 0.46027225, z: -0.005466717, w: 0.8877441}
+  m_LocalPosition: {x: 297.8, y: -341.9, z: -372.3}
+  m_LocalScale: {x: 94.707634, y: 4.3413715, z: 52.102974}
+  m_Children: []
+  m_Father: {fileID: 524793911}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: -0.268, y: 54.813004, z: -0.84400004}
+--- !u!65 &232785972
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 232785970}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &232785973
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 232785970}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &233344099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 233344100}
+  - component: {fileID: 233344102}
+  - component: {fileID: 233344101}
+  m_Layer: 0
+  m_Name: Zone6_SkyWalkway_Stairs_Collider4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &233344100
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 233344099}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.135, y: 0.674, z: 7.847}
+  m_LocalScale: {x: 0.24457277, y: 1.4476839, z: 7.9447527}
+  m_Children: []
+  m_Father: {fileID: 1438537271}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &233344101
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 233344099}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000039, y: 1.0000001, z: 1.0000001}
+  m_Center: {x: 0, y: -0.000015258789, z: 0}
+--- !u!33 &233344102
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 233344099}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &234074091
 GameObject:
   m_ObjectHideFlags: 0
@@ -9379,6 +9826,55 @@ MonoBehaviour:
   minWaitTime: 0.5
   maxWaitTime: 1
   duration: 0
+--- !u!1 &248654481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 248654482}
+  - component: {fileID: 248654484}
+  - component: {fileID: 248654483}
+  m_Layer: 0
+  m_Name: Zone6_SkyWalkway_Stairs_Collider11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &248654482
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 248654481}
+  m_LocalRotation: {x: -0, y: 0.000000029802319, z: -0, w: 1}
+  m_LocalPosition: {x: -0.5370018, y: -0.07399368, z: -0.79299986}
+  m_LocalScale: {x: 1.14268, y: 0.16945006, z: 7.9447517}
+  m_Children: []
+  m_Father: {fileID: 1438537271}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &248654483
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 248654481}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000039, y: 1.0000001, z: 1.0000001}
+  m_Center: {x: 0, y: -0.000015258789, z: 0}
+--- !u!33 &248654484
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 248654481}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &250156526
 GameObject:
   m_ObjectHideFlags: 0
@@ -10251,6 +10747,55 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 271047035}
   m_Mesh: {fileID: 4300142, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!1 &272863051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 272863052}
+  - component: {fileID: 272863054}
+  - component: {fileID: 272863053}
+  m_Layer: 0
+  m_Name: Zone5_B_Railing3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &272863052
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 272863051}
+  m_LocalRotation: {x: -0.3227396, y: 0.31797895, z: -0.6258553, w: 0.6348493}
+  m_LocalPosition: {x: 323.4, y: -174, z: -413.2}
+  m_LocalScale: {x: 338.07404, y: 4.3413715, z: 52.102974}
+  m_Children: []
+  m_Father: {fileID: 524793911}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -0.674, y: 53.879, z: -89.525}
+--- !u!65 &272863053
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 272863051}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &272863054
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 272863051}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &273784443
 GameObject:
   m_ObjectHideFlags: 0
@@ -13663,6 +14208,55 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &392153017
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 392153018}
+  - component: {fileID: 392153020}
+  - component: {fileID: 392153019}
+  m_Layer: 0
+  m_Name: Zone6_SkyWalkway_Stairs_Collider3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &392153018
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 392153017}
+  m_LocalRotation: {x: 0.6531627, y: 0.2708847, z: -0.2708847, w: 0.6531627}
+  m_LocalPosition: {x: -3.698, y: 0.01, z: 13.472}
+  m_LocalScale: {x: 3.3027701, y: 1.3970807, z: 0.1800328}
+  m_Children: []
+  m_Father: {fileID: 1438537271}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &392153019
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 392153017}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &392153020
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 392153017}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &392596590
 GameObject:
   m_ObjectHideFlags: 0
@@ -19686,7 +20280,12 @@ Transform:
   m_LocalRotation: {x: -0.0025565363, y: 0.8887763, z: -0.007998769, w: 0.45826444}
   m_LocalPosition: {x: 13.253987, y: -6.6736517, z: 8.707691}
   m_LocalScale: {x: 0.0275996, y: 0.027599592, z: 0.027599592}
-  m_Children: []
+  m_Children:
+  - {fileID: 901372853}
+  - {fileID: 67469175}
+  - {fileID: 272863052}
+  - {fileID: 232785971}
+  - {fileID: 109502844}
   m_Father: {fileID: 1404010970}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20031,6 +20630,104 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9250e86f3bb862545b9082a15087c80c, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &541305748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 541305749}
+  - component: {fileID: 541305751}
+  - component: {fileID: 541305750}
+  m_Layer: 0
+  m_Name: Zone6_TrinStation_Stairs_Collider7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &541305749
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 541305748}
+  m_LocalRotation: {x: -0.3829037, y: 0.0031864494, z: 0.000000923872, w: 0.9237828}
+  m_LocalPosition: {x: -0.752, y: 4.648, z: 4.442}
+  m_LocalScale: {x: 2.904981, y: 0.3022795, z: 3.2258773}
+  m_Children: []
+  m_Father: {fileID: 617782771}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: -45.027, y: 0.47700003, z: -0.19800001}
+--- !u!65 &541305750
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 541305748}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &541305751
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 541305748}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &546740357
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 546740358}
+  - component: {fileID: 546740360}
+  - component: {fileID: 546740359}
+  m_Layer: 0
+  m_Name: Zone6_TrinStation_Stairs_Collider1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &546740358
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 546740357}
+  m_LocalRotation: {x: -0.0031747515, y: -0.38151616, z: 0.0000002980232, w: 0.92435676}
+  m_LocalPosition: {x: -4.61, y: 7.44, z: 8.22}
+  m_LocalScale: {x: 0.2858093, y: 2.7527168, z: 7.627044}
+  m_Children: []
+  m_Father: {fileID: 617782771}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -0.33600003, y: -44.856003, z: 0.13900001}
+--- !u!65 &546740359
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 546740357}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &546740360
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 546740357}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &546858237
 GameObject:
   m_ObjectHideFlags: 0
@@ -22647,7 +23344,16 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: -0.7041585, w: 0.71004283}
   m_LocalPosition: {x: 34.288563, y: 18.416935, z: -17.956228}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 546740358}
+  - {fileID: 2008895614}
+  - {fileID: 1611492382}
+  - {fileID: 1571775288}
+  - {fileID: 997036598}
+  - {fileID: 1452812279}
+  - {fileID: 541305749}
+  - {fileID: 1341467182}
+  - {fileID: 1709248296}
   m_Father: {fileID: 103165175}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -24313,6 +25019,7 @@ GameObject:
   - component: {fileID: 654778635}
   - component: {fileID: 654778637}
   - component: {fileID: 654778636}
+  - component: {fileID: 654778638}
   m_Layer: 0
   m_Name: CLEM_Zona5_B
   m_TagString: Untagged
@@ -24376,6 +25083,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 654778634}
   m_Mesh: {fileID: 4300260, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!65 &654778638
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 654778634}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 17.348454, y: 14.552242, z: 44.211792}
+  m_Center: {x: 1.0927459, y: -1.1646955e-14, z: 22.10588}
 --- !u!1 &660528934
 GameObject:
   m_ObjectHideFlags: 0
@@ -25539,6 +26258,55 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 679435940}
   m_Mesh: {fileID: 4300038, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!1 &682089554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 682089555}
+  - component: {fileID: 682089557}
+  - component: {fileID: 682089556}
+  m_Layer: 0
+  m_Name: Zone6_SkyWalkway_Stairs_Collider6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &682089555
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 682089554}
+  m_LocalRotation: {x: -0, y: 0.000000029802319, z: -0, w: 1}
+  m_LocalPosition: {x: -2.57, y: 1.4, z: 8.5}
+  m_LocalScale: {x: 1.14268, y: 0.16945006, z: 6.815836}
+  m_Children: []
+  m_Father: {fileID: 1438537271}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &682089556
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 682089554}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000039, y: 1.0000001, z: 1.0000001}
+  m_Center: {x: 0, y: -0.000015258789, z: 0}
+--- !u!33 &682089557
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 682089554}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &682669034
 GameObject:
   m_ObjectHideFlags: 0
@@ -28813,6 +29581,55 @@ Transform:
   m_Father: {fileID: 1389928545}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &772560626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 772560627}
+  - component: {fileID: 772560629}
+  - component: {fileID: 772560628}
+  m_Layer: 0
+  m_Name: Zone6_SkyWalkway_Stairs_Collider8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &772560627
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 772560626}
+  m_LocalRotation: {x: 0.6531627, y: 0.2708847, z: -0.2708847, w: 0.6531627}
+  m_LocalPosition: {x: -1.662, y: 1.378, z: 3.639}
+  m_LocalScale: {x: 3.3027701, y: 1.5638102, z: 0.18003002}
+  m_Children: []
+  m_Father: {fileID: 1438537271}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &772560628
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 772560626}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &772560629
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 772560626}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &774340243
 GameObject:
   m_ObjectHideFlags: 0
@@ -30542,6 +31359,55 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &823486208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 823486209}
+  - component: {fileID: 823486211}
+  - component: {fileID: 823486210}
+  m_Layer: 0
+  m_Name: Zone6_SkyWalkway_Stairs_Collider7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &823486209
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 823486208}
+  m_LocalRotation: {x: 0.6531627, y: 0.2708847, z: -0.2708847, w: 0.6531627}
+  m_LocalPosition: {x: -2.185, y: 0.748, z: 3.113}
+  m_LocalScale: {x: 3.3027701, y: 0.13297, z: 1.4484003}
+  m_Children: []
+  m_Father: {fileID: 1438537271}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &823486210
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 823486208}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &823486211
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 823486208}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &824605362
 GameObject:
   m_ObjectHideFlags: 0
@@ -33145,6 +34011,55 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 897510183}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &901372852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 901372853}
+  - component: {fileID: 901372855}
+  - component: {fileID: 901372854}
+  m_Layer: 0
+  m_Name: Zone5_B_Railing1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &901372853
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 901372852}
+  m_LocalRotation: {x: -0.0054666842, y: 0.46027225, z: -0.005466717, w: 0.8877441}
+  m_LocalPosition: {x: 71, y: 0.3, z: -63.4}
+  m_LocalScale: {x: 287.55356, y: 4.3415327, z: 52.102882}
+  m_Children: []
+  m_Father: {fileID: 524793911}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -0.268, y: 54.813004, z: -0.84400004}
+--- !u!65 &901372854
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 901372852}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &901372855
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 901372852}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &901585594
 GameObject:
   m_ObjectHideFlags: 0
@@ -33396,6 +34311,55 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 906157560}
   m_Mesh: {fileID: 4300032, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!1 &907798867
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 907798868}
+  - component: {fileID: 907798870}
+  - component: {fileID: 907798869}
+  m_Layer: 0
+  m_Name: Zone6_SkyWalkway_Stairs_Collider9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &907798868
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 907798867}
+  m_LocalRotation: {x: 0.6531627, y: 0.2708847, z: -0.2708847, w: 0.6531627}
+  m_LocalPosition: {x: -1.6619997, y: 0.009990811, z: 3.6389987}
+  m_LocalScale: {x: 3.3027701, y: 1.5638092, z: 0.18003002}
+  m_Children: []
+  m_Father: {fileID: 1438537271}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &907798869
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 907798867}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &907798870
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 907798867}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &908987505
 GameObject:
   m_ObjectHideFlags: 0
@@ -34224,6 +35188,7 @@ GameObject:
   - component: {fileID: 930437897}
   - component: {fileID: 930437899}
   - component: {fileID: 930437898}
+  - component: {fileID: 930437900}
   m_Layer: 0
   m_Name: CLEM_Zona5_PianoBridge_Railings2
   m_TagString: Untagged
@@ -34287,6 +35252,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 930437896}
   m_Mesh: {fileID: 4300258, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!65 &930437900
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 930437896}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7704755, y: 51.491287, z: 19.845383}
+  m_Center: {x: -0.078043364, y: -2.3628316, z: 9.922676}
 --- !u!1 &932838044
 GameObject:
   m_ObjectHideFlags: 0
@@ -37898,6 +38875,55 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 996103199}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &997036597
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 997036598}
+  - component: {fileID: 997036600}
+  - component: {fileID: 997036599}
+  m_Layer: 0
+  m_Name: Zone6_TrinStation_Stairs_Collider5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &997036598
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 997036597}
+  m_LocalRotation: {x: -0, y: -0, z: 0.000000059604638, w: 1}
+  m_LocalPosition: {x: 0.612, y: 7.322, z: 6.384}
+  m_LocalScale: {x: 0.20120105, y: 2.7893114, z: 1.4650965}
+  m_Children: []
+  m_Father: {fileID: 617782771}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &997036599
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 997036597}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &997036600
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 997036597}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &997428487
 GameObject:
   m_ObjectHideFlags: 0
@@ -39757,6 +40783,55 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1062085216}
   m_Mesh: {fileID: 4300060, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!1 &1063698896
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1063698897}
+  - component: {fileID: 1063698899}
+  - component: {fileID: 1063698898}
+  m_Layer: 0
+  m_Name: Zone6_SkyWalkway_Stairs_Collider1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1063698897
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1063698896}
+  m_LocalRotation: {x: 0.6531627, y: 0.2708847, z: -0.2708847, w: 0.6531627}
+  m_LocalPosition: {x: -4.221, y: 0.748, z: 12.946}
+  m_LocalScale: {x: 3.3027685, y: 0.13297375, z: 1.4484037}
+  m_Children: []
+  m_Father: {fileID: 1438537271}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1063698898
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1063698896}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1063698899
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1063698896}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1064556486
 Prefab:
   m_ObjectHideFlags: 0
@@ -41087,6 +42162,55 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1100819042}
   m_Mesh: {fileID: 4300162, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!1 &1100999012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1100999013}
+  - component: {fileID: 1100999015}
+  - component: {fileID: 1100999014}
+  m_Layer: 0
+  m_Name: Zone6_SkyWalkway_Stairs_Collider5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1100999013
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1100999012}
+  m_LocalRotation: {x: -0, y: 0.000000029802319, z: -0, w: 1}
+  m_LocalPosition: {x: -2.578, y: -0.07, z: 9.034}
+  m_LocalScale: {x: 1.1426827, y: 0.1694505, z: 7.9447517}
+  m_Children: []
+  m_Father: {fileID: 1438537271}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1100999014
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1100999012}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000039, y: 1.0000001, z: 1.0000001}
+  m_Center: {x: 0, y: -0.000015258789, z: 0}
+--- !u!33 &1100999015
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1100999012}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1102470382 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 0c1ff45791162f541b5dc694bffb02c1, type: 3}
@@ -45429,6 +46553,55 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1213492318}
   m_Mesh: {fileID: 4300112, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!1 &1214272955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1214272956}
+  - component: {fileID: 1214272958}
+  - component: {fileID: 1214272957}
+  m_Layer: 0
+  m_Name: Zone6_SkyWalkway_Stairs_Collider13
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1214272956
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1214272955}
+  m_LocalRotation: {x: 0.6531627, y: 0.2708847, z: -0.2708847, w: 0.6531627}
+  m_LocalPosition: {x: -0.145, y: 0.75, z: -6.663}
+  m_LocalScale: {x: 3.3027701, y: 0.13297, z: 1.4484003}
+  m_Children: []
+  m_Father: {fileID: 1438537271}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1214272957
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1214272955}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1214272958
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1214272955}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1214665489 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100004, guid: 46bec0c54cd21cd459b2ac354bbf5dbe, type: 3}
@@ -49835,6 +51008,55 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1310520998}
   m_Mesh: {fileID: 4300038, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!1 &1310608983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1310608984}
+  - component: {fileID: 1310608986}
+  - component: {fileID: 1310608985}
+  m_Layer: 0
+  m_Name: Zone6_SkyWalkway_Stairs_Collider17
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1310608984
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1310608983}
+  m_LocalRotation: {x: -0, y: 0.000000029802319, z: -0, w: 1}
+  m_LocalPosition: {x: 1.505, y: -0.074, z: -9.309}
+  m_LocalScale: {x: 1.14268, y: 0.16945006, z: 5.1385183}
+  m_Children: []
+  m_Father: {fileID: 1438537271}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1310608985
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1310608983}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000039, y: 1.0000001, z: 1.0000001}
+  m_Center: {x: 0, y: -0.000015258789, z: 0}
+--- !u!33 &1310608986
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1310608983}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1310892637
 GameObject:
   m_ObjectHideFlags: 0
@@ -50436,6 +51658,55 @@ Transform:
   m_PrefabParentObject: {fileID: 4235553235435304, guid: 9cdfe6fd48d39d34d9191157928e8faf,
     type: 2}
   m_PrefabInternal: {fileID: 1756290102}
+--- !u!1 &1329229820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1329229821}
+  - component: {fileID: 1329229823}
+  - component: {fileID: 1329229822}
+  m_Layer: 0
+  m_Name: Zone6_SkyWalkway_Stairs_Collider16
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1329229821
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1329229820}
+  m_LocalRotation: {x: -0, y: 0.000000029802319, z: -0, w: 1}
+  m_LocalPosition: {x: 0.968, y: 0.67, z: -10.351}
+  m_LocalScale: {x: 0.24457005, y: 1.4476805, z: 5.0857964}
+  m_Children: []
+  m_Father: {fileID: 1438537271}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1329229822
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1329229820}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000039, y: 1.0000001, z: 1.0000001}
+  m_Center: {x: 0, y: -0.000015258789, z: 0}
+--- !u!33 &1329229823
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1329229820}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1330022360
 GameObject:
   m_ObjectHideFlags: 0
@@ -51035,6 +52306,55 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7a2a4447e2360940bc16694b0e3b0cb, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1341467181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1341467182}
+  - component: {fileID: 1341467184}
+  - component: {fileID: 1341467183}
+  m_Layer: 0
+  m_Name: Zone6_TrinStation_Stairs_Collider8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1341467182
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1341467181}
+  m_LocalRotation: {x: -0.38290367, y: 0.0031864042, z: 0.00000095367415, w: 0.9237828}
+  m_LocalPosition: {x: 0.576, y: 5.094, z: 5.62}
+  m_LocalScale: {x: 0.13617437, y: 1.038768, z: 3.4676714}
+  m_Children: []
+  m_Father: {fileID: 617782771}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: -45.027, y: 0.47700003, z: -0.19800001}
+--- !u!65 &1341467183
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1341467181}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1341467184
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1341467181}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1343896565
 GameObject:
   m_ObjectHideFlags: 0
@@ -53871,6 +55191,55 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6811032, y: 0.64449936, z: 0.99904895}
   m_Center: {x: -0.000000029802322, y: 0.119095355, z: 0.067965224}
+--- !u!1 &1413056196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1413056197}
+  - component: {fileID: 1413056199}
+  - component: {fileID: 1413056198}
+  m_Layer: 0
+  m_Name: Zone6_SkyWalkway_Stairs_Collider12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1413056197
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1413056196}
+  m_LocalRotation: {x: -0, y: 0.000000029802319, z: -0, w: 1}
+  m_LocalPosition: {x: -0.5290045, y: 1.3960075, z: -1.3270031}
+  m_LocalScale: {x: 1.14268, y: 0.16945006, z: 6.8158417}
+  m_Children: []
+  m_Father: {fileID: 1438537271}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1413056198
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1413056196}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000039, y: 1.0000001, z: 1.0000001}
+  m_Center: {x: 0, y: -0.000015258789, z: 0}
+--- !u!33 &1413056199
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1413056196}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1413762912
 GameObject:
   m_ObjectHideFlags: 0
@@ -55145,7 +56514,25 @@ Transform:
   m_LocalRotation: {x: 0, y: -0.3830888, z: -0, w: 0.92371154}
   m_LocalPosition: {x: 11.187311, y: -4.784229, z: -15.487576}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1063698897}
+  - {fileID: 26008653}
+  - {fileID: 392153018}
+  - {fileID: 233344100}
+  - {fileID: 1100999013}
+  - {fileID: 682089555}
+  - {fileID: 823486209}
+  - {fileID: 772560627}
+  - {fileID: 907798868}
+  - {fileID: 2082252519}
+  - {fileID: 248654482}
+  - {fileID: 1413056197}
+  - {fileID: 1214272956}
+  - {fileID: 1949356445}
+  - {fileID: 55258966}
+  - {fileID: 1329229821}
+  - {fileID: 1310608984}
+  - {fileID: 10416707}
   m_Father: {fileID: 103165175}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -56376,6 +57763,55 @@ Transform:
   m_Father: {fileID: 1389928545}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1452812278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1452812279}
+  - component: {fileID: 1452812281}
+  - component: {fileID: 1452812280}
+  m_Layer: 0
+  m_Name: Zone6_TrinStation_Stairs_Collider6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1452812279
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452812278}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.758, y: 8.708, z: 6.384}
+  m_LocalScale: {x: 0.20120017, y: 2.7893121, z: 1.4651011}
+  m_Children: []
+  m_Father: {fileID: 617782771}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!65 &1452812280
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452812278}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1452812281
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452812278}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1456272014
 GameObject:
   m_ObjectHideFlags: 0
@@ -60244,6 +61680,7 @@ GameObject:
   - component: {fileID: 1555548924}
   - component: {fileID: 1555548926}
   - component: {fileID: 1555548925}
+  - component: {fileID: 1555548927}
   m_Layer: 0
   m_Name: CLEM_Zona6_A
   m_TagString: Untagged
@@ -60307,6 +61744,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1555548923}
   m_Mesh: {fileID: 4300296, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!65 &1555548927
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1555548923}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 18.318, y: 8.872738, z: 27.047285}
+  m_Center: {x: 0, y: 0.12696937, z: 13.523639}
 --- !u!1 &1556301159
 GameObject:
   m_ObjectHideFlags: 0
@@ -60861,6 +62310,55 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1571681155}
   m_Mesh: {fileID: 4300098, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!1 &1571775287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1571775288}
+  - component: {fileID: 1571775290}
+  - component: {fileID: 1571775289}
+  m_Layer: 0
+  m_Name: Zone6_TrinStation_Stairs_Collider4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1571775288
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1571775287}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.792, y: 7.334, z: 5.632}
+  m_LocalScale: {x: 3.0472374, y: 2.7893112, z: 0.18739907}
+  m_Children: []
+  m_Father: {fileID: 617782771}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1571775289
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1571775287}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.0004566, z: 1}
+  m_Center: {x: 1.1955442e-11, y: -0.00022980172, z: 8.1210455e-10}
+--- !u!33 &1571775290
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1571775287}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1571841170
 GameObject:
   m_ObjectHideFlags: 0
@@ -62267,6 +63765,55 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1607078562}
   m_Mesh: {fileID: 4300000, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!1 &1611492381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1611492382}
+  - component: {fileID: 1611492384}
+  - component: {fileID: 1611492383}
+  m_Layer: 0
+  m_Name: Zone6_TrinStation_Stairs_Collider3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1611492382
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1611492381}
+  m_LocalRotation: {x: -0.0031747515, y: -0.38151622, z: 0.00000035762784, w: 0.9243567}
+  m_LocalPosition: {x: -5.013, y: 6.031, z: 9.167}
+  m_LocalScale: {x: 1.1290209, y: 0.15155004, z: 7.3919454}
+  m_Children: []
+  m_Father: {fileID: 617782771}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -0.33600003, y: -44.856003, z: 0.13900001}
+--- !u!65 &1611492383
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1611492381}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1611492384
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1611492381}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1611750500
 GameObject:
   m_ObjectHideFlags: 0
@@ -65516,6 +67063,8 @@ GameObject:
   - component: {fileID: 1706257535}
   - component: {fileID: 1706257537}
   - component: {fileID: 1706257536}
+  - component: {fileID: 1706257539}
+  - component: {fileID: 1706257538}
   m_Layer: 0
   m_Name: CLEM_Zona6_SkyWalkway_Railings2
   m_TagString: Untagged
@@ -65579,6 +67128,30 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1706257534}
   m_Mesh: {fileID: 4300290, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!65 &1706257538
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1706257534}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 456.55716, y: 2.9151537, z: 2.618066}
+  m_Center: {x: -225.25839, y: 0.51665616, z: 0.3327976}
+--- !u!65 &1706257539
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1706257534}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 256.1017, y: 2.9151537, z: 2.618066}
+  m_Center: {x: -609.3576, y: 0.51665616, z: 0.3327976}
 --- !u!1 &1706508095
 GameObject:
   m_ObjectHideFlags: 0
@@ -65729,6 +67302,55 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1707408310}
   m_Mesh: {fileID: 4300072, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!1 &1709248295
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1709248296}
+  - component: {fileID: 1709248298}
+  - component: {fileID: 1709248297}
+  m_Layer: 0
+  m_Name: Zone6_TrinStation_Stairs_Collider9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1709248296
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1709248295}
+  m_LocalRotation: {x: -0.38290367, y: 0.0031864042, z: 0.00000095367415, w: 0.9237828}
+  m_LocalPosition: {x: -2.101, y: 4.773, z: 5.304}
+  m_LocalScale: {x: 0.13617012, y: 1.0387714, z: 2.513747}
+  m_Children: []
+  m_Father: {fileID: 617782771}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: -45.027, y: 0.47700003, z: -0.19800001}
+--- !u!65 &1709248297
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1709248295}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1709248298
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1709248295}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1709642767
 GameObject:
   m_ObjectHideFlags: 0
@@ -72837,6 +74459,7 @@ GameObject:
   - component: {fileID: 1896900202}
   - component: {fileID: 1896900204}
   - component: {fileID: 1896900203}
+  - component: {fileID: 1896900205}
   m_Layer: 0
   m_Name: CLEM_Zona6_GiantColumn
   m_TagString: Untagged
@@ -72900,6 +74523,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1896900201}
   m_Mesh: {fileID: 4300280, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+--- !u!65 &1896900205
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1896900201}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.1474733, y: 7.1128583, z: 24.054003}
+  m_Center: {x: -0.01926303, y: -0.000030517578, z: 12.026995}
 --- !u!1 &1899254533
 GameObject:
   m_ObjectHideFlags: 0
@@ -77329,6 +78964,55 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.19656, y: 19.636509, z: 14.180104}
   m_Center: {x: 4.5562687, y: -5.732317, z: -0.0000042915344}
+--- !u!1 &1949356444
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1949356445}
+  - component: {fileID: 1949356447}
+  - component: {fileID: 1949356446}
+  m_Layer: 0
+  m_Name: Zone6_SkyWalkway_Stairs_Collider14
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1949356445
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1949356444}
+  m_LocalRotation: {x: 0.6531627, y: 0.2708847, z: -0.2708847, w: 0.6531627}
+  m_LocalPosition: {x: 0.37799817, y: 1.3800163, z: -6.1370025}
+  m_LocalScale: {x: 3.3027701, y: 1.5638102, z: 0.18003002}
+  m_Children: []
+  m_Father: {fileID: 1438537271}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1949356446
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1949356444}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1949356447
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1949356444}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1952263030
 GameObject:
   m_ObjectHideFlags: 0
@@ -78954,6 +80638,7 @@ GameObject:
   - component: {fileID: 1986642471}
   - component: {fileID: 1986642473}
   - component: {fileID: 1986642472}
+  - component: {fileID: 1986642475}
   - component: {fileID: 1986642474}
   m_Layer: 0
   m_Name: CLEM_Zona5_PianoBridge_Floor
@@ -79028,8 +80713,20 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 37.934673, y: 25.975618, z: 0.3889406}
-  m_Center: {x: 16.318453, y: -4.749898, z: 0.19446649}
+  m_Size: {x: 5.319464, y: 26.351124, z: 0.38894063}
+  m_Center: {x: 0.010834612, y: -4.9376464, z: 0.19446649}
+--- !u!65 &1986642475
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1986642470}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 37.934677, y: 3.69784, z: 0.38894063}
+  m_Center: {x: 16.318453, y: 6.389012, z: 0.19446649}
 --- !u!1 &1989693785
 GameObject:
   m_ObjectHideFlags: 0
@@ -80006,6 +81703,55 @@ Transform:
   m_Father: {fileID: 731735623}
   m_RootOrder: 253
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180.32399}
+--- !u!1 &2008895613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2008895614}
+  - component: {fileID: 2008895616}
+  - component: {fileID: 2008895615}
+  m_Layer: 0
+  m_Name: Zone6_TrinStation_Stairs_Collider2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2008895614
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2008895613}
+  m_LocalRotation: {x: -0.0031747515, y: -0.38151622, z: 0.00000035762784, w: 0.9243567}
+  m_LocalPosition: {x: -4.6, y: 8.73, z: 8.78}
+  m_LocalScale: {x: 1.1290241, y: 0.15155083, z: 9.478846}
+  m_Children: []
+  m_Father: {fileID: 617782771}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -0.33600003, y: -44.856003, z: 0.13900001}
+--- !u!65 &2008895615
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2008895613}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &2008895616
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2008895613}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2009589392
 GameObject:
   m_ObjectHideFlags: 0
@@ -82023,6 +83769,55 @@ Transform:
   m_Father: {fileID: 479930970}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2082252518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2082252519}
+  - component: {fileID: 2082252521}
+  - component: {fileID: 2082252520}
+  m_Layer: 0
+  m_Name: Zone6_SkyWalkway_Stairs_Collider10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2082252519
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2082252518}
+  m_LocalRotation: {x: -0, y: 0.000000029802319, z: -0, w: 1}
+  m_LocalPosition: {x: -1.094, y: 0.67, z: -1.98}
+  m_LocalScale: {x: 0.24457005, y: 1.4476805, z: 7.9447517}
+  m_Children: []
+  m_Father: {fileID: 1438537271}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2082252520
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2082252518}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000039, y: 1.0000001, z: 1.0000001}
+  m_Center: {x: 0, y: -0.000015258789, z: 0}
+--- !u!33 &2082252521
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2082252518}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2084190268
 GameObject:
   m_ObjectHideFlags: 0
