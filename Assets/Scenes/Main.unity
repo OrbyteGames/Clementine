@@ -19741,7 +19741,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 513337359}
   m_LocalRotation: {x: 0, y: 0, z: -0.009908683, w: 0.99995095}
-  m_LocalPosition: {x: -9.4861555, y: -2.6078656, z: -12.152483}
+  m_LocalPosition: {x: -9.49, y: -2.57, z: -12.15}
   m_LocalScale: {x: 0.6999993, y: 0.99999917, z: 0.99999994}
   m_Children: []
   m_Father: {fileID: 71731603}
@@ -23898,7 +23898,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4071467110998940, guid: f15dccb87021d354fa536f649cdfda15, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.24
+      value: -0.806
       objectReference: {fileID: 0}
     - target: {fileID: 4071467110998940, guid: f15dccb87021d354fa536f649cdfda15, type: 2}
       propertyPath: m_LocalRotation.x
@@ -38294,7 +38294,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+  - {fileID: 2100000, guid: 688d8e68de42def4ab4044a2aaeecce7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -52854,7 +52854,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1352009197}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.0502067, y: 13.9255495, z: -12.099247}
+  m_LocalPosition: {x: -1.94, y: 13.93, z: -12.11}
   m_LocalScale: {x: 0.07399998, y: 23.679993, z: 0.20999995}
   m_Children: []
   m_Father: {fileID: 71731603}
@@ -56442,7 +56442,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 07e8827b00dfceb4ca691ed68f878f0a, type: 3}
+  - {fileID: 2100000, guid: 688d8e68de42def4ab4044a2aaeecce7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -83059,6 +83059,7 @@ GameObject:
   - component: {fileID: 2053396415}
   - component: {fileID: 2053396414}
   - component: {fileID: 2053396413}
+  - component: {fileID: 2053396417}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -83127,13 +83128,44 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2053396412}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.05199814, y: -0.31, z: 7.919}
-  m_LocalScale: {x: 0.25, y: 1, z: 0.25000012}
+  m_LocalRotation: {x: 0.003239483, y: -0.7070993, z: 0.70709944, w: -0.003239513}
+  m_LocalPosition: {x: 0.095, y: -0.871, z: 7.91899}
+  m_LocalScale: {x: 0.4230228, y: 1, z: 0.25000012}
   m_Children: []
   m_Father: {fileID: 1165292254}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -270.525, y: 89.998, z: -90.00201}
+--- !u!328 &2053396417
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2053396412}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: be265499a84c4d24ead85af3c5e811d7, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 3
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 1
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
+  m_Url: 
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 1
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
 --- !u!1 &2055089995
 GameObject:
   m_ObjectHideFlags: 0
