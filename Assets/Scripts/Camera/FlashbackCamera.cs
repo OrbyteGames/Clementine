@@ -16,7 +16,10 @@ public class FlashbackCamera : MonoBehaviour {
     private PlayerMovement pm;
     private Vector3 posMarker;
     private FlashBackToyHorse fbth;
+    private FlashBackFamilyWindow fbfw;
 
+    private float targetaspect = 16.0f/9.0f;
+    float windowaspect, scaleheight;
     // Use this for initialization
     void Start()
     {
@@ -26,9 +29,12 @@ public class FlashbackCamera : MonoBehaviour {
         //tpuc = Clementine.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl>();
         pm = Clementine.GetComponent<PlayerMovement>();
         startCount = false;
-         posMarker = Marker1.transform.position;
+        posMarker = Marker1.transform.position;
         fbth = gameObject.GetComponent<FlashBackToyHorse>();
+        fbfw = gameObject.GetComponent<FlashBackFamilyWindow>();
         played = false;
+        windowaspect = (float)thisCam.pixelWidth / (float)thisCam.pixelHeight;
+        scaleheight = windowaspect / targetaspect;
     }
 
     // Update is called once per frame
@@ -38,12 +44,19 @@ public class FlashbackCamera : MonoBehaviour {
         {          
             if ((Vector3.Distance(Clementine.transform.position, posMarker) < activationDist))
             {
+                Rect rect= thisCam.rect;
+                rect.width = 1.0f;
+                rect.height = scaleheight;
+                rect.x = 0;
+                rect.y = (1.0f- scaleheight)/2.0f;
+                thisCam.rect = rect;
                 previousCam.enabled = false;
                 thisCam.enabled = true;
                 startCount = true;
                 if (pm) pm.LockMovement();
                 //tpuc.DisableMovement();
-                fbth.StartScene();
+                if (fbth) fbth.StartScene();
+                if (fbfw) fbfw.StartScene();
             }
            
         }

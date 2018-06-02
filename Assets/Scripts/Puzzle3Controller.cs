@@ -22,7 +22,7 @@ public class Puzzle3Controller : MonoBehaviour {
         energyIncreaseValue = 10.0f;
         spotlight.enabled = false;
         bridge.SetActive(false);
-        bridge.GetComponent<BoxCollider>().enabled = false;
+        //bridge.GetComponent<BoxCollider>().enabled = false;
         audioSource = gameObject.GetComponent<AudioSource>();
         if (electricSound!=null && audioSource !=null) audioSource.clip = electricSound;
 	}
