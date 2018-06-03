@@ -50112,7 +50112,13 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 111162293149824704, guid: 4153f35645853f0408311aa08b655762,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 111162293149824704, guid: 4153f35645853f0408311aa08b655762, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 4153f35645853f0408311aa08b655762, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1261389364
@@ -54490,6 +54496,20 @@ GameObject:
   m_PrefabParentObject: {fileID: 1251440850308186, guid: 4153f35645853f0408311aa08b655762,
     type: 2}
   m_PrefabInternal: {fileID: 1260203032}
+--- !u!111 &1355799857
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1355799846}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 4603af966790140409070e9867c5c33e, type: 3}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1358974965
 GameObject:
   m_ObjectHideFlags: 0
@@ -77124,7 +77144,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1375301734
+  randomSeed: 588118703
   InitialModule:
     serializedVersion: 3
     enabled: 1

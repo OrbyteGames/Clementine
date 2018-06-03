@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.ComponentModel;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -20,12 +21,15 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody _rigidBody;
     Animator _animator;
+ //   Animation _anim;
     bool _isMovementLocked = false;
     bool _isJumpLocked = false;
     bool _isJumping = false;
 
-    float _verticalVelocity = 0;
+    GameObject target;
 
+    float _verticalVelocity = 0;
+    private BackgroundWorker _backgroundWorker;
     // Use this for initialization
     void Start()
     {
@@ -35,8 +39,10 @@ public class PlayerMovement : MonoBehaviour
         if (CameraManager.Instance.ActiveCamera == null)
             _activedCamera = Camera.main;
 
+
         _animator = GetComponent<Animator>();
     }
+
 
     public void LockMovement()
     {
@@ -68,8 +74,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if (!_isMovementLocked) ManageMovement();
-
+        //if (!_anim.isPlaying) { 
+        if (_animator.GetCurrentAnimatorStateInfo(0).IsName("SleepingStandingUp") &&
+            _animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
+        {
+            //Wait every frame until animation has finished
+            //yield return null;
+        }else { 
+            if (!_isMovementLocked) ManageMovement();
+        }
     }
 
     void ManageMovement()
