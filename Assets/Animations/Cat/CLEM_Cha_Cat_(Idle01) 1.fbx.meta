@@ -1,0 +1,202 @@
+fileFormatVersion: 2
+guid: 3f9c426dad60eff43938d788a9b92f3a
+timeCreated: 1527692618
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Car_Ears_01_01SHJnt
+    100002: Car_Ears_01_02SHJnt
+    100004: Car_Ears_01_03SHJnt
+    100006: Car_Ears_02_01SHJnt
+    100008: Car_Ears_02_02SHJnt
+    100010: Car_Ears_02_03SHJnt
+    100012: Car_Head_JawEndSHJnt
+    100014: Car_Head_JawSHJnt
+    100016: Car_Head_TopSHJnt
+    100018: Car_l_Clavicle_AuxSHJnt
+    100020: Car_l_Eye_01SHJnt
+    100022: Car_l_FrontLeg_AnkleSHJnt
+    100024: Car_l_FrontLeg_BallSHJnt
+    100026: Car_l_FrontLeg_HipSHJnt
+    100028: Car_l_FrontLeg_KneeSHJnt
+    100030: Car_l_FrontLeg_ToeSHJnt
+    100032: Car_l_HindLeg_AnkleSHJnt
+    100034: Car_l_HindLeg_BallSHJnt
+    100036: Car_l_HindLeg_HipSHJnt
+    100038: Car_l_HindLeg_Knee1SHJnt
+    100040: Car_l_HindLeg_Knee2SHJnt
+    100042: Car_l_HindLeg_ToeSHJnt
+    100044: Car_Neck_01SHJnt
+    100046: Car_Neck_02SHJnt
+    100048: Car_Neck_TopSHJnt
+    100050: Car_r_Clavicle_AuxSHJnt
+    100052: Car_r_Eye_01SHJnt
+    100054: Car_r_FrontLeg_AnkleSHJnt
+    100056: Car_r_FrontLeg_BallSHJnt
+    100058: Car_r_FrontLeg_HipSHJnt
+    100060: Car_r_FrontLeg_KneeSHJnt
+    100062: Car_r_FrontLeg_ToeSHJnt
+    100064: Car_r_HindLeg_AnkleSHJnt
+    100066: Car_r_HindLeg_BallSHJnt
+    100068: Car_r_HindLeg_HipSHJnt
+    100070: Car_r_HindLeg_Knee1SHJnt
+    100072: Car_r_HindLeg_Knee2SHJnt
+    100074: Car_r_HindLeg_ToeSHJnt
+    100076: Car_ROOTSHJnt
+    100078: Car_SHJntGrp
+    100080: Car_Spine_01SHJnt
+    100082: Car_Spine_02SHJnt
+    100084: Car_Spine_03SHJnt
+    100086: Car_Spine_04SHJnt
+    100088: Car_Spine_TopSHJnt
+    100090: Car_Tail_01_01SHJnt
+    100092: Car_Tail_01_02SHJnt
+    100094: Car_Tail_01_03SHJnt
+    100096: Car_Tail_01_04SHJnt
+    100098: Car_Tail_01_05SHJnt
+    100100: Car_Tail_01_06SHJnt
+    100102: //RootNode
+    100104: CLEM_Cha_Gato_Fix
+    100106: joint1
+    100108: joint2
+    400000: Car_Ears_01_01SHJnt
+    400002: Car_Ears_01_02SHJnt
+    400004: Car_Ears_01_03SHJnt
+    400006: Car_Ears_02_01SHJnt
+    400008: Car_Ears_02_02SHJnt
+    400010: Car_Ears_02_03SHJnt
+    400012: Car_Head_JawEndSHJnt
+    400014: Car_Head_JawSHJnt
+    400016: Car_Head_TopSHJnt
+    400018: Car_l_Clavicle_AuxSHJnt
+    400020: Car_l_Eye_01SHJnt
+    400022: Car_l_FrontLeg_AnkleSHJnt
+    400024: Car_l_FrontLeg_BallSHJnt
+    400026: Car_l_FrontLeg_HipSHJnt
+    400028: Car_l_FrontLeg_KneeSHJnt
+    400030: Car_l_FrontLeg_ToeSHJnt
+    400032: Car_l_HindLeg_AnkleSHJnt
+    400034: Car_l_HindLeg_BallSHJnt
+    400036: Car_l_HindLeg_HipSHJnt
+    400038: Car_l_HindLeg_Knee1SHJnt
+    400040: Car_l_HindLeg_Knee2SHJnt
+    400042: Car_l_HindLeg_ToeSHJnt
+    400044: Car_Neck_01SHJnt
+    400046: Car_Neck_02SHJnt
+    400048: Car_Neck_TopSHJnt
+    400050: Car_r_Clavicle_AuxSHJnt
+    400052: Car_r_Eye_01SHJnt
+    400054: Car_r_FrontLeg_AnkleSHJnt
+    400056: Car_r_FrontLeg_BallSHJnt
+    400058: Car_r_FrontLeg_HipSHJnt
+    400060: Car_r_FrontLeg_KneeSHJnt
+    400062: Car_r_FrontLeg_ToeSHJnt
+    400064: Car_r_HindLeg_AnkleSHJnt
+    400066: Car_r_HindLeg_BallSHJnt
+    400068: Car_r_HindLeg_HipSHJnt
+    400070: Car_r_HindLeg_Knee1SHJnt
+    400072: Car_r_HindLeg_Knee2SHJnt
+    400074: Car_r_HindLeg_ToeSHJnt
+    400076: Car_ROOTSHJnt
+    400078: Car_SHJntGrp
+    400080: Car_Spine_01SHJnt
+    400082: Car_Spine_02SHJnt
+    400084: Car_Spine_03SHJnt
+    400086: Car_Spine_04SHJnt
+    400088: Car_Spine_TopSHJnt
+    400090: Car_Tail_01_01SHJnt
+    400092: Car_Tail_01_02SHJnt
+    400094: Car_Tail_01_03SHJnt
+    400096: Car_Tail_01_04SHJnt
+    400098: Car_Tail_01_05SHJnt
+    400100: Car_Tail_01_06SHJnt
+    400102: //RootNode
+    400104: CLEM_Cha_Gato_Fix
+    400106: joint1
+    400108: joint2
+    2100000: lambert1
+    4300000: CLEM_Cha_Gato_Fix
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: CLEM_Cha_Gato_Fix
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
