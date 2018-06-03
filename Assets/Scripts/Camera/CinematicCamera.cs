@@ -37,7 +37,12 @@ public class CinematicCamera : MonoBehaviour {
                 previousCam.enabled = false;
                 thisCam.enabled = true;
                 startCount = true;
-                if (pm) pm.LockMovement();
+                if (pm)
+                {
+                    pm._animator.SetBool("Idle", true);
+                    pm._animator.SetBool("Walking", false);
+                    pm.LockMovement();
+                }
                 //tpuc.DisableMovement();                   
             }
         }

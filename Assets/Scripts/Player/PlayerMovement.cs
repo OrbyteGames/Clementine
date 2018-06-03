@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     Camera _activedCamera;
 
     Rigidbody _rigidBody;
-    Animator _animator;
+    public Animator _animator;
  //   Animation _anim;
     bool _isMovementLocked = false;
     bool _isJumpLocked = false;
