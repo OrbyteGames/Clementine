@@ -45,7 +45,8 @@ public class Puzzle2_Controller : MonoBehaviour
                     anim.nearActivate();
                     nearActivate = true;
                 }
-                if (energyTime > 0.0f)
+
+                if (energyTime > 0.0f && anim.IsAwake)
                 {
                     energyTime -= Time.deltaTime;
                     gameObject.transform.position += (new Vector3(-robotSpeed, 0.0f, 0.0f) * Time.deltaTime);
@@ -61,8 +62,10 @@ public class Puzzle2_Controller : MonoBehaviour
                     anim.active = true;
                     if (electricSound != null && audioSource != null) audioSource.Play();
                     if (!RobotLight.activeSelf) RobotLight.SetActive(true);
-                    storedEnergy += energyIncreaseValue;
-                    energyTime = timeIncrease;
+                    if (anim.IsAwake) { 
+                        storedEnergy += energyIncreaseValue;
+                        energyTime = timeIncrease;
+                    }
                 }
                 if (storedEnergy > 50)
                 {
@@ -73,11 +76,13 @@ public class Puzzle2_Controller : MonoBehaviour
         }
         else
         {
+
             gameObject.transform.position += (new Vector3(-robotSpeed, 0.0f, 0.0f) * Time.deltaTime);
             container.transform.position += (new Vector3(-containerSpeed, 0.0f, 0.0f) * Time.deltaTime);
             //transform.position += new Vector3(-robotSpeed, 0.0f, 0.0f);
             anim.StopWalking();
             if (Mathf.Abs(container.transform.position.x - target.position.x) < 0.1) Deactivate();
+            
         }
 
     }

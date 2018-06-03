@@ -73,13 +73,11 @@ public class PlayerMovement : MonoBehaviour
 
 
     private void Update()
-    {
-        //if (!_anim.isPlaying) { 
+    {         
         if (_animator.GetCurrentAnimatorStateInfo(0).IsName("SleepingStandingUp") &&
             _animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
         {
-            //Wait every frame until animation has finished
-            //yield return null;
+            //Waiting for WakeUp
         }else { 
             if (!_isMovementLocked) ManageMovement();
         }

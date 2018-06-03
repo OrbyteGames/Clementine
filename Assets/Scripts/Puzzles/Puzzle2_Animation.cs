@@ -8,6 +8,7 @@ public class Puzzle2_Animation : MonoBehaviour
     Animator animator;
     public bool active = false;
     public bool solved = false;
+    public bool IsAwake = false;
     // Use this for initialization
     void Start()
     {
@@ -18,14 +19,25 @@ public class Puzzle2_Animation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (active)
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("wake") &&
+        animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
         {
-            active = false;
-            StartWalking();
+            //Waiting for WakeUp
+            IsAwake = false;
         }
         else
         {
-            if (solved) StopWalking();
+            
+            if (active)
+            {
+                IsAwake = true;
+                active = false;
+                StartWalking();
+            }
+            else
+            {
+                if (solved) StopWalking();
+            }
         }
     }
 
