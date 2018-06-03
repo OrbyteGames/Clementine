@@ -18,14 +18,14 @@ public class LightOnOff : MonoBehaviour {
     {
         gameObject.GetComponent<Renderer>().material = OffMaterial;
         objectlight = gameObject.GetComponent<Light>();
-        objectPosGround = new Vector3(gameObject.transform.position.x,0, gameObject.transform.position.z);
+        objectPosGround = new Vector3(gameObject.transform.position.x,0.0f,gameObject.transform.position.z);
         if (objectlight) objectlight.enabled = false;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        playerPosGround = new Vector3( player.transform.position.x,0, player.transform.position.z);
+        playerPosGround = new Vector3( player.transform.position.x,0.0f, player.transform.position.z);
         if (!inside)
         {
             if (Vector3.Distance(playerPosGround, objectPosGround) < minDistance) {
