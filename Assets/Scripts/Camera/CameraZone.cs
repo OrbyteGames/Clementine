@@ -29,6 +29,7 @@ public class CameraZone : MonoBehaviour
         {
             //playerCam.enabled = false;
             cam.enabled = true;
+            cam.GetComponent<AudioListener>().enabled = true;
             if (associatedRotationCamScript) associatedRotationCamScript.ActivateCam();
         }
     }
@@ -39,6 +40,7 @@ public class CameraZone : MonoBehaviour
         {
             //playerCam.enabled = true;
             cam.enabled = false;
+            cam.GetComponent<AudioListener>().enabled = true;
             if (associatedRotationCamScript) associatedRotationCamScript.DeactivateCam();
         }
     }

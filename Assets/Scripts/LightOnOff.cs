@@ -34,7 +34,8 @@ public class LightOnOff : MonoBehaviour {
                 turnOffCounter = 0.0f;
                 inside = true;
                 gameObject.GetComponent<Renderer>().material = OnMaterial;
-                if (objectlight) objectlight.enabled = true;
+                foreach (Light l in GetComponentsInChildren<Light>()) l.enabled = true;
+                //if (objectlight) objectlight.enabled = true;
             }
         }
         else {                    
@@ -45,7 +46,9 @@ public class LightOnOff : MonoBehaviour {
                     turnOffCounter = 0.0f;
                     inside = false;
                     gameObject.GetComponent<Renderer>().material = OffMaterial;
-                    if (objectlight) objectlight.enabled = false;
+                    foreach (Light l in GetComponentsInChildren<Light>()) l.enabled = false;
+
+                    //if (objectlight) objectlight.enabled = false;
                 }
             }
         }

@@ -27,10 +27,12 @@ public class AutoActiveCamera : MonoBehaviour
         if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0 
             && hasChanged == false )
         {
-            clem_control.camChanged = true;
+            //clem_control.camChanged = true;
 
-            //hasChanged = true;
-            ////clement.transform.forward = forwardPoint.forward;
+            //
+            hasChanged = true;
+            ////
+            clement.transform.forward = forwardPoint.forward;
 
 
         }
