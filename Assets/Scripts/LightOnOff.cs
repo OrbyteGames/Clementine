@@ -5,11 +5,12 @@ using UnityEngine;
 public class LightOnOff : MonoBehaviour {
     public Material OnMaterial;
     public Material OffMaterial;
-
-    private Light objectlight;
-
     public GameObject player;
     public float minDistance = 2.0f;
+    public float turnOffCooldown = 3.0f;
+
+    private float turnOffCounter;
+    private Light objectlight;
     private bool inside;
     private Vector3 playerPosGround;
     private Vector3 objectPosGround;
@@ -20,6 +21,7 @@ public class LightOnOff : MonoBehaviour {
         objectlight = gameObject.GetComponent<Light>();
         objectPosGround = new Vector3(gameObject.transform.position.x,0.0f,gameObject.transform.position.z);
         if (objectlight) objectlight.enabled = false;
+        turnOffCounter = 0.0f;
     }
 
     // Update is called once per frame
@@ -29,16 +31,22 @@ public class LightOnOff : MonoBehaviour {
         if (!inside)
         {
             if (Vector3.Distance(playerPosGround, objectPosGround) < minDistance) {
+                turnOffCounter = 0.0f;
                 inside = true;
                 gameObject.GetComponent<Renderer>().material = OnMaterial;
                 if (objectlight) objectlight.enabled = true;
             }
         }
-        else {
+        else {                    
             if (Vector3.Distance(playerPosGround, objectPosGround) > minDistance) {
-                inside = false;
-                gameObject.GetComponent<Renderer>().material = OffMaterial;
-                if (objectlight) objectlight.enabled = false;
+                turnOffCounter += Time.deltaTime;
+                if (turnOffCounter > turnOffCooldown)
+                    {
+                    turnOffCounter = 0.0f;
+                    inside = false;
+                    gameObject.GetComponent<Renderer>().material = OffMaterial;
+                    if (objectlight) objectlight.enabled = false;
+                }
             }
         }
     }
